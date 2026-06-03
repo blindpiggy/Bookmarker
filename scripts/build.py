@@ -186,7 +186,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="bookmarks-build/{built_at}">
-  <title>Bookmarks</title>
+  <title>Bookmarker</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -639,7 +639,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       <div class="logo-mark">
         <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
       </div>
-      <span class="site-name">Bookmarks</span>
+      <span class="site-name">Bookmarker</span>
     </a>
     <div class="header-controls">
       <div class="search-expand" id="searchExpand">
