@@ -20,6 +20,7 @@ Requirements:
     - Run from the repo root directory
 
 Notes:
+    - Reads note HTML body to extract URLs from anchor href attributes
     - Batches notes 100 at a time to avoid AppleScript timeouts
     - Safe to re-run: skips URLs already written to data/bookmarks/
     - Handles both Pinboard-imported notes and current Share Sheet notes
@@ -34,6 +35,7 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from html.parser import HTMLParser
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
@@ -44,9 +46,62 @@ NOTES_ACCOUNT = "iCloud"
 BATCH_SIZE    = 100
 SEP           = "\x1e"  # ASCII record separator
 
+# ── HTML URL extractor ────────────────────────────────────────────────────────
+
+class HrefExtractor(HTMLParser):
+    """Extracts href URLs and visible text from Notes HTML body."""
+
+    def __init__(self):
+        super().__init__()
+        self.urls  = []
+        self.texts = []
+        self._current_text = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'a':
+            attrs_dict = dict(attrs)
+            href = attrs_dict.get('href', '')
+            if href.startswith('http'):
+                self.urls.append(href)
+
+    def handle_data(self, data):
+        self._current_text.append(data)
+
+    def get_text(self):
+        return ' '.join(self._current_text).strip()
+
+
+def extract_urls_from_html(html: str) -> tuple[list[str], str]:
+    """
+    Returns (urls, plain_text) from a Notes HTML body.
+    URLs come from <a href> attributes.
+    Plain text is everything visible, with URLs stripped out.
+    """
+    parser = HrefExtractor()
+    try:
+        parser.feed(html)
+    except Exception:
+        pass
+
+    urls = list(dict.fromkeys(parser.urls))  # deduplicate, preserve order
+
+    # Also scan raw text for any plain URLs not wrapped in anchors
+    plain = parser.get_text()
+    raw_urls = re.findall(r'https?://[^\s\)\]\'"<>]+', plain)
+    for u in raw_urls:
+        if u not in urls:
+            urls.append(u)
+
+    # Remove URLs from plain text to get annotation
+    annotation_text = plain
+    for u in urls:
+        annotation_text = annotation_text.replace(u, '')
+
+    return urls, annotation_text
+
+
 # ── AppleScript helpers ───────────────────────────────────────────────────────
 
-# Step 1: get total note count
 COUNT_SCRIPT = f"""
 tell application "Notes"
     set targetFolder to folder "{NOTES_FOLDER}" of account "{NOTES_ACCOUNT}"
@@ -54,7 +109,7 @@ tell application "Notes"
 end tell
 """
 
-# Step 2: fetch a batch by index range (1-based, inclusive)
+# Uses 'body of n' (HTML) instead of 'plaintext of n' to get URLs from anchors
 BATCH_SCRIPT_TEMPLATE = """\
 on run argv
     set outPath to item 1 of argv
@@ -71,7 +126,7 @@ on run argv
             set n to item i of allNotes
             set nID to id of n
             set nTitle to name of n
-            set nBody to plaintext of n
+            set nBody to body of n
             set nDate to (creation date of n) - (date "Thursday, January 1, 1970 at 00:00:00") + (time to GMT)
             set sep to (ASCII character 30)
             set rec to nID & sep & nTitle & sep & nBody & sep & (nDate as text) & (ASCII character 10)
@@ -83,8 +138,7 @@ end run
 """
 
 
-def run_applescript(script: str, args: list[str] = [], timeout: int = 120) -> str:
-    """Writes script to a temp file and runs it via osascript."""
+def run_applescript(script: str, args: list = [], timeout: int = 30) -> str:
     import tempfile
     with tempfile.NamedTemporaryFile(mode='w', suffix='.applescript',
                                      delete=False, encoding='utf-8') as sf:
@@ -97,50 +151,39 @@ def run_applescript(script: str, args: list[str] = [], timeout: int = 120) -> st
         )
     finally:
         os.unlink(script_path)
-
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip())
     return result.stdout.strip()
 
 
 def get_note_count() -> int:
-    """Returns the total number of notes in the Bookmarks folder."""
     print("Counting notes in Bookmarks folder…")
     result = run_applescript(COUNT_SCRIPT, timeout=30)
     return int(result.strip())
 
 
-def fetch_batch(start: int, end: int, out_path: str) -> str:
-    """
-    Fetches notes from index start to end (1-based, inclusive)
-    and writes them to out_path. Returns file contents.
-    """
+def fetch_batch(start: int, end: int) -> str:
     import tempfile
-
     script = BATCH_SCRIPT_TEMPLATE.format(
         folder=NOTES_FOLDER,
         account=NOTES_ACCOUNT,
     )
-
     with tempfile.NamedTemporaryFile(mode='w', suffix='.txt',
                                      delete=False, encoding='utf-8') as of:
         tmp_path = of.name
-
     try:
-        run_applescript(script, args=[tmp_path, str(start), str(end)], timeout=120)
+        run_applescript(script, args=[tmp_path, str(start), str(end)], timeout=180)
         contents = Path(tmp_path).read_text(encoding='utf-8', errors='replace')
     finally:
         try:
             os.unlink(tmp_path)
         except OSError:
             pass
-
     return contents
 
 
 # ── Parsing ───────────────────────────────────────────────────────────────────
 
-URL_RE            = re.compile(r'https?://[^\s\)\]\'"<>]+')
 PINBOARD_URL_RE   = re.compile(r'^URL:\s*(https?://\S+)', re.MULTILINE)
 PINBOARD_TS_RE    = re.compile(r'^Timestamp:\s*(\d+)', re.MULTILINE)
 PINBOARD_NOISE_RE = re.compile(r'^(Folder|Timestamp|URL):\s*.*$', re.MULTILINE)
@@ -151,38 +194,40 @@ def parse_note(raw_id, raw_title, raw_body, raw_date) -> list[dict]:
     body    = raw_body.strip()
     date_ts = int(raw_date.strip()) if raw_date.strip().lstrip('-').isdigit() else None
 
-    if PINBOARD_TS_RE.search(body):
-        return _parse_pinboard(raw_id, title, body, date_ts)
+    # Detect Pinboard import by presence of Timestamp: field in plaintext
+    # For Pinboard notes, body may be HTML wrapping the old plain text
+    plain_body = re.sub(r'<[^>]+>', ' ', body).strip()
+
+    if PINBOARD_TS_RE.search(plain_body):
+        return _parse_pinboard(raw_id, title, plain_body, date_ts)
     else:
         return _parse_current(raw_id, title, body, date_ts)
 
 
-def _parse_pinboard(note_id, title, body, note_ts) -> list[dict]:
-    ts_match  = PINBOARD_TS_RE.search(body)
+def _parse_pinboard(note_id, title, plain_body, note_ts) -> list[dict]:
+    ts_match  = PINBOARD_TS_RE.search(plain_body)
     saved_ts  = int(ts_match.group(1)) if ts_match else note_ts
-    url_match = PINBOARD_URL_RE.search(body)
+    url_match = PINBOARD_URL_RE.search(plain_body)
     url       = url_match.group(1).strip() if url_match else None
 
     if not url:
-        urls = URL_RE.findall(body)
+        urls = re.findall(r'https?://[^\s\)\]\'"<>]+', plain_body)
         url  = urls[0] if urls else None
     if not url:
         return []
 
-    cleaned    = PINBOARD_NOISE_RE.sub('', body).replace(url, '')
+    cleaned    = PINBOARD_NOISE_RE.sub('', plain_body).replace(url, '')
     annotation = _clean(cleaned)
     return [_make(note_id, url, title, annotation, saved_ts)]
 
 
-def _parse_current(note_id, title, body, note_ts) -> list[dict]:
-    urls = list(dict.fromkeys(URL_RE.findall(body)))  # deduplicate, preserve order
+def _parse_current(note_id, title, html_body, note_ts) -> list[dict]:
+    urls, annotation_text = extract_urls_from_html(html_body)
+
     if not urls:
         return []
 
-    body_without = body
-    for u in urls:
-        body_without = body_without.replace(u, '')
-    annotation = _clean(body_without)
+    annotation = _clean(annotation_text)
 
     results = []
     for i, url in enumerate(urls):
@@ -198,6 +243,7 @@ def _parse_current(note_id, title, body, note_ts) -> list[dict]:
 
 def _clean(text) -> str | None:
     cleaned = re.sub(r'\bUnread\b', '', text or '')
+    cleaned = re.sub(r'<[^>]+>', ' ', cleaned)  # strip any residual HTML
     cleaned = re.sub(r'\s+', ' ', cleaned).strip()
     return cleaned if len(cleaned) >= 3 else None
 
@@ -234,7 +280,7 @@ def existing_urls() -> set:
     return urls
 
 
-def write_bookmark(bookmark: dict, dry_run: bool) -> Path | None:
+def write_bookmark(bookmark: dict, dry_run: bool) -> Path:
     saved_at = bookmark["saved_at"]
     try:
         dt = datetime.fromisoformat(saved_at[:19])
@@ -249,11 +295,10 @@ def write_bookmark(bookmark: dict, dry_run: bool) -> Path | None:
         out_path = out_dir / f"{bookmark['id']}_{counter}.json"
         counter += 1
 
-    if dry_run:
-        return out_path
+    if not dry_run:
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(json.dumps(bookmark, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(bookmark, indent=2, ensure_ascii=False), encoding="utf-8")
     return out_path
 
 
@@ -265,7 +310,6 @@ def main():
     parser.add_argument("--dry-run", action="store_true",   help="Parse and print without writing")
     args = parser.parse_args()
 
-    # Get total count
     try:
         total = get_note_count()
     except Exception as e:
@@ -274,10 +318,8 @@ def main():
 
     print(f"  {total} notes found in Notes › {NOTES_ACCOUNT} › {NOTES_FOLDER}\n")
 
-    limit = args.sample if args.sample else total
-    limit = min(limit, total)
+    limit = min(args.sample if args.sample else total, total)
 
-    # Load existing URLs
     known_urls: set = set()
     if not args.dry_run:
         known_urls = existing_urls()
@@ -285,17 +327,14 @@ def main():
             print(f"  {len(known_urls)} existing bookmarks — duplicates will be skipped.\n")
 
     written = skipped = empty = errors = 0
+    starts  = list(range(1, limit + 1, BATCH_SIZE))
 
-    # Process in batches
-    batches = range(1, limit + 1, BATCH_SIZE)
-    num_batches = len(batches)
-
-    for batch_num, start in enumerate(batches, 1):
+    for batch_num, start in enumerate(starts, 1):
         end = min(start + BATCH_SIZE - 1, limit)
-        print(f"Batch {batch_num}/{num_batches}: notes {start}–{end}…")
+        print(f"Batch {batch_num}/{len(starts)}: notes {start}–{end}…")
 
         try:
-            raw = fetch_batch(start, end, "")
+            raw = fetch_batch(start, end)
         except Exception as e:
             print(f"  ✗ Batch failed: {e}", file=sys.stderr)
             errors += (end - start + 1)
@@ -329,8 +368,9 @@ def main():
                     continue
                 known_urls.add(url)
 
+                path = write_bookmark(bookmark, dry_run=args.dry_run)
+
                 if args.dry_run:
-                    path = write_bookmark(bookmark, dry_run=True)
                     print(f"  [dry-run] {path.relative_to(REPO_ROOT)}")
                     print(f"    url:        {bookmark['url']}")
                     print(f"    title:      {bookmark['title']}")
@@ -338,10 +378,10 @@ def main():
                     print(f"    saved_at:   {bookmark['saved_at']}")
                     print()
                 else:
-                    write_bookmark(bookmark, dry_run=False)
                     written += 1
 
-        print(f"  ✓ done  (written so far: {written})")
+        if not args.dry_run:
+            print(f"  ✓ done  (written so far: {written})")
 
     print(f"\n{'─' * 44}")
     if args.dry_run:
