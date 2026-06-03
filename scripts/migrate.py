@@ -118,7 +118,7 @@ def fetch_notes_applescript() -> str:
         sys.exit(1)
 
     try:
-        contents = Path(out_path).read_text(encoding='utf-8')
+        contents = Path(out_path).read_text(encoding='utf-8', errors='replace')
     finally:
         try:
             os.unlink(out_path)
