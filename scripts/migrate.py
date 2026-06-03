@@ -192,7 +192,10 @@ PINBOARD_NOISE_RE = re.compile(r'^(Folder|Timestamp|URL):\s*.*$', re.MULTILINE)
 def parse_note(raw_id, raw_title, raw_body, raw_date) -> list[dict]:
     title   = raw_title.strip()
     body    = raw_body.strip()
-    date_ts = int(raw_date.strip()) if raw_date.strip().lstrip('-').isdigit() else None
+    try:
+        date_ts = int(float(raw_date.strip()))
+    except (ValueError, TypeError):
+        date_ts = None
 
     # Detect Pinboard import by presence of Timestamp: field in plaintext
     # For Pinboard notes, body may be HTML wrapping the old plain text
@@ -217,7 +220,7 @@ def _parse_pinboard(note_id, title, plain_body, note_ts) -> list[dict]:
         return []
 
     cleaned    = PINBOARD_NOISE_RE.sub('', plain_body).replace(url, '')
-    annotation = _clean(cleaned)
+    annotation = _clean(cleaned, title=title)
     return [_make(note_id, url, title, annotation, saved_ts)]
 
 
@@ -227,7 +230,7 @@ def _parse_current(note_id, title, html_body, note_ts) -> list[dict]:
     if not urls:
         return []
 
-    annotation = _clean(annotation_text)
+    annotation = _clean(annotation_text, title=title)
 
     results = []
     for i, url in enumerate(urls):
@@ -241,20 +244,29 @@ def _parse_current(note_id, title, html_body, note_ts) -> list[dict]:
     return results
 
 
-def _clean(text) -> str | None:
+def _clean(text, title=None) -> str | None:
     cleaned = re.sub(r'\bUnread\b', '', text or '')
     cleaned = re.sub(r'<[^>]+>', ' ', cleaned)  # strip any residual HTML
     cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-    return cleaned if len(cleaned) >= 3 else None
+    if not cleaned or len(cleaned) < 3:
+        return None
+    # Suppress annotation if it's just the title repeated
+    if title and cleaned.strip().lower() == title.strip().lower():
+        return None
+    return cleaned
 
 
 def _make(note_id, url, title, annotation, saved_ts) -> dict:
+    import hashlib
     if saved_ts and saved_ts > 0:
         saved_at = datetime.fromtimestamp(saved_ts, tz=timezone.utc).isoformat()
     else:
         saved_at = datetime.now(timezone.utc).isoformat()
+    # Use a hash of the URL for a stable, unique, collision-free file ID
+    url_hash = hashlib.sha1(url.encode()).hexdigest()[:12]
+    file_id  = f"{saved_ts or int(datetime.now(timezone.utc).timestamp())}_{url_hash}"
     return {
-        "id"         : str(saved_ts or int(datetime.now(timezone.utc).timestamp())),
+        "id"         : file_id,
         "url"        : url,
         "title"      : title,
         "annotation" : annotation,
