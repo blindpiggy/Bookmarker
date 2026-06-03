@@ -1,0 +1,88 @@
+name: Weekly Build & Deploy
+
+# ── Schedule ──────────────────────────────────────────────────────────────────
+# Runs every Friday at midnight Eastern time.
+# Eastern is UTC-4 (EDT) in summer, UTC-5 (EST) in winter.
+# This is set to 05:00 UTC Saturday which equals midnight Friday EDT.
+#
+# ⏰ TO CHANGE THE SCHEDULE:
+#   Edit the cron expression below. Format: 'minute hour day month weekday'
+#   Examples:
+#     '0 5 * * 6'   → Friday midnight EDT (current)
+#     '0 6 * * 6'   → Friday midnight EST (winter)
+#     '0 5 * * 0'   → Saturday midnight EDT
+#     '0 12 * * 1'  → Monday noon UTC
+#   Cron helper: https://crontab.guru
+#
+on:
+  schedule:
+    - cron: '0 5 * * 6'   # ← change this line to reschedule
+
+  # Allows you to trigger a build manually from the GitHub Actions tab
+  workflow_dispatch:
+
+# ── Permissions ───────────────────────────────────────────────────────────────
+permissions:
+  contents: write       # needed to commit enriched JSON files back to repo
+  pages: write          # needed to deploy to GitHub Pages
+  id-token: write       # needed for GitHub Pages OIDC auth
+
+# ── Jobs ──────────────────────────────────────────────────────────────────────
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+
+      # 1. Check out the full repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so git blame/log works if needed
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # 3. Enrich any new bookmark JSON files with OG metadata
+      #    Skips already-enriched files automatically.
+      #    If enrichment fails for some URLs, the build continues —
+      #    those cards will render without OG image/description.
+      - name: Enrich bookmarks
+        run: python3 scripts/enrich.py
+        continue-on-error: false
+
+      # 4. Commit enriched JSON files back to the repo
+      #    Only commits if there are actually changes (new enriched files).
+      #    Uses a neutral "github-actions" author so it's clearly automated.
+      - name: Commit enriched files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No new enriched files to commit."
+          else
+            git commit -m "chore: enrich bookmark metadata [skip ci]"
+            git push
+          fi
+
+      # 5. Build the static site
+      - name: Build site
+        run: python3 scripts/build.py
+
+      # 6. Upload the built site/ folder as a GitHub Pages artifact
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+      # 7. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
