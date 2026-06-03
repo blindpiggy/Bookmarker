@@ -44,40 +44,71 @@ NOTES_ACCOUNT  = "iCloud"      # Notes account name — change if different
 
 # ── AppleScript ───────────────────────────────────────────────────────────────
 
-# Fetches all notes from the target folder.
-# Returns a tab-and-newline-delimited string:
-#   id \t title \t body \t creation_date
-# Dates are returned as Unix timestamps via AppleScript's `time to GMT` offset trick.
-APPLESCRIPT = f"""
-tell application "Notes"
-    set targetFolder to folder "{NOTES_FOLDER}" of account "{NOTES_ACCOUNT}"
-    set allNotes to every note of targetFolder
-    set output to ""
-    repeat with n in allNotes
-        set nID to id of n
-        set nTitle to name of n
-        set nBody to plaintext of n
-        -- AppleScript dates: seconds since Jan 1 2001 local time
-        -- Convert to Unix timestamp (Unix epoch = Jan 1 1970)
-        set nDate to (creation date of n) - (date "Thursday, January 1, 1970 at 00:00:00") + (time to GMT)
-        -- Escape tabs and newlines in title and body so we can split safely
-        set nTitle to do shell script "echo " & quoted form of nTitle & " | tr '\\t' ' '"
-        set nBody to do shell script "echo " & quoted form of nBody & " | tr '\\t' ' '"
-        set output to output & nID & "\\t" & nTitle & "\\t" & nBody & "\\t" & nDate & "\\n"
-    end repeat
-    return output
-end tell
+# Writes each note as a line to a temp file using ASCII record separator (0x1e)
+# to delimit fields. No shell calls inside the loop — much faster for large folders.
+# Output is written directly to disk to avoid subprocess pipe buffer limits.
+
+APPLESCRIPT_TEMPLATE = """\
+on run argv
+    set outPath to item 1 of argv
+    set outFile to open for access POSIX file outPath with write permission
+    set eof of outFile to 0
+    tell application "Notes"
+        set targetFolder to folder "{folder}" of account "{account}"
+        set allNotes to every note of targetFolder
+        repeat with n in allNotes
+            set nID to id of n
+            set nTitle to name of n
+            set nBody to plaintext of n
+            set nDate to (creation date of n) - (date "Thursday, January 1, 1970 at 00:00:00") + (time to GMT)
+            set sep to (ASCII character 30)
+            set rec to nID & sep & nTitle & sep & nBody & sep & (nDate as text) & (ASCII character 10)
+            write rec to outFile
+        end repeat
+    end tell
+    close access outFile
+end run
 """
 
+SEP = "\x1e"  # ASCII record separator — same as used in AppleScript above
+
+
 def fetch_notes_applescript() -> str:
-    """Runs the AppleScript and returns raw output."""
-    print("Asking Notes for your bookmarks (this may take a moment for large folders)…")
-    result = subprocess.run(
-        ["osascript", "-e", APPLESCRIPT],
-        capture_output=True,
-        text=True,
-        timeout=300   # 5 minute timeout for large note collections
+    """
+    Runs the AppleScript, writing output to a temp file to avoid
+    subprocess pipe buffer limits. Returns file contents as a string.
+    """
+    import tempfile
+
+    script = APPLESCRIPT_TEMPLATE.format(
+        folder=NOTES_FOLDER,
+        account=NOTES_ACCOUNT,
     )
+
+    # Write AppleScript to a temp file so we can pass args via osascript
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.applescript',
+                                     delete=False, encoding='utf-8') as sf:
+        sf.write(script)
+        script_path = sf.name
+
+    # Output goes to a separate temp file
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.txt',
+                                     delete=False, encoding='utf-8') as of:
+        out_path = of.name
+
+    print("Asking Notes for your bookmarks (this may take a few minutes for large folders)…")
+    print("Notes may ask for permission — click OK if a dialog appears.\n")
+
+    try:
+        result = subprocess.run(
+            ["osascript", script_path, out_path],
+            capture_output=True,
+            text=True,
+            timeout=1800   # 30 minute timeout for very large folders
+        )
+    finally:
+        os.unlink(script_path)
+
     if result.returncode != 0:
         print(f"\n✗ AppleScript error:\n{result.stderr}", file=sys.stderr)
         print("\nCommon causes:", file=sys.stderr)
@@ -85,7 +116,16 @@ def fetch_notes_applescript() -> str:
         print(f"  • Folder name isn't exactly '{NOTES_FOLDER}' — check Notes.app", file=sys.stderr)
         print(f"  • Account name isn't exactly '{NOTES_ACCOUNT}' — check Notes.app sidebar", file=sys.stderr)
         sys.exit(1)
-    return result.stdout
+
+    try:
+        contents = Path(out_path).read_text(encoding='utf-8')
+    finally:
+        try:
+            os.unlink(out_path)
+        except OSError:
+            pass
+
+    return contents
 
 
 # ── Parsing ───────────────────────────────────────────────────────────────────
@@ -298,7 +338,7 @@ def main():
     errors    = 0
 
     for line in lines:
-        parts = line.split("\t")
+        parts = line.split(SEP)
         if len(parts) < 4:
             empty += 1
             continue
