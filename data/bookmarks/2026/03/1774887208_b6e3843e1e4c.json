@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-30T16:13:28+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "layout.design",
+  "og": {
+    "title": "Layout — The compiler between design systems and AI coding agents",
+    "description": "Extract your design system from Figma or any website. Layout generates structured context bundles that make Claude Code, Cursor, and Codex build on-brand UI automatically.",
+    "image": "https://layout.design/opengraph-image.png?opengraph-image.0x~wf_f2vybwu.png"
+  },
+  "enriched_at": "2026-06-03T19:20:14.421182+00:00"
 }

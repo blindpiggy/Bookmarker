@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-13T10:24:30+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "daverupert.com",
+  "og": {
+    "title": "When moving fast, talking is the first thing to break",
+    "description": "When you make speed and “moving fast” the biggest priority on a project or in an organization, the first thing to breakdown is talking to each other. Talking takes time. Consensus is expensive and slow. In a pressurized environment there’s no time to schedule calls, get input from subject matter experts, or resolve key differences of opinion. ASAP makes a big assumption that all relevant parties are already in the room.",
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:20:26.715073+00:00"
 }

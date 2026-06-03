@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-04T03:01:53+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "utopia.fyi",
+  "og": {
+    "title": "Designing with fluid type scales",
+    "description": "Breakpoint-based type sizing has always felt a bit arbitrary to me. It seems like equal parts guesswork and compromise, where the better we want it to work, the more stuff we need to design. It strikes me as inelegant and inefficient.",
+    "image": "https://utopia.fyi/og.png"
+  },
+  "enriched_at": "2026-06-03T19:20:51.959531+00:00"
 }

@@ -86,6 +86,15 @@ def fetch_og(url: str) -> dict:
     Returns a dict with keys: title, description, image (all optional).
     Returns an empty dict on any error.
     """
+    # Sanitize URL — remove any non-ASCII replacement characters from
+    # encoding issues during migration, and encode non-ASCII chars safely
+    try:
+        url = url.encode('ascii', errors='ignore').decode('ascii')
+        if not url.startswith('http'):
+            return {}
+    except Exception:
+        return {}
+
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:

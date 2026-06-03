@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-11T02:36:42+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "keithcirkel.co.uk",
+  "og": {
+    "title": "What's My JND?",
+    "description": "Find your Just Noticeable Difference in colour perception. How small a colour difference can you actually see?",
+    "image": "https://www.keithcirkel.co.uk/images/whats-my-jnd-og.png"
+  },
+  "enriched_at": "2026-06-03T19:19:43.339326+00:00"
 }

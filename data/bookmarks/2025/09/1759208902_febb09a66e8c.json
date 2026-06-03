@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-30T05:08:22+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "daybreak.studio",
+  "og": {
+    "title": "A new (or rather, old) approach to typography on the web | Daybreak Studio",
+    "description": "Typography serves language, not the convenience of a system.",
+    "image": "https://daybreak.studio/writing/adaline-typography/opengraph.jpg"
+  },
+  "enriched_at": "2026-06-03T19:18:01.906859+00:00"
 }

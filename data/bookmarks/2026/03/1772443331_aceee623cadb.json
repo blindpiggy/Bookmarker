@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-02T09:22:11+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "shumer.dev",
+  "og": {
+    "title": "Something Big Is Happening",
+    "description": "A personal note for non-tech friends and family on what AI is starting to change.",
+    "image": "https://shumer.dev/images/social-preview.jpg"
+  },
+  "enriched_at": "2026-06-03T19:19:38.071623+00:00"
 }

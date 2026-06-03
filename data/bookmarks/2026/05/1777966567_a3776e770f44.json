@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-05T07:36:07+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "en.wikipedia.org",
+  "og": {
+    "title": "Twelve basic principles of animation - Wikipedia",
+    "description": null,
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/03/Book_the_illusion_of_life.jpg"
+  },
+  "enriched_at": "2026-06-03T19:20:53.397141+00:00"
 }

@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-09T09:25:26+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "matthiasott.com",
+  "og": {
+    "title": " · Matthias Ott",
+    "description": "Web design engineer, UX designer, teacher, and speaker – helping teams build websites and digital products with a focus on CSS, accessibility, and performance.",
+    "image": "https://matthiasott.com/og-image-std.jpg?v=001"
+  },
+  "enriched_at": "2026-06-03T19:17:42.619591+00:00"
 }

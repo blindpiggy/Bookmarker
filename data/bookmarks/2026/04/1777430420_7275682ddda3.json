@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-29T02:40:20+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "sharing.ia.net",
+  "og": {
+    "title": "Madness and Imagination",
+    "description": "Madness and Imagination\nDare to Know, Dare to Imagine, Dare to Make",
+    "image": "https://sharing.ia.net/presenter/b541d9ee82f24318a025b3a1a2f97d67/assets/4289aeeeab118473fddb8275313ea704/thumbnail_og.png"
+  },
+  "enriched_at": "2026-06-03T19:20:42.495494+00:00"
 }

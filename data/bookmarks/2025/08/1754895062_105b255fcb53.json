@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-08-11T06:51:02+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "oldmanmountain.com",
+  "og": {
+    "title": "Elkhorn Bikepacking Rack - | Old Man Mountain",
+    "description": "The Elkhorn comes in two sizes; Short and Tall.\r\n\r\n \tThe Short is designed for 27.5 and 700c wheels. Fits tires up to 27.5 x 2.8\" or 700c x 50mm.\r\n \tThe Tall is designed for maximum mud clearance and bikes with 29\" tires. Fits tires",
+    "image": "https://oldmanmountain.com/wp-content/uploads/2022/04/Layer-1.jpg"
+  },
+  "enriched_at": "2026-06-03T19:17:04.388841+00:00"
 }

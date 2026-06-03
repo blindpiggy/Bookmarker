@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-10T07:00:08+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "arcadestudios.com",
+  "og": {
+    "title": "Arcade Studios",
+    "description": "Arcade is a digital-forward creative agency.",
+    "image": "https://cdn.prod.website-files.com/687ff88f41c17d94bde9b4ec/690b7cf237f048cd5242025a_home-opengraph.jpeg"
+  },
+  "enriched_at": "2026-06-03T19:20:23.999583+00:00"
 }

@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-11T16:00:22+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "linkedin.com",
+  "og": {
+    "title": "Converting PDF to Web App with Claude Code &amp; NYS Design System | Jesse Gardner posted on the topic | LinkedIn",
+    "description": "Watch me turn a PDF into a web application in 10 minutes using Claude Code and the NYS Design System MCP server.\n\nI posted about this experiment a few weeks ago, but a few people asked how it actually worked. So I recorded the process start-to-finish.\n\nSome highlights from the video:\n\n- The prompt I’m using (a PRD + tasks approach)\n- How the Figma MCP server differs from our custom NYS Design System MCP server\n- The MCP tools we built, and what structured information they pass to the model\n- Exp",
+    "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQHMgFJ0Cxzvdg/thumbnail-with-play-button-overlay-high/B4EZxJt3xSK0DY-/0/1770763316997?e=2147483647&v=beta&t=NLFrOUWuAZYrTPB8YfSG8nuEgvDME5XLBuIeX5ujWDg"
+  },
+  "enriched_at": "2026-06-03T19:19:11.131281+00:00"
 }

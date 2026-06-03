@@ -1,11 +1,15 @@
 {
   "id": "1774849813_7a8e1720ec91",
   "url": "https://aeris.edbn.me/?city=YYZ",
-  "title": "Aeris � Real-Time 3D Flight Tracking",
+  "title": "Aeris Real-Time 3D Flight Tracking",
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-30T05:50:13+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "aeris.edbn.me",
+  "og": {
+    "title": "Live Flights over Toronto (YYZ) - 3D Flight Tracker",
+    "description": "Track flights above Toronto in real-time 3D. See live ADS-B aircraft around YYZ with altitude-aware rendering - low altitudes glow cyan, high altitudes shift to gold. Free and open source.",
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:20:11.132782+00:00"
 }

@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-14T19:17:41+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "buttondown.com",
+  "og": {
+    "title": "How to deal with your kid leaving",
+    "description": "My child is in high school and I’ve been in deep mourning for the last two years that they’ll (likely) be leaving me first for college, and then for...life!",
+    "image": "https://assets.buttondown.email/images/848a4170-8ecb-44e4-bc5e-7c1915c32c1a.jpg?w=960&fit=max"
+  },
+  "enriched_at": "2026-06-03T19:20:58.685178+00:00"
 }

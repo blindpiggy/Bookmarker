@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-11-28T11:51:49+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "casualarchivist.substack.com",
+  "og": {
+    "title": "All Aboard!",
+    "description": "I first learned about Tyco Toys from a YouTube video on the history of Lego. Tyco Super Blocks were one of their competitors in the ’80s and the ads featured in the video boasted about their superiority. The ads didn't necessarily catch my eye, but the logotype did: An ultra bold geometric 4-letter word with 2 ligatures in it, one of them (the CO) a tiny gap shy of becoming an infinity symbol. My excitement was immeasurable.",
+    "image": "https://substackcdn.com/image/fetch/$s_!at-G!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fadd2aa2d-e6f7-4e16-89c7-6947f25be1d4_1200x772.jpeg"
+  },
+  "enriched_at": "2026-06-03T19:18:31.101821+00:00"
 }

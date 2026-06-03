@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-18T09:57:14+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "zerovector.design",
+  "og": {
+    "title": "Zero-Vector Design",
+    "description": "A design philosophy for the age of AI. No intermediary. No translation layer. No friction. From intent to artifact, directly.",
+    "image": "https://zerovector.design/og-card.png"
+  },
+  "enriched_at": "2026-06-03T19:19:57.522223+00:00"
 }

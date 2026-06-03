@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-15T07:38:40+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "a11y-collective.com",
+  "og": {
+    "title": "Accessible Writing Techniques for Web Content",
+    "description": "Master accessible writing with expert strategies for inclusive web content. Transform your writing workflow with actionable tips for reaching every reader.",
+    "image": "https://www.a11y-collective.com/wp-content/uploads/2025/09/3-4_APR_Social.png"
+  },
+  "enriched_at": "2026-06-03T19:17:50.821243+00:00"
 }

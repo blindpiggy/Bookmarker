@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-30T05:34:27+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "mass-driver.com",
+  "og": {
+    "title": "MD UI: a Typeface for Interfacing",
+    "description": "",
+    "image": "https://cdn.fontdue.com/mass-driver/images/2238790731114222718/announcement-header.jpg?v=63941071853"
+  },
+  "enriched_at": "2026-06-03T19:20:08.817069+00:00"
 }

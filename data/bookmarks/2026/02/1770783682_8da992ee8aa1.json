@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-11T04:21:22+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "accessibilityforeveryone.site",
+  "og": {
+    "title": "Accessibility For Everyone by Laura Kalbag",
+    "description": "Read the book online for free.",
+    "image": "https://accessibilityforeveryone.site/images/meta/home.png"
+  },
+  "enriched_at": "2026-06-03T19:19:09.340722+00:00"
 }

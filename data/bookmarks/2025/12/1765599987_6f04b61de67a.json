@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-12-13T04:26:27+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "buttondown.com",
+  "og": {
+    "title": "Buttondown — Newsletter software for people like you",
+    "description": "Buttondown is the last email platform you'll migrate to. We're focused on your success, not on bleeding you dry.",
+    "image": "https://marketing.buttondown.com/opengraph-image"
+  },
+  "enriched_at": "2026-06-03T19:18:42.115215+00:00"
 }

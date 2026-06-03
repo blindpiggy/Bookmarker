@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-27T13:34:47+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "nooneshappy.com",
+  "og": {
+    "title": "The AI Bubble — No One's Happy",
+    "description": "The AI buildout is the largest capital expenditure in the history of the technology industry. The financial structure holding it together has a name.",
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:21:03.679232+00:00"
 }

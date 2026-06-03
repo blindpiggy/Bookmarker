@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-01-16T20:27:18+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "monaspace.githubnext.com",
+  "og": {
+    "title": "Monaspace",
+    "description": "An innovative superfamily of fonts for code",
+    "image": "https://monaspace.githubnext.com/opengraph-image.png?8f0e79eb8fe60cfc"
+  },
+  "enriched_at": "2026-06-03T19:18:56.982027+00:00"
 }

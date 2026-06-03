@@ -5,7 +5,11 @@
   "annotation": "James Embrey Woodcraft Feb 27, 2026 at 10:40?AM",
   "tags": [],
   "saved_at": "2026-02-27T06:40:01+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "james.embrey.ca",
+  "og": {
+    "title": "James Embrey Woodcraft",
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:19:33.539922+00:00"
 }

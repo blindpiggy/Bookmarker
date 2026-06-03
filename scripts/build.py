@@ -189,7 +189,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
   <title>Bookmarks</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
 
@@ -209,8 +209,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       --radius: 10px;
       --radius-sm: 6px;
       --radius-pill: 999px;
-      --font-serif: 'Instrument Serif', Georgia, serif;
-      --font-sans: 'DM Sans', system-ui, sans-serif;
+      --font-sans: 'Outfit', system-ui, sans-serif;
       --max-w: 700px;
     }}
 
@@ -274,8 +273,9 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     }}
 
     .site-name {{
-      font-family: var(--font-serif);
+      font-family: var(--font-sans);
       font-size: 17px;
+      font-weight: 600;
       color: var(--text-primary);
       letter-spacing: 0.01em;
     }}
@@ -529,7 +529,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     }}
 
     .card-title {{
-      font-family: var(--font-serif);
+      font-family: var(--font-sans);
       font-size: 16px;
       color: var(--text-primary);
       line-height: 1.35;

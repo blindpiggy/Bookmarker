@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-18T03:43:42+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "principles.design",
+  "og": {
+    "title": "Why Most Design Principles Fail",
+    "description": "Many design principles are really statements of values. Values describe what a team believes. Principles guide decisions. Values express intent. Principles h...",
+    "image": "https://principles.design/images/articles/why-most-design-principles-fail/why-design-principles-fail.png"
+  },
+  "enriched_at": "2026-06-03T19:19:52.235394+00:00"
 }

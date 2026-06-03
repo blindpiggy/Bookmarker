@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-21T08:32:48+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "smashingmagazine.com",
+  "og": {
+    "title": "Ten Data-Backed Truths Of User Experience ROI — Smashing Magazine",
+    "description": "Every extra second of friction has a measurable business cost. Carrie Webster shares ten data-backed UX facts that link user experience directly to revenue, retention, and long-term growth.",
+    "image": "https://files.smashing.media/articles/data-backed-truths-user-experience-roi/data-backed-truths-user-experience-roi.jpg"
+  },
+  "enriched_at": "2026-06-03T19:20:59.994377+00:00"
 }

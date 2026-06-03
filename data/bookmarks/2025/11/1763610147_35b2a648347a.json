@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-11-20T03:42:27+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "letterformarchive.org",
+  "og": {
+    "title": "The Art of Wood Type: 20 Unique Notecards & Envelopes | Letterform Archive",
+    "description": "An elegant set of notecards and envelopes with beautiful reproductions of prints by San Francisco printing legend Jack Stauffacher This keepsake box of 20 different notecards and accompanying envelopes showcases the range of the abstract and playful typographic art Stauffacher composed with his beloved mismatched wooden letters and experimental methods of inking and printing. An ideal gift for lovers of letterpress, type, and modern art.",
+    "image": "https://letterformarchive.org/wp-content/uploads/2023/09/Stauff_notecards__60396.1695683088.1280.1280.jpg"
+  },
+  "enriched_at": "2026-06-03T19:18:24.156790+00:00"
 }

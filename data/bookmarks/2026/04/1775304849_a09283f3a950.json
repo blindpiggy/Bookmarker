@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-04T12:14:09+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "bsky.app",
+  "og": {
+    "title": "Trapper Creek (@hillerns.bsky.social)",
+    "description": "If you haven’t already, I’d highly recommend Steve Duda’s “River Songs, Moments of Wild Wonder in Fly Fishing.” And Matthew DeLorme’s woodcut illustrations are outstanding. Published by Mountaineers Books.",
+    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lqfgqkmi6d6lf44e4rnyie4i/bafkreigqioyh3emklwqrrt4qtbafee5prfichz344xuuesi5jgm6nv4p2a"
+  },
+  "enriched_at": "2026-06-03T19:20:15.693732+00:00"
 }

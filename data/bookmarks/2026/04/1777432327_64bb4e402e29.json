@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-29T03:12:07+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "store.ia.net",
+  "og": {
+    "title": "iA ノートブック The Notebook for Writers",
+    "description": "Watermark lines guide your pen. As your words come into focus, the lines fade into the background. The iA Notebook has been a labor of love, spanning several years of trials and fails and deeply engaging our designer team.These watermark guidelines are subtle and unobtrusive, offering direction without overpowering the",
+    "image": "http://store.ia.net/cdn/shop/files/1-Cover_WLogo.jpg?v=1774879422"
+  },
+  "enriched_at": "2026-06-03T19:20:44.232901+00:00"
 }

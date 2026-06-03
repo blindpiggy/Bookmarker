@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-30T03:26:50+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "opendaw.org",
+  "og": {
+    "title": "A new holistic exploration of music creation inside your browser",
+    "description": "openDAW is a next-gen web-based digital audio workstation designed to democratize music production.",
+    "image": "./meta.jpg"
+  },
+  "enriched_at": "2026-06-03T19:20:07.232567+00:00"
 }

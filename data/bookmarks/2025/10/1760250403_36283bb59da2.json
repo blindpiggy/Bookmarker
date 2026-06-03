@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-10-12T06:26:43+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "posterazor.sourceforge.io",
+  "og": {
+    "title": "PosteRazor - Make your own poster!",
+    "description": "PosteRazor - Make your own poster!",
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:18:06.330311+00:00"
 }

@@ -1,11 +1,15 @@
 {
   "id": "1773827817_652485dc46d6",
   "url": "https://open.zerovector.design/",
-  "title": "The Open Vector � Learn to build with AI",
+  "title": "The Open Vector — Learn to build with AI",
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-18T09:56:57+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "open.zerovector.design",
+  "og": {
+    "title": "The Open Vector — Learn to build with AI",
+    "description": "A free, open learning platform for design-led engineering with AI. Six levels. Sixty lessons. From terminal basics to Systems Auteur.",
+    "image": "https://open.zerovector.design/og/open-vector.png"
+  },
+  "enriched_at": "2026-06-03T19:19:56.267812+00:00"
 }

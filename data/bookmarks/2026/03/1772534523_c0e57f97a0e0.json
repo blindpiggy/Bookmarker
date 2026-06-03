@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-03T10:42:03+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "hvpandya.com",
+  "og": {
+    "title": "Expose your design system to LLMs",
+    "description": "LLMs drift, fabricate tokens, and start every session from scratch. Here's how to feed your design system to AI coding agents so they stop guessing.",
+    "image": "https://hvpandya.com/assets/og-images/og-llm-design-systems.png"
+  },
+  "enriched_at": "2026-06-03T19:19:39.528760+00:00"
 }

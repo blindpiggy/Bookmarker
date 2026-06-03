@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-08-21T03:19:19+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "alistapart.com",
+  "og": {
+    "title": "How to Sell UX Research with Two Simple Questions",
+    "description": "It’s one reason why so many UX designers are frustrated in their job and why many projects fail. And it’s also why we often can’t sell research: every decision-maker is confident in their own menta…",
+    "image": "https://i0.wp.com/alistapart.com/wp-content/uploads/2021/10/sell-ux-research-illustration.jpg?fit=1200%2C706&quality=89&ssl=1"
+  },
+  "enriched_at": "2026-06-03T19:17:09.464764+00:00"
 }

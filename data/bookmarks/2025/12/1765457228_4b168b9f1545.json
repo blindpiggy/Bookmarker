@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-12-11T12:47:08+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "henry.codes",
+  "og": {
+    "title": "How to distort text with SVG filters | Henry From Online",
+    "description": "Just doin’ a quick one today on SVG filter primitives and how to do cool text effects with them.",
+    "image": "https://v1.screenshot.11ty.dev/https%3A%2F%2Fhenry.codes%2Fopengraph%2Fwriting%2Fhow-to-distort-text-with-svg/opengraph"
+  },
+  "enriched_at": "2026-06-03T19:18:39.438320+00:00"
 }

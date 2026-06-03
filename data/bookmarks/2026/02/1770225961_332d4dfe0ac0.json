@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-04T17:26:01+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "inclusive.microsoft.design",
+  "og": {
+    "title": "Microsoft Inclusive Design",
+    "description": "Microsoft Inclusive Design is a practice that anyone who creates and manages products and services can use to build more inclusive experiences for everyone. Get the principles, guidebooks, workshop tools, videos, and many more free resources.",
+    "image": "https://inclusive.microsoft.design/images/OGImage.png"
+  },
+  "enriched_at": "2026-06-03T19:19:03.134875+00:00"
 }

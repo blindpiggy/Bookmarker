@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-28T05:30:55+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "bunkielife.com",
+  "og": {
+    "title": "Alcove Bunkie 160 With Loft (with extra room!) - Bunkie Life",
+    "description": "Discover the Alcove 160 ft² Bunkie with loft - our first design with a second room for a bathroom, office, storage, or kitchenette.",
+    "image": "https://bunkielife.com/wp-content/uploads/2025/09/alcove-final.jpeg"
+  },
+  "enriched_at": "2026-06-03T19:17:59.251756+00:00"
 }

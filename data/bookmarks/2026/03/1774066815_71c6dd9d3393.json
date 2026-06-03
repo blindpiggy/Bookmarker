@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-21T04:20:15+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "givemethechills.com",
+  "og": {
+    "title": "Andrea Grassi",
+    "description": "I love building things and living mindfully.",
+    "image": "https://secure.gravatar.com/avatar/5da786817c1869d1dfec5d802618ee5674d36e8877480e5cd110902e69e01947?s=200&d=identicon&r=g"
+  },
+  "enriched_at": "2026-06-03T19:19:59.208479+00:00"
 }

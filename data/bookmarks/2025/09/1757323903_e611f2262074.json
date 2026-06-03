@@ -1,11 +1,15 @@
 {
   "id": "1757323903_e611f2262074",
   "url": "https://www.bigbill.com/ca_en/brawny-flannelr-shirt-121",
-  "title": "Brawny Flannel� Shirt",
+  "title": "Brawny Flannel Shirt",
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-08T09:31:43+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "bigbill.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:17:29.704893+00:00"
 }

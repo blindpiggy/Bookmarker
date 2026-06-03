@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-18T09:56:42+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "helloerikaflowers.com",
+  "og": {
+    "title": "Erika Flowers | Design Leader & Builder",
+    "description": "25+ years at the intersection of humans, systems, and AI.",
+    "image": "https://helloerikaflowers.com/images/og-card.jpg"
+  },
+  "enriched_at": "2026-06-03T19:19:55.012530+00:00"
 }

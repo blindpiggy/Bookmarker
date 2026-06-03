@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-24T03:39:17+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "polypane.app",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:20:32.415350+00:00"
 }

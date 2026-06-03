@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-01-06T05:56:32+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "medium.com",
+  "og": {
+    "title": "The Fallacy of Federated Design Systems",
+    "description": "Avoid the damage and distress of glorifying the wrong model",
+    "image": "https://miro.medium.com/v2/resize:fit:1200/1*5um8BleCAsO86NcUUJGxGA.png"
+  },
+  "enriched_at": "2026-06-03T19:18:54.241029+00:00"
 }

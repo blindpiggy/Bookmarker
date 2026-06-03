@@ -1,11 +1,15 @@
 {
   "id": "1758185345_9487220f74b2",
   "url": "https://github.com/MicrosoftEdge/Demos/blob/main/css-masonry/README.md",
-  "title": "Demos/css-masonry/README.md at main � MicrosoftEdge/Demos",
+  "title": "Demos/css-masonry/README.md at main · MicrosoftEdge/Demos",
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-18T08:49:05+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "github.com",
+  "og": {
+    "title": "Demos/css-masonry/README.md at main · MicrosoftEdge/Demos",
+    "description": "Web pages and apps used to demo various DevTools, PWA, WebView, Extensions, and Web Platform features of Microsoft Edge - MicrosoftEdge/Demos",
+    "image": "https://opengraph.githubassets.com/00a4bd6b6640583531bc06f4d0e83bd1f2093a5294e4c50b1f8fa2a9aaa6d7fe/MicrosoftEdge/Demos"
+  },
+  "enriched_at": "2026-06-03T19:17:52.789382+00:00"
 }

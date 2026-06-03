@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-19T05:25:17+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "piccalil.li",
+  "og": {
+    "title": "A (more) Modern CSS Reset",
+    "description": "I wrote “A Modern CSS Reset” almost 4 years ago and, yeh, it’s not aged overly well. I spotted it being linked up again a few days ago and thought it’s probably a good idea to publish an updated version.",
+    "image": "https://piccalil.b-cdn.net/api/og-image?slug=a-more-modern-css-reset/"
+  },
+  "enriched_at": "2026-06-03T19:17:54.048867+00:00"
 }

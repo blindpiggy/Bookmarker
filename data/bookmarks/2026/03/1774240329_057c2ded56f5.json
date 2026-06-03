@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-23T04:32:09+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "iamarino.com",
+  "og": {
+    "title": "TV in Radio Times: On AI and the Role of the Designer",
+    "description": "As AI accelerates execution, a quieter question emerges: when output becomes abundant, what gives the work meaning?",
+    "image": "https://iamarino.com/wp-content/uploads/2026/03/HI2025-cover-designandai.png"
+  },
+  "enriched_at": "2026-06-03T19:20:02.375872+00:00"
 }

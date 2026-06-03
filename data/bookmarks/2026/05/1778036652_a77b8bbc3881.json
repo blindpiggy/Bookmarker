@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-06T03:04:12+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "codepen.io",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:20:54.642088+00:00"
 }

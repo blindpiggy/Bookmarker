@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-08-30T07:40:36+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "dismountbikeshop.com",
+  "og": {
+    "title": "Dismount Bike Shop - Bikes. Coffee. Supply.",
+    "description": "Dismount is a full service family bike shop that specializes in City, Adventure, Gravel, Mountain, and Kids bicycles. We run a coffee bar inside our walls that provides a social hub for the community, and offers you a unique bike buying experience. We're located in Midtown Toronto at 936 St. Clair Avenue West.",
+    "image": "http://dismountbikeshop.com/cdn/shop/files/DismountLogo_cef0113b-e20f-434d-8dd8-a4d27cbc448b.jpg?height=628&pad_color=fff&v=1639607077&width=1200"
+  },
+  "enriched_at": "2026-06-03T19:17:23.938610+00:00"
 }

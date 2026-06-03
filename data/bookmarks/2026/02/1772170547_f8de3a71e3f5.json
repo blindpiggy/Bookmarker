@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-27T05:35:47+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "minitokyo3d.com",
+  "og": {
+    "title": "Mini Tokyo 3D",
+    "description": "A real-time 3D digital map of Tokyo's public transport system. This data visualization was produced by Akihiko Kusanagi.",
+    "image": "https://minitokyo3d.com/images/screenshot1.jpg"
+  },
+  "enriched_at": "2026-06-03T19:19:30.224515+00:00"
 }

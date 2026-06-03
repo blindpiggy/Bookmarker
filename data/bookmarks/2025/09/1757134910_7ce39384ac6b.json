@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-06T05:01:50+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "dreamonkey.com",
+  "og": {
+    "title": "More than a checklist: three things that changed how I see accessibility",
+    "description": "New thoughts to understand how to approach A11Y in a meaningful way",
+    "image": "https://dreamonkey.com/blog/articles/84/header_three_things_a11y_facebook.jpg"
+  },
+  "enriched_at": "2026-06-03T19:17:27.510145+00:00"
 }

@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-11-28T11:45:24+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "modernillustration.org",
+  "og": {
+    "title": "Modern Illustration",
+    "description": "",
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:18:27.748588+00:00"
 }

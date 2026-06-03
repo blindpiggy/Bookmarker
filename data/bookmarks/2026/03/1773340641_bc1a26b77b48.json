@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-12T18:37:21+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "penpot.app",
+  "og": {
+    "title": "Penpot Pricing | Self-host pricing",
+    "description": "Find out our prices to deploy and manage Penpot on your servers. For organizations requiring complete ownership over their design infrastructure.",
+    "image": ""
+  },
+  "enriched_at": "2026-06-03T19:19:45.491512+00:00"
 }

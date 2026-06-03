@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-01T03:59:58+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "easingwizard.com",
+  "og": {
+    "title": "Easing Wizard - CSS Easing Editor and Generator",
+    "description": "Generate and customize CSS easing functions with ease and magical precision using Easing Wizard 🧙",
+    "image": "https://easingwizard.com/share-image.png"
+  },
+  "enriched_at": "2026-06-03T19:20:47.035472+00:00"
 }

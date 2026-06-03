@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-08T10:41:14+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "getdesign.md",
+  "og": {
+    "title": "getdesign.md — DESIGN.md collection for AI coding agents",
+    "description": "Browse independent design system analyses from popular websites. Drop one into your project as design reference for your coding agent.",
+    "image": "https://getdesign.md/api/og/default"
+  },
+  "enriched_at": "2026-06-03T19:20:20.556213+00:00"
 }

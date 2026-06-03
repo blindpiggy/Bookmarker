@@ -1,11 +1,15 @@
 {
   "id": "1776746198_b34277abed26",
   "url": "https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems?ref=sidebar",
-  "title": "If you thought the speed of writing code was your problem - you have�",
+  "title": "If you thought the speed of writing code was your problem - you have bigger problems | Andrew Murphy",
   "annotation": "If you thought the speed of writing code was your problem - you have bigger problems | Debugging Leadership",
   "tags": [],
   "saved_at": "2026-04-21T04:36:38+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "andrewmurphy.io",
+  "og": {
+    "title": "If you thought the speed of writing code was your problem - you have bigger problems | Andrew Murphy",
+    "description": "AI coding tools are optimising the wrong thing and nobody wants to hear it. Writing code was already fast. The bottleneck is everything else: unclear requirements, review queues, terrified deploy cultures, and an org chart that needs six meetings to decide what colour the button should be.",
+    "image": "https://andrewmurphy.io/api/payload-uploads/file/coddespeed.png"
+  },
+  "enriched_at": "2026-06-03T19:20:30.617066+00:00"
 }

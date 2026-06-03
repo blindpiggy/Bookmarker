@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-24T19:36:53+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "quietui.org",
+  "og": {
+    "title": "Quiet UI",
+    "description": "A UI library for the Web with a focus on accessibility, longevity, performance, and simplicity.",
+    "image": "https://quietui.org/assets/images/og-image.png"
+  },
+  "enriched_at": "2026-06-03T19:17:58.068172+00:00"
 }

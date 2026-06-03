@@ -1,11 +1,15 @@
 {
   "id": "1777710789_40af35e1bb04",
   "url": "https://www.linkedin.com/posts/marko-mijailovic_i-spent-years-watching-design-system-components-share-7451945258214502400-HWzO?utm_source=social_share_send&utm_medium=ios_app&rcm=ACoAACFWqI4BTSOOz7iHLDKAKVcF2NUoAjphKNI&utm_campaign=share_via",
-  "title": "https://www.linkedin.com/posts/marko-mijailovic_i-spent-years-watching�",
+  "title": "I spent years watching design system components get manually translated into code.\n\nDesigner ships a Figma component. Engineer interprets it. Something is always slightly off wrong spacing value… | Marko Mijailovic | 48 comments",
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-02T08:33:09+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "linkedin.com",
+  "og": {
+    "title": "I spent years watching design system components get manually translated into code.\n\nDesigner ships a Figma component. Engineer interprets it. Something is always slightly off wrong spacing value… | Marko Mijailovic | 48 comments",
+    "description": "I spent years watching design system components get manually translated into code.\n\nDesigner ships a Figma component. Engineer interprets it. Something is always slightly off wrong spacing value, missing variant, token name that doesn't match. Then there's a review, a fix, another review.\n\nThis workflow removes that friction at the source. The component goes from Figma to reviewed, committed code without a single thing getting lost in translation. Engineers still own the code. I just stopped mak",
+    "image": "https://media.licdn.com/dms/image/v2/D4E22AQE_eg30dwQaaQ/feedshare-shrink_800/B4EZ2qgujOKcAc-/0/1776682199632?e=2147483647&v=beta&t=rcmNfZc9Lqg5ZyAPTuCW05WYhi99eugx6KgwxOXMlzA"
+  },
+  "enriched_at": "2026-06-03T19:20:50.363674+00:00"
 }

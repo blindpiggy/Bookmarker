@@ -1,11 +1,15 @@
 {
   "id": "1780148815_7a3f3bf7d0a2",
   "url": "https://youtube.com/watch?v=RDFGkBE2O50&si=iyC0ZXzlchgJtNW2",
-  "title": "Mark Rober�s $60 Million Science Experiment | TED",
+  "title": "Mark Robers $60 Million Science Experiment | TED",
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-30T13:46:55+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "youtube.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:21:09.216413+00:00"
 }

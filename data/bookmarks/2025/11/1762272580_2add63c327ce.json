@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-11-04T16:09:40+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "fromourplace.ca",
+  "og": {
+    "title": "Wonder Oven",
+    "description": "6-in-1 air fryer and toaster oven with steam infusion",
+    "image": "http://fromourplace.ca/cdn/shop/products/WonderOven_Char_1.jpg?v=1758557227"
+  },
+  "enriched_at": "2026-06-03T19:18:16.646884+00:00"
 }

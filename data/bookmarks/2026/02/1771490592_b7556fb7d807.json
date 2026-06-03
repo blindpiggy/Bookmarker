@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-19T08:43:12+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "pudding.cool",
+  "og": {
+    "title": "Sizing chaos",
+    "description": "The inter-generational struggle to find clothes that fit more than a tiny portion of women",
+    "image": "https://pudding.cool/2026/02/womens-sizing/assets/og2.jpg"
+  },
+  "enriched_at": "2026-06-03T19:19:20.046800+00:00"
 }

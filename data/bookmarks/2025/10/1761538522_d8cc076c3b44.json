@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-10-27T04:15:22+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "svpsports.ca",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:18:13.328109+00:00"
 }

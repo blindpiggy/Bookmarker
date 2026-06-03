@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-11T02:09:34+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "blog.maximeheckel.com",
+  "og": {
+    "title": "Shades of Halftone - The Blog of Maxime Heckel",
+    "description": "An interactive deep dive into building halftone shaders in GLSL, covering everything from classic dot patterns and CMYK color separation to Moiré interference, gooey effects, and animated displacement.",
+    "image": "https://blog.maximeheckel.com/static/og/87476d3b0871838ae8917d401ba03be5.png?v1"
+  },
+  "enriched_at": "2026-06-03T19:19:07.811806+00:00"
 }

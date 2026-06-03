@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-16T03:47:26+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "rauno.me",
+  "og": {
+    "title": "Invisible Details of Interaction Design",
+    "description": "What makes great interactions feel right?",
+    "image": "https://rauno.me/static/craft/og-interaction-design2.png"
+  },
+  "enriched_at": "2026-06-03T19:19:17.281720+00:00"
 }

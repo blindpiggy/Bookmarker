@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-09-19T11:05:40+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "youtube.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:17:55.493589+00:00"
 }

@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-28T05:38:53+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "houseindustries.com",
+  "og": {
+    "title": "House Industries Lettering Manual by House Industries",
+    "description": "A book detailing the process of hand-lettering written by Ken Barber.",
+    "image": ""
+  },
+  "enriched_at": "2026-06-03T19:20:36.633580+00:00"
 }

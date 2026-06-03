@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-21T11:31:27+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "fontastic.space",
+  "og": {
+    "title": "Fontastic Space",
+    "description": "Compare Google Fonts with anatomy overlays, metrics & pairing scores. Free.",
+    "image": "https://fontastic.space/opengraph-image?c85377ab9bfc6bf1"
+  },
+  "enriched_at": "2026-06-03T19:21:01.168003+00:00"
 }

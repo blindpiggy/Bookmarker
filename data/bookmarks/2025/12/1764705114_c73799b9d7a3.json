@@ -5,7 +5,11 @@
   "annotation": "Helpful decal / sticker video:",
   "tags": [],
   "saved_at": "2025-12-02T19:51:54+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "mahalomydude.com",
+  "og": {
+    "title": "Mahalo My Dude Store",
+    "description": "The Mahalo My Dude Merch Store - Shirts, stickers and car decals. Home of the original I Only Ride Park stickers for your mountain bike, helmet and more...",
+    "image": "http://www.mahalomydude.com/cdn/shop/collections/homepage_1_1200x1200.png?v=1663189971"
+  },
+  "enriched_at": "2026-06-03T19:18:34.376833+00:00"
 }

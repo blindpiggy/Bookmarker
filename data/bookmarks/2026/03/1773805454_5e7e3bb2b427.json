@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-18T03:44:14+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "principles.design",
+  "og": {
+    "title": "1. What design principles actually are (and aren't)",
+    "description": "A curated collection of design principles used as decision-making frameworks. Practical examples and guidance for teams building products.",
+    "image": "https://principles.design/images/design-principles-og.png"
+  },
+  "enriched_at": "2026-06-03T19:19:53.483028+00:00"
 }

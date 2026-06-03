@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-08-11T06:58:18+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "bryanmanio.com",
+  "og": {
+    "title": "How I approach motion in product design - The Desk of Bryan Maniotakis",
+    "description": "Motion is critical for how a product feels. It guides attention, reinforces brand personality, and can make an interface feel more responsive. Motion has been",
+    "image": "https://bryanmanio.com/wp-content/uploads/2025/08/motion-optimized.jpeg"
+  },
+  "enriched_at": "2026-06-03T19:17:05.854116+00:00"
 }

@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-03-22T04:37:47+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "currentreader.app",
+  "og": {
+    "title": "Current - A River of Reading",
+    "description": "Current rethinks RSS for the modern reader. Your feeds flow like a river. No inbox anxiety, no unread counts. Just beautiful reading.",
+    "image": "https://currentreader.app/og-image.png"
+  },
+  "enriched_at": "2026-06-03T19:20:00.642688+00:00"
 }

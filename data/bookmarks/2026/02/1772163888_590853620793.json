@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-02-27T03:44:48+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "principles.design",
+  "og": {
+    "title": "Design Principles",
+    "description": "A curated collection of design principles used as decision-making frameworks. Practical examples and guidance for teams building products.",
+    "image": "https://principles.design/images/design-principles-og.png"
+  },
+  "enriched_at": "2026-06-03T19:19:28.925359+00:00"
 }

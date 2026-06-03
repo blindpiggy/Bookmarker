@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-04-08T13:37:30+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "medium.com",
+  "og": {
+    "title": "Figma is no longer the source of truth",
+    "description": "How Circuit DS evolved from a design system into a code-first AI workflow — and what it means for everyone who builds product.",
+    "image": "https://miro.medium.com/v2/resize:fit:1200/1*Ug3XVs14RUtNp4k9F9amZQ.jpeg"
+  },
+  "enriched_at": "2026-06-03T19:20:22.361066+00:00"
 }

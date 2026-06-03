@@ -1,11 +1,15 @@
 {
   "id": "1775639581_188a976a2215",
   "url": "https://github.com/VoltAgent/awesome-design-md/tree/main",
-  "title": "VoltAgent/awesome-design-md: Collection of DESIGN.md files that capture�",
+  "title": "GitHub - VoltAgent/awesome-design-md: A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
   "annotation": "VoltAgent/awesome-design-md: Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI.",
   "tags": [],
   "saved_at": "2026-04-08T09:13:01+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "github.com",
+  "og": {
+    "title": "GitHub - VoltAgent/awesome-design-md: A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+    "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI. - VoltAgent/awesome-design-md",
+    "image": "https://opengraph.githubassets.com/05b6e36b224ef8c284a35940ab44f2950c67168b2d7d761dcd46487fe563cf2c/VoltAgent/awesome-design-md"
+  },
+  "enriched_at": "2026-06-03T19:20:17.656857+00:00"
 }

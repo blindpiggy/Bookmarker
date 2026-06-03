@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-05-01T03:57:27+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "courses.joshwcomeau.com",
+  "og": {
+    "title": "Bezier Customizer, a tool from Whimsical Animations",
+    "description": "Create the perfect easing curve with this helpful tool!",
+    "image": "https://courses.joshwcomeau.com/images/whimsy-landing/og-whimsical-animations.png"
+  },
+  "enriched_at": "2026-06-03T19:20:45.743483+00:00"
 }

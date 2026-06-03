@@ -1,11 +1,15 @@
 {
   "id": "1774578781_3fdb2b0205df",
   "url": "https://www.theguardian.com/news/2026/mar/26/ai-got-the-blame-for-the-iran-school-bombing-the-truth-is-far-more-worrying",
-  "title": "AI got the blame for the Iran school bombing. The truth is far more�",
+  "title": "AI got the blame for the Iran school bombing. The truth is far more worrying",
   "annotation": "AI got the blame for the Iran school bombing. The truth is far more worrying",
   "tags": [],
   "saved_at": "2026-03-27T02:33:01+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "theguardian.com",
+  "og": {
+    "title": "AI got the blame for the Iran school bombing. The truth is far more worrying",
+    "description": "LLMs-gone-rogue dominated coverage, but had nothing to do with the targeting. Instead, it was choices made by human beings, over many years, that gave us this atrocity",
+    "image": "https://i.guim.co.uk/img/media/c698c95ce425500a4e3856b0a7c149aec3ebcf29/394_0_4246_3397/master/4246.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=86f134309770e28ed011323704f6b523"
+  },
+  "enriched_at": "2026-06-03T19:20:05.716438+00:00"
 }

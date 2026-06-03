@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-08-08T03:47:48+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "buttondown.com",
+  "og": {
+    "title": "How to not build the Torment Nexus",
+    "description": "This is No Gods No Masters, 2024, painted by me, in wax. 65x78” Join the $2 Lunch Club! This week’s question comes to us from Will Hopkins: When your job and...",
+    "image": "https://assets.buttondown.email/images/af464d0b-e902-4584-bb35-1dd78d19e413.jpg?w=960&fit=max"
+  },
+  "enriched_at": "2026-06-03T19:17:03.065243+00:00"
 }

@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2025-11-16T06:15:25+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "luckyrabbit-creative.myshopify.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:18:22.544844+00:00"
 }

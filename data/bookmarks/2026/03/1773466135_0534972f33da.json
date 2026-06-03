@@ -1,11 +1,15 @@
 {
   "id": "1773466135_0534972f33da",
   "url": "https://github.com/CyberTimon/RapidRAW?tab=readme-ov-file",
-  "title": "CyberTimon/RapidRAW: A beautiful, non-destructive, and GPU-accelerated�",
+  "title": "GitHub - CyberTimon/RapidRAW: A beautiful, non-destructive, and GPU-accelerated RAW image editor built with performance in mind.",
   "annotation": "CyberTimon/RapidRAW: A beautiful, non-destructive, and GPU-accelerated RAW image editor built with performance in mind.",
   "tags": [],
   "saved_at": "2026-03-14T05:28:55+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "github.com",
+  "og": {
+    "title": "GitHub - CyberTimon/RapidRAW: A beautiful, non-destructive, and GPU-accelerated RAW image editor built with performance in mind.",
+    "description": "A beautiful, non-destructive, and GPU-accelerated RAW image editor built with performance in mind. - CyberTimon/RapidRAW",
+    "image": "https://opengraph.githubassets.com/2f5d8c6422de6fcbb778f86c86281fabd73823eccd5e66605fa7559f154edb86/CyberTimon/RapidRAW"
+  },
+  "enriched_at": "2026-06-03T19:19:49.139894+00:00"
 }

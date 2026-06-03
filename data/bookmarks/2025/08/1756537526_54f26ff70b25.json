@@ -1,11 +1,15 @@
 {
   "id": "1756537526_54f26ff70b25",
   "url": "https://www.rei.com/blog/cycle/diy-make-your-own-bucket-bike-panniers",
-  "title": "DIY: Make Your Own Bucket Bike Panniers - Uncommon Path � An REI Co�",
-  "annotation": "DIY: Make Your Own Bucket Bike Panniers - Uncommon Path � An REI Co-op Publication",
+  "title": "DIY: Make Your Own Bucket Bike Panniers - Uncommon Path An REI Co",
+  "annotation": "DIY: Make Your Own Bucket Bike Panniers - Uncommon Path An REI Co-op Publication",
   "tags": [],
   "saved_at": "2025-08-30T07:05:26+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "rei.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-03T19:17:22.353311+00:00"
 }

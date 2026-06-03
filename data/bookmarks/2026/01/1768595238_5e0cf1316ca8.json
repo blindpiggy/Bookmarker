@@ -5,7 +5,11 @@
   "annotation": null,
   "tags": [],
   "saved_at": "2026-01-16T20:27:18+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "github.com",
+  "og": {
+    "title": "Mona Sans & Hubot Sans",
+    "description": "Two variable, open source fonts from GitHub.",
+    "image": "https://github.githubassets.com/assets/mona-hubot-sans-eb98d1659f57.png"
+  },
+  "enriched_at": "2026-06-03T19:18:58.438374+00:00"
 }

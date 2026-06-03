@@ -1,11 +1,15 @@
 {
   "id": "1765700229_02c5266932b7",
   "url": "https://samply.app/",
-  "title": "Samply � Audio file sharing",
+  "title": "Samply · Audio file sharing",
   "annotation": null,
   "tags": [],
   "saved_at": "2025-12-14T08:17:09+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "samply.app",
+  "og": {
+    "title": "Samply · Audio file sharing",
+    "description": "Stream privately and losslessly to any device. Use time-coded comments, versions, and more to collaborate on your projects.",
+    "image": "/og-image.png"
+  },
+  "enriched_at": "2026-06-03T19:18:43.234119+00:00"
 }

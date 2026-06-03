@@ -2,10 +2,14 @@
   "id": "1769490947_be61d27b88af",
   "url": "https://www.figma.com/community/file/1597641111449594397",
   "title": "MCP Apps for Claude - Figma UI kit",
-  "annotation": "MCP Apps for Claude - Figma UI kit UI kit for designing MCP Apps in Claude. Includes components, patterns, and guidelines for building integrations that render inline � covering layout, typography, colour tokens, and interaction states. Built by Anthropic's design team.",
+  "annotation": "MCP Apps for Claude - Figma UI kit UI kit for designing MCP Apps in Claude. Includes components, patterns, and guidelines for building integrations that render inline covering layout, typography, colour tokens, and interaction states. Built by Anthropic's design team.",
   "tags": [],
   "saved_at": "2026-01-27T05:15:47+00:00",
-  "domain": null,
-  "og": null,
-  "enriched_at": null
+  "domain": "figma.com",
+  "og": {
+    "title": "MCP Apps for Claude | Figma",
+    "description": "UI kit for designing MCP Apps in Claude. Includes components, patterns, and guidelines for building integrations that render inline — covering layout, typography, color tokens, and interaction states. Built by Anthropic's design team.",
+    "image": "https://s3-alpha.figma.com/hub/file/2337974355885720277/ac449755-2f7c-43d2-bfbb-eb47d191bab5-cover.png"
+  },
+  "enriched_at": "2026-06-03T19:19:00.112633+00:00"
 }
