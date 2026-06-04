@@ -1,1 +1,17 @@
-{"id":"20260604130931","url":"https://www.rivered.io/","title":"Rivered","annotation":"","tags":["RSS"],"saved_at":"2026-06-04T13:09:31-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260604130931",
+  "url": "https://www.rivered.io/",
+  "title": "Rivered",
+  "annotation": "",
+  "tags": [
+    "RSS"
+  ],
+  "saved_at": "2026-06-04T13:09:31-0400",
+  "domain": "rivered.io",
+  "og": {
+    "title": "Rivered",
+    "description": "Rivered is a simple, uncluttered RSS feed reader. Subscribe to your favourite sites and read them in a continuous river of news — no unread counts, no clutter.",
+    "image": null
+  },
+  "enriched_at": "2026-06-04T17:45:19.379697+00:00"
+}
