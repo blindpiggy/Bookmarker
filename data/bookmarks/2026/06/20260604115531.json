@@ -1,1 +1,17 @@
-{"id":"20260604115531","url":"https://james.embrey.ca/","title":"James Embrey Woodcraft","annotation":"","tags":["Wood"],"saved_at":"2026-06-04T11:55:31-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260604115531",
+  "url": "https://james.embrey.ca/",
+  "title": "James Embrey Woodcraft",
+  "annotation": "",
+  "tags": [
+    "Wood"
+  ],
+  "saved_at": "2026-06-04T11:55:31-0400",
+  "domain": "james.embrey.ca",
+  "og": {
+    "title": "James Embrey Woodcraft",
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-04T16:35:56.339894+00:00"
+}
