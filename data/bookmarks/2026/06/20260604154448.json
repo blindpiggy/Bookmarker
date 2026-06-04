@@ -1,1 +1,17 @@
-{"id":"20260604154448","url":"https://www.mintot.ca/about/","title":"About Us - Mint Occupational Therapy","annotation":"","tags":["Mint"],"saved_at":"2026-06-04T15:44:48-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260604154448",
+  "url": "https://www.mintot.ca/about/",
+  "title": "About Us - Mint Occupational Therapy",
+  "annotation": "",
+  "tags": [
+    "Mint"
+  ],
+  "saved_at": "2026-06-04T15:44:48-0400",
+  "domain": "mintot.ca",
+  "og": {
+    "title": "About Us - Mint Occupational Therapy",
+    "description": "MintOT is an occupational therapy practice in Guelph, Ontario specializing in mental health support and ADHD coaching for students, parents and professionals.",
+    "image": "https://www.mintot.ca/wp-content/uploads/2024/09/social-2-1024x521.png"
+  },
+  "enriched_at": "2026-06-04T19:46:19.813609+00:00"
+}
