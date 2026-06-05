@@ -251,10 +251,6 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
 
     /* ── Header ── */
     header {{
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      padding: 8px 16px;
       border-bottom: 2px solid rgba(255, 255, 255, 0.50);
       background: rgba(255, 255, 255, 0.80);
       backdrop-filter: blur(8px);
@@ -264,6 +260,15 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       top: 0;
       z-index: 100;
       width: 100%;
+    }}
+
+    .header-inner {{
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 8px 20px;
+      max-width: var(--max-w);
+      margin: 0 auto;
     }}
 
     .header-left {{
@@ -624,6 +629,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     .card-tags {{
       display: flex;
       gap: 4px;
+      row-gap: 8px;
       flex-wrap: wrap;
       align-items: center;
       margin-top: auto;
@@ -680,29 +686,31 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
 </head>
 <body>
   <header>
-    <div class="header-left">
-      <div class="tag-dropdown-wrap">
-        <button class="icon-btn" id="tagBtn" aria-label="Filter by tag">
-          <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-        </button>
-        <div class="tag-dropdown" id="tagDropdown" role="listbox" aria-label="Filter by tag">
-          <p class="tag-dropdown-heading">Filter by tag</p>
-          <div class="tag-pills-wrap" id="tagPillsWrap"></div>
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="tag-dropdown-wrap">
+          <button class="icon-btn" id="tagBtn" aria-label="Filter by tag">
+            <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          </button>
+          <div class="tag-dropdown" id="tagDropdown" role="listbox" aria-label="Filter by tag">
+            <p class="tag-dropdown-heading">Filter by tag</p>
+            <div class="tag-pills-wrap" id="tagPillsWrap"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="header-center">
-      <a class="site-brand" href="/">
-        <span class="site-name">Bookmarker</span>
-      </a>
-    </div>
-    <div class="header-right">
-      <div class="search-expand" id="searchExpand">
-        <input type="text" id="searchInput" placeholder="Search bookmarks…" aria-label="Search bookmarks" autocomplete="off">
+      <div class="header-center">
+        <a class="site-brand" href="/">
+          <span class="site-name">Bookmarker</span>
+        </a>
       </div>
-      <button class="icon-btn" id="searchBtn" aria-label="Toggle search (⌘K)">
-        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
+      <div class="header-right">
+        <div class="search-expand" id="searchExpand">
+          <input type="text" id="searchInput" placeholder="Search bookmarks…" aria-label="Search bookmarks" autocomplete="off">
+        </div>
+        <button class="icon-btn" id="searchBtn" aria-label="Toggle search (⌘K)">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
