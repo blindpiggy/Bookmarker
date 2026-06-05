@@ -1,1 +1,17 @@
-{"id":"20260605143819","url":"http://archive.blackwoodgallery.ca/about/index.html","title":"Blackwood Gallery | About","annotation":"","tags":["printmaking"],"saved_at":"2026-06-05T14:38:19-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260605143819",
+  "url": "http://archive.blackwoodgallery.ca/about/index.html",
+  "title": "Blackwood Gallery | About",
+  "annotation": "",
+  "tags": [
+    "printmaking"
+  ],
+  "saved_at": "2026-06-05T14:38:19-0400",
+  "domain": "archive.blackwoodgallery.ca",
+  "og": {
+    "title": "Blackwood Gallery | About",
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-05T18:38:33.902024+00:00"
+}
