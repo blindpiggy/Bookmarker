@@ -772,6 +772,7 @@ function selectTag(tag) {{
   buildTagPills();
   tagBtn.classList.toggle('active', activeTag !== 'all');
   closeDropdown();
+  pushURL();
   resetAndRender();
 }}
 
@@ -789,6 +790,7 @@ function closeSearch() {{
   searchBtn.classList.remove('active');
   searchInput.value = '';
   activeQuery = '';
+  pushURL();
   resetAndRender();
 }}
 
@@ -920,6 +922,27 @@ const observer = new IntersectionObserver((entries) => {{
 
 observer.observe(loadSentinel);
 
+// ── URL state ──
+function pushURL() {{
+  const params = new URLSearchParams();
+  if (activeTag !== 'all') params.set('tag', activeTag);
+  if (activeQuery) params.set('q', activeQuery);
+  const search = params.toString() ? '?' + params.toString() : window.location.pathname;
+  history.replaceState(null, '', search || '?');
+  // if no params, clean up the trailing ?
+  if (!params.toString()) history.replaceState(null, '', window.location.pathname);
+}}
+
+function readURL() {{
+  const params = new URLSearchParams(window.location.search);
+  activeTag   = params.get('tag') || 'all';
+  activeQuery = params.get('q')   || '';
+  if (activeQuery) {{
+    searchInput.value = activeQuery;
+    openSearch();
+  }}
+}}
+
 // ── Event listeners ──
 searchBtn.addEventListener('click', () => {{
   if (searchOpen) {{ closeSearch(); }} else {{ openSearch(); }}
@@ -936,6 +959,7 @@ tagDropdown.addEventListener('click', e => e.stopPropagation());
 
 searchInput.addEventListener('input', () => {{
   activeQuery = searchInput.value.trim();
+  pushURL();
   resetAndRender();
 }});
 
@@ -951,8 +975,23 @@ document.addEventListener('keydown', (e) => {{
   }}
 }});
 
+window.addEventListener('popstate', () => {{
+  readURL();
+  buildTagPills();
+  tagBtn.classList.toggle('active', activeTag !== 'all');
+  if (activeQuery) {{
+    searchInput.value = activeQuery;
+    openSearch();
+  }} else {{
+    closeSearch();
+  }}
+  resetAndRender();
+}});
+
 // ── Init ──
+readURL();
 buildTagPills();
+tagBtn.classList.toggle('active', activeTag !== 'all');
 resetAndRender();
 </script>
 </body>
