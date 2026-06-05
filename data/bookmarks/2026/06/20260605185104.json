@@ -1,1 +1,17 @@
-{"id":"20260605185104","url":"https://graphicclaystudio.com/","title":"Graphic Clay Studio","annotation":"","tags":["Printmaking"],"saved_at":"2026-06-05T18:51:04-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260605185104",
+  "url": "https://graphicclaystudio.com/",
+  "title": "Graphic Clay Studio",
+  "annotation": "",
+  "tags": [
+    "Printmaking"
+  ],
+  "saved_at": "2026-06-05T18:51:04-0400",
+  "domain": "graphicclaystudio.com",
+  "og": {
+    "title": "Graphic Clay Studio",
+    "description": "",
+    "image": null
+  },
+  "enriched_at": "2026-06-05T22:51:27.355481+00:00"
+}
