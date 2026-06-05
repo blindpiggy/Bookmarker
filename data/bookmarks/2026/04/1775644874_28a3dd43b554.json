@@ -3,7 +3,11 @@
   "url": "https://getdesign.md/",
   "title": "DESIGN.md Collection for AI Agents",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "ai",
+    "design",
+    "tools"
+  ],
   "saved_at": "2026-04-08T10:41:14+00:00",
   "domain": "getdesign.md",
   "og": {

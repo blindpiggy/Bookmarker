@@ -3,7 +3,10 @@
   "url": "https://courses.joshwcomeau.com/tools/bezier",
   "title": "Bezier Customizer, a tool from Whimsical Animations",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "css",
+    "tools"
+  ],
   "saved_at": "2026-05-01T03:57:27+00:00",
   "domain": "courses.joshwcomeau.com",
   "og": {

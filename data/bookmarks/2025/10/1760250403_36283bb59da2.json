@@ -3,7 +3,9 @@
   "url": "https://posterazor.sourceforge.io/index.php?page=features&lang=english",
   "title": "Tile tiling print",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "tools"
+  ],
   "saved_at": "2025-10-12T06:26:43+00:00",
   "domain": "posterazor.sourceforge.io",
   "og": {

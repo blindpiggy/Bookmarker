@@ -3,7 +3,9 @@
   "url": "https://www.linkedin.com/posts/marko-mijailovic_i-spent-years-watching-design-system-components-share-7451945258214502400-HWzO?utm_source=social_share_send&utm_medium=ios_app&rcm=ACoAACFWqI4BTSOOz7iHLDKAKVcF2NUoAjphKNI&utm_campaign=share_via",
   "title": "I spent years watching design system components get manually translated into code.\n\nDesigner ships a Figma component. Engineer interprets it. Something is always slightly off wrong spacing value… | Marko Mijailovic | 48 comments",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design"
+  ],
   "saved_at": "2026-05-02T08:33:09+00:00",
   "domain": "linkedin.com",
   "og": {

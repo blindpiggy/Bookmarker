@@ -3,7 +3,9 @@
   "url": "https://fromourplace.ca/products/wonder-oven",
   "title": "Wonder Oven",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "shop"
+  ],
   "saved_at": "2025-11-04T16:09:40+00:00",
   "domain": "fromourplace.ca",
   "og": {

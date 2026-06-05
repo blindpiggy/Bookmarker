@@ -3,7 +3,10 @@
   "url": "https://www.nytimes.com/2026/02/18/opinion/ai-software.html",
   "title": "Opinion | The A.I. Disruption Weve Been Waiting for Has Arrived",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "ai",
+    "culture"
+  ],
   "saved_at": "2026-02-21T06:43:14+00:00",
   "domain": "nytimes.com",
   "og": {

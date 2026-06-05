@@ -3,7 +3,9 @@
   "url": "https://minitokyo3d.com/",
   "title": "Mini Tokyo 3D",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "tools"
+  ],
   "saved_at": "2026-02-27T05:35:47+00:00",
   "domain": "minitokyo3d.com",
   "og": {

@@ -3,7 +3,9 @@
   "url": "https://productpicnic.beehiiv.com/p/aura-ux",
   "title": "Aura UX",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "ux"
+  ],
   "saved_at": "2025-08-21T04:08:42+00:00",
   "domain": "productpicnic.beehiiv.com",
   "og": {

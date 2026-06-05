@@ -3,7 +3,10 @@
   "url": "https://hvpandya.com/llm-design-systems?ref=sidebar",
   "title": "Expose Your Design System to LLMs",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "ai",
+    "design"
+  ],
   "saved_at": "2026-03-03T10:42:03+00:00",
   "domain": "hvpandya.com",
   "og": {

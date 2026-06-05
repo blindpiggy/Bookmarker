@@ -3,7 +3,10 @@
   "url": "https://matthiasott.com/",
   "title": "Matthias Ott",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design",
+    "webdev"
+  ],
   "saved_at": "2025-09-09T09:25:26+00:00",
   "domain": "matthiasott.com",
   "og": {

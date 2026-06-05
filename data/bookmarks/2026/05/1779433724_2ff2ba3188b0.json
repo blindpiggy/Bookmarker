@@ -3,7 +3,11 @@
   "url": "https://www.mux.com/?utm_source=videojs&utm_campaign=vjs10",
   "title": "Video API for developers",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "tools",
+    "video",
+    "webdev"
+  ],
   "saved_at": "2026-05-22T07:08:44+00:00",
   "domain": "mux.com",
   "og": {

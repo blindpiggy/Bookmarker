@@ -3,7 +3,10 @@
   "url": "https://henry.codes/writing/how-to-distort-text-with-svg/",
   "title": "How To Distort Text With SVG Filters | Henry From Online",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "css",
+    "webdev"
+  ],
   "saved_at": "2025-12-11T12:47:08+00:00",
   "domain": "henry.codes",
   "og": {

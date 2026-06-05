@@ -3,7 +3,10 @@
   "url": "https://dialed.gg/",
   "title": "Color Game — How Well Can You Remember Colors?",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design",
+    "tools"
+  ],
   "saved_at": "2026-02-20T10:09:22+00:00",
   "domain": "dialed.gg",
   "og": {

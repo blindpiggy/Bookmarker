@@ -3,7 +3,9 @@
   "url": "https://www.modernillustration.org/",
   "title": "Modern Illustration",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design"
+  ],
   "saved_at": "2025-11-28T11:45:24+00:00",
   "domain": "modernillustration.org",
   "og": {

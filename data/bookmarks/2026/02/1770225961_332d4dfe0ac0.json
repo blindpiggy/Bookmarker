@@ -3,7 +3,10 @@
   "url": "https://inclusive.microsoft.design/",
   "title": "Microsoft Inclusive Design",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "accessibility",
+    "design"
+  ],
   "saved_at": "2026-02-04T17:26:01+00:00",
   "domain": "inclusive.microsoft.design",
   "og": {

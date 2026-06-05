@@ -3,7 +3,10 @@
   "url": "https://clagnut.com/sandbox/font-size-adjust-ex.html",
   "title": "Font metrics calculator for font-size-adjust",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "typography",
+    "webdev"
+  ],
   "saved_at": "2026-03-16T16:05:04+00:00",
   "domain": "clagnut.com",
   "og": {

@@ -3,7 +3,9 @@
   "url": "https://eskimogordon.com/",
   "title": "Eskimo Design",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design"
+  ],
   "saved_at": "2025-09-20T15:35:48+00:00",
   "domain": "eskimogordon.com",
   "og": {

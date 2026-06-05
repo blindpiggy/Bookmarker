@@ -3,7 +3,10 @@
   "url": "https://buttondown.com/?utm_source=referral",
   "title": "Newsletter software for people like you",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "reading",
+    "tools"
+  ],
   "saved_at": "2025-12-13T04:26:27+00:00",
   "domain": "buttondown.com",
   "og": {

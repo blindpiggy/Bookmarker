@@ -3,7 +3,9 @@
   "url": "https://gomakethings.com/articles/how-to-add-icons-to-external-links-with-css/",
   "title": "How to add icons to external links with CSS",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "webdev"
+  ],
   "saved_at": "2026-05-29T02:33:32+00:00",
   "domain": "gomakethings.com",
   "og": {

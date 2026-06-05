@@ -3,7 +3,10 @@
   "url": "https://www.currentreader.app/docs",
   "title": "Current - A River of Reading",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "reading",
+    "tools"
+  ],
   "saved_at": "2026-03-22T04:37:47+00:00",
   "domain": "currentreader.app",
   "og": {

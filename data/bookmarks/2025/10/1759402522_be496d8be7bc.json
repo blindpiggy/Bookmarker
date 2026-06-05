@@ -3,7 +3,11 @@
   "url": "https://ui.shadcn.com/",
   "title": "The Foundation for your Design System",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design",
+    "tools",
+    "webdev"
+  ],
   "saved_at": "2025-10-02T10:55:22+00:00",
   "domain": "ui.shadcn.com",
   "og": {

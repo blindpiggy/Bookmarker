@@ -3,7 +3,10 @@
   "url": "https://webkit.org/blog/17660/introducing-css-grid-lanes/",
   "title": "Introducing CSS Grid Lanes",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "css",
+    "webdev"
+  ],
   "saved_at": "2025-12-20T06:37:28+00:00",
   "domain": "webkit.org",
   "og": {

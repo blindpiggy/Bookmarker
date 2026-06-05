@@ -3,7 +3,10 @@
   "url": "https://pagy.co/#pricing",
   "title": "Free drag & drop website builder",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "tools",
+    "webdev"
+  ],
   "saved_at": "2025-08-31T12:06:18+00:00",
   "domain": "pagy.co",
   "og": {

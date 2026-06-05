@@ -3,7 +3,9 @@
   "url": "https://dismountbikeshop.com/",
   "title": "Bikes. Coffee. Supply.",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "cycling"
+  ],
   "saved_at": "2025-08-30T07:40:36+00:00",
   "domain": "dismountbikeshop.com",
   "og": {

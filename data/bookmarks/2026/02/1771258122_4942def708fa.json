@@ -3,7 +3,10 @@
   "url": "https://www.youtube.com/watch?v=pAnrocPfFEo",
   "title": "Introducing Slots (new feature) | Schema by Figma 2025",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design",
+    "video"
+  ],
   "saved_at": "2026-02-16T16:08:42+00:00",
   "domain": "youtube.com",
   "og": {

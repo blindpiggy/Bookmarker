@@ -3,7 +3,9 @@
   "url": "https://www.bbc.com/travel/article/20251010-riding-the-rhine-europes-first-certified-long-distance-cycle-path",
   "title": "Riding the Rhine: Europe's first certified long-distance cycle path",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "cycling"
+  ],
   "saved_at": "2025-10-15T12:16:41+00:00",
   "domain": "bbc.com",
   "og": {

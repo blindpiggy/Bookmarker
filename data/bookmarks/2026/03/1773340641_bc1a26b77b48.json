@@ -3,7 +3,10 @@
   "url": "https://penpot.app/pricing/self-host",
   "title": "Penpot Pricing | Self-host pricing",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design",
+    "tools"
+  ],
   "saved_at": "2026-03-12T18:37:21+00:00",
   "domain": "penpot.app",
   "og": {

@@ -3,7 +3,9 @@
   "url": "https://principles.design/",
   "title": "Design Principles",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "design"
+  ],
   "saved_at": "2026-02-27T03:44:48+00:00",
   "domain": "principles.design",
   "og": {

@@ -3,7 +3,10 @@
   "url": "https://open.zerovector.design/",
   "title": "The Open Vector — Learn to build with AI",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "ai",
+    "design"
+  ],
   "saved_at": "2026-03-18T09:56:57+00:00",
   "domain": "open.zerovector.design",
   "og": {

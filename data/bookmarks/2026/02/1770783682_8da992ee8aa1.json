@@ -3,7 +3,9 @@
   "url": "https://accessibilityforeveryone.site/",
   "title": "Accessibility For Everyone by Laura Kalbag",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "accessibility"
+  ],
   "saved_at": "2026-02-11T04:21:22+00:00",
   "domain": "accessibilityforeveryone.site",
   "og": {

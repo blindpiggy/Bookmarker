@@ -3,7 +3,10 @@
   "url": "https://blog.maximeheckel.com/posts/shades-of-halftone/",
   "title": "Shades of Halftone - The Blog of Maxime Heckel",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "css",
+    "design"
+  ],
   "saved_at": "2026-02-11T02:09:34+00:00",
   "domain": "blog.maximeheckel.com",
   "og": {

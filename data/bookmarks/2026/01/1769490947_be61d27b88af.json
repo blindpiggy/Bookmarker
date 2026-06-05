@@ -3,7 +3,10 @@
   "url": "https://www.figma.com/community/file/1597641111449594397",
   "title": "MCP Apps for Claude - Figma UI kit",
   "annotation": "MCP Apps for Claude - Figma UI kit UI kit for designing MCP Apps in Claude. Includes components, patterns, and guidelines for building integrations that render inline covering layout, typography, colour tokens, and interaction states. Built by Anthropic's design team.",
-  "tags": [],
+  "tags": [
+    "design",
+    "tools"
+  ],
   "saved_at": "2026-01-27T05:15:47+00:00",
   "domain": "figma.com",
   "og": {

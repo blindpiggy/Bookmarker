@@ -3,7 +3,10 @@
   "url": "https://polypane.app/",
   "title": "Polypane. The missing half of your web development environment.",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "tools",
+    "webdev"
+  ],
   "saved_at": "2026-04-24T03:39:17+00:00",
   "domain": "polypane.app",
   "og": {

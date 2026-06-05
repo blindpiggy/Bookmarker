@@ -3,7 +3,9 @@
   "url": "https://youtube.com/watch?v=RDFGkBE2O50&si=iyC0ZXzlchgJtNW2",
   "title": "Mark Robers $60 Million Science Experiment | TED",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "video"
+  ],
   "saved_at": "2026-05-30T13:46:55+00:00",
   "domain": "youtube.com",
   "og": {

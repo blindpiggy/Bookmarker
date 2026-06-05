@@ -3,7 +3,11 @@
   "url": "https://recordly.dev/",
   "title": "Open-source app for incredible screen recordings.",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "tools",
+    "video",
+    "webdev"
+  ],
   "saved_at": "2026-05-29T02:26:35+00:00",
   "domain": "recordly.dev",
   "og": {

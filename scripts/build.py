@@ -194,22 +194,42 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
 
     :root {{
-      --bg: #f7f5f1;
-      --surface: #ffffff;
-      --border: #e5e2dc;
-      --border-mid: #d4d0c8;
-      --text-primary: #1a1916;
-      --text-secondary: #6b6760;
-      --text-tertiary: #a09c96;
-      --accent: #1a1916;
-      --accent-fg: #f7f5f1;
-      --tag-bg: #eeecea;
+      /* ── Grey scale ── */
+      --gray-000: #ffffff;
+      --gray-100: #f7f7f7;
+      --gray-200: #f0f0f0;
+      --gray-300: #e8e8e8;
+      --gray-400: #e0e0e0;
+      --gray-500: #c8c8c8;
+      --gray-600: #a0a0a0;
+      --gray-700: #6b6b6b;
+      --gray-800: #1a1a1a;
+
+      /* ── Semantic aliases ── */
+      --bg:             var(--gray-100);
+      --surface:        var(--gray-000);
+      --border:         var(--gray-400);
+      --border-mid:     var(--gray-500);
+      --text-primary:   var(--gray-800);
+      --text-secondary: var(--gray-700);
+      --text-tertiary:  var(--gray-600);
+      --accent:         var(--gray-800);
+      --accent-fg:      var(--gray-000);
+      --tag-bg:         var(--gray-400);
+
+      /* ── Shadows ── */
       --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
       --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+
+      /* ── Radii ── */
       --radius: 10px;
       --radius-sm: 6px;
       --radius-pill: 999px;
+
+      /* ── Typography ── */
       --font-sans: 'Outfit', system-ui, sans-serif;
+
+      /* ── Layout ── */
       --max-w: 700px;
     }}
 
@@ -226,50 +246,50 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     .wrapper {{
       max-width: var(--max-w);
       margin: 0 auto;
-      padding: 0 20px 60px;
+      padding: 15px 20px 60px;
     }}
 
     /* ── Header ── */
     header {{
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      gap: 10px;
-      padding: 18px 0 16px;
-      border-bottom: 1px solid var(--border);
+      padding: 8px 16px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+      background: rgba(255, 255, 255, 0.80);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       margin-bottom: 20px;
       position: sticky;
       top: 0;
-      background: var(--bg);
       z-index: 100;
+      width: 100%;
+    }}
+
+    .header-left {{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }}
+
+    .header-center {{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }}
+
+    .header-right {{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
     }}
 
     .site-brand {{
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-right: auto;
       text-decoration: none;
-    }}
-
-    .logo-mark {{
-      width: 28px;
-      height: 28px;
-      background: var(--accent);
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }}
-
-    .logo-mark svg {{
-      width: 15px;
-      height: 15px;
-      fill: none;
-      stroke: var(--accent-fg);
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
     }}
 
     .site-name {{
@@ -285,6 +305,8 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       align-items: center;
       gap: 4px;
     }}
+
+    /* kept for JS compat — actual layout uses .header-right */
 
     .search-expand {{
       overflow: hidden;
@@ -359,7 +381,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     .tag-dropdown {{
       position: absolute;
       top: calc(100% + 8px);
-      right: 0;
+      left: 0;
       background: var(--surface);
       border: 1px solid var(--border-mid);
       border-radius: var(--radius);
@@ -421,11 +443,22 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       align-items: center;
       gap: 5px;
       font-size: 12px;
-      padding: 3px 8px 3px 11px;
+      padding: 3px 8px 3px 8px;
       border-radius: var(--radius-pill);
       border: 1px solid var(--border-mid);
       color: var(--text-secondary);
       background: var(--surface);
+    }}
+
+    .state-pill-icon {{
+      width: 11px;
+      height: 11px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
     }}
 
     .state-pill-x {{
@@ -443,17 +476,18 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     .state-pill-x:hover {{ color: var(--text-primary); }}
 
     .state-pill-x svg {{
-      width: 12px;
-      height: 12px;
+      width: 10px;
+      height: 10px;
       stroke: currentColor;
       fill: none;
-      stroke-width: 2.5;
+      stroke-width: 2;
       stroke-linecap: round;
     }}
 
     .results-count {{
       font-size: 12px;
-      color: var(--text-tertiary);
+      font-weight: 600;
+      color: var(--text-primary);
     }}
 
     /* ── Cards ── */
@@ -461,31 +495,40 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
 
     .card {{
       background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: 16px;
       overflow: hidden;
       display: flex;
       flex-direction: row;
-      box-shadow: var(--shadow);
-      transition: box-shadow 0.15s, border-color 0.15s;
+      position: relative;
       text-decoration: none;
       color: inherit;
     }}
 
-    .card:hover {{
-      box-shadow: var(--shadow-md);
-      border-color: var(--border-mid);
+    .card::after {{
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      border: 2px solid rgba(255, 255, 255, 0.50);
+      pointer-events: none;
+      z-index: 1;
+      transition: border-color 200ms ease;
+    }}
+
+    .card:hover::after {{
+      border-color: var(--gray-400);
     }}
 
     .card-img {{
       width: 160px;
       min-width: 160px;
-      background: var(--tag-bg);
+      background: var(--gray-200);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
       overflow: hidden;
+      order: 2;
     }}
 
     .card-img img {{
@@ -493,16 +536,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       height: 100%;
       object-fit: cover;
       display: block;
-    }}
-
-    .card-img-placeholder svg {{
-      width: 24px;
-      height: 24px;
-      stroke: var(--text-tertiary);
-      fill: none;
-      stroke-width: 1.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+      mix-blend-mode: multiply;
     }}
 
     .card-body {{
@@ -514,55 +548,10 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       gap: 6px;
     }}
 
-    .card-tags {{
-      display: flex;
-      gap: 4px;
-      flex-wrap: wrap;
-    }}
-
-    .card-tag {{
-      font-size: 11px;
-      padding: 2px 8px;
-      border-radius: var(--radius-pill);
-      background: var(--tag-bg);
-      color: var(--text-secondary);
-    }}
-
-    .card-title {{
-      font-family: var(--font-sans);
-      font-size: 16px;
-      color: var(--text-primary);
-      line-height: 1.35;
-    }}
-
-    .card-excerpt {{
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }}
-
-    .card-annotation {{
-      border-left: 2px solid var(--border-mid);
-      padding-left: 10px;
-    }}
-
-    .card-annotation p {{
-      font-size: 12px;
-      color: var(--text-secondary);
-      font-style: italic;
-      line-height: 1.55;
-    }}
-
     .card-meta {{
       display: flex;
       align-items: center;
       gap: 6px;
-      margin-top: auto;
-      padding-top: 4px;
     }}
 
     .card-meta-domain,
@@ -572,25 +561,82 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       color: var(--text-tertiary);
     }}
 
-    .card-meta-link {{
-      margin-left: auto;
-      color: var(--text-tertiary);
-      display: flex;
-      align-items: center;
-      transition: color 0.12s;
+    .card-title {{
+      font-family: var(--font-sans);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }}
+
+    .card-title-link {{
+      color: inherit;
       text-decoration: none;
     }}
 
-    .card-meta-link:hover {{ color: var(--text-primary); }}
+    .card-title-link:hover {{
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }}
 
-    .card-meta-link svg {{
-      width: 14px;
-      height: 14px;
-      stroke: currentColor;
+    .card-excerpt {{
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }}
+
+    .card-annotation {{
+      display: inline-flex;
+      padding: 4px 12px 4px 8px;
+      align-items: flex-start;
+      gap: 8px;
+      border-radius: 14px;
+      background: var(--gray-200);
+    }}
+
+    .card-annotation-icon {{
+      width: 13px;
+      height: 13px;
+      stroke: var(--text-tertiary);
       fill: none;
       stroke-width: 2;
       stroke-linecap: round;
       stroke-linejoin: round;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }}
+
+    .card-annotation p {{
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      flex: 1;
+    }}
+
+    .card-tags {{
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 2px;
+    }}
+
+    .card-tag {{
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: var(--tag-bg);
+      color: var(--text-secondary);
+      line-height: 1.55;
     }}
 
     /* ── Lazy load sentinel ── */
@@ -623,7 +669,8 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       .card-img {{
         width: 100%;
         min-width: unset;
-        height: 160px;
+        height: 180px;
+        order: -1;
       }}
       .site-name {{ display: none; }}
       .search-expand.open {{ max-width: 180px; }}
@@ -632,22 +679,8 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
   </style>
 </head>
 <body>
-<div class="wrapper">
-
   <header>
-    <a class="site-brand" href="/">
-      <div class="logo-mark">
-        <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-      </div>
-      <span class="site-name">Bookmarker</span>
-    </a>
-    <div class="header-controls">
-      <div class="search-expand" id="searchExpand">
-        <input type="text" id="searchInput" placeholder="Search bookmarks…" aria-label="Search bookmarks" autocomplete="off">
-      </div>
-      <button class="icon-btn" id="searchBtn" aria-label="Toggle search (⌘K)">
-        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
+    <div class="header-left">
       <div class="tag-dropdown-wrap">
         <button class="icon-btn" id="tagBtn" aria-label="Filter by tag">
           <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
@@ -658,7 +691,22 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
         </div>
       </div>
     </div>
+    <div class="header-center">
+      <a class="site-brand" href="/">
+        <span class="site-name">Bookmarker</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <div class="search-expand" id="searchExpand">
+        <input type="text" id="searchInput" placeholder="Search bookmarks…" aria-label="Search bookmarks" autocomplete="off">
+      </div>
+      <button class="icon-btn" id="searchBtn" aria-label="Toggle search (⌘K)">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
   </header>
+
+<div class="wrapper">
 
   <div class="feed-state" id="feedState" aria-live="polite"></div>
   <main class="feed" id="feed" aria-label="Bookmarks feed"></main>
@@ -666,7 +714,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     <span>Loading more…</span>
   </div>
   <div class="empty-state" id="emptyState">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a09c96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gray-600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
     </svg>
     <p>No results found.</p>
@@ -706,7 +754,7 @@ function buildTagPills() {{
   const allPill = makePill('All', 'all');
   tagPillsWrap.appendChild(allPill);
   Object.keys(TAG_INDEX).forEach(tag => {{
-    tagPillsWrap.appendChild(makePill(`${{tag}} (${{TAG_INDEX[tag]}})`, tag));
+    tagPillsWrap.appendChild(makePill(tag, tag));
   }});
 }}
 
@@ -752,7 +800,7 @@ function closeDropdown() {{
 // ── Filtering ──
 function getFiltered() {{
   return BOOKMARKS.filter(b => {{
-    const matchTag = activeTag === 'all' || (b.tags || []).includes(activeTag);
+    const matchTag = activeTag === 'all' || (b.tags || []).map(t => t.toLowerCase()).includes(activeTag.toLowerCase());
     const q = activeQuery.toLowerCase();
     const matchQuery = !q || [b.title, b.description, b.annotation, b.domain, ...(b.tags || [])].some(f => f && f.toLowerCase().includes(q));
     return matchTag && matchQuery;
@@ -765,23 +813,34 @@ function updateFeedState() {{
   const hasTag   = activeTag !== 'all';
   const hasQuery = activeQuery.length > 0;
 
-  if (hasTag) {{
-    feedState.appendChild(makeClearPill(activeTag, () => selectTag('all')));
-  }}
-  if (hasQuery) {{
-    feedState.appendChild(makeClearPill(`"${{activeQuery}}"`, () => closeSearch()));
-  }}
-
   const count = document.createElement('span');
   count.className = 'results-count';
   count.textContent = `${{filtered.length}} result${{filtered.length !== 1 ? 's' : ''}}`;
   feedState.appendChild(count);
+
+  if (hasTag) {{
+    feedState.appendChild(makeClearPill(activeTag, 'tag', () => selectTag('all')));
+  }}
+  if (hasQuery) {{
+    feedState.appendChild(makeClearPill(`"${{activeQuery}}"`, 'search', () => closeSearch()));
+  }}
 }}
 
-function makeClearPill(label, onClear) {{
+function makeClearPill(label, type, onClear) {{
   const pill = document.createElement('span');
   pill.className = 'state-pill';
+
+  const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  icon.setAttribute('viewBox', '0 0 24 24');
+  icon.classList.add('state-pill-icon');
+  if (type === 'tag') {{
+    icon.innerHTML = `<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>`;
+  }} else {{
+    icon.innerHTML = `<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>`;
+  }}
+  pill.appendChild(icon);
   pill.appendChild(document.createTextNode(label));
+
   const btn = document.createElement('button');
   btn.className = 'state-pill-x';
   btn.setAttribute('aria-label', `Clear ${{label}}`);
@@ -807,28 +866,29 @@ function renderCard(b) {{
 
   const imgHTML = b.image
     ? `<div class="card-img"><img src="${{b.image}}" alt="" loading="lazy"></div>`
-    : `<div class="card-img card-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>`;
+    : '';
 
-  const tagsHTML = (b.tags || []).map(t => `<span class="card-tag">${{t}}</span>`).join('');
-  const annotationHTML = b.annotation ? `<div class="card-annotation"><p>${{b.annotation}}</p></div>` : '';
+  const tagsHTML = (b.tags || [])
+    .filter(t => t && t.trim())
+    .map(t => `<span class="card-tag">${{t.trim().toLowerCase()}}</span>`).join('');
+  const annotationHTML = b.annotation ? `<div class="card-annotation"><svg class="card-annotation-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><p>${{b.annotation}}</p></div>` : '';
+  const tagsRowHTML = (annotationHTML || tagsHTML)
+    ? `<div class="card-tags">${{annotationHTML}}${{tagsHTML}}</div>`
+    : '';
   const excerptHTML = b.description ? `<p class="card-excerpt">${{b.description}}</p>` : '';
 
   article.innerHTML = `
-    ${{imgHTML}}
     <div class="card-body">
-      ${{tagsHTML ? `<div class="card-tags">${{tagsHTML}}</div>` : ''}}
-      <h2 class="card-title">${{b.title || 'Untitled'}}</h2>
-      ${{excerptHTML}}
-      ${{annotationHTML}}
       <div class="card-meta">
-        <span class="card-meta-domain">${{b.domain || ''}}</span>
-        ${{b.domain ? '<span class="card-meta-sep">·</span>' : ''}}
         <span class="card-meta-date">${{formatDate(b.date)}}</span>
-        <a class="card-meta-link" href="${{b.url}}" target="_blank" rel="noopener" aria-label="Open link">
-          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </a>
+        ${{b.domain ? '<span class="card-meta-sep">·</span>' : ''}}
+        <span class="card-meta-domain">${{b.domain || ''}}</span>
       </div>
-    </div>`;
+      <h2 class="card-title"><a class="card-title-link" href="${{b.url}}" target="_blank" rel="noopener">${{b.title || 'Untitled'}}</a></h2>
+      ${{excerptHTML}}
+      ${{tagsRowHTML}}
+    </div>
+    ${{imgHTML}}`;
 
   return article;
 }}

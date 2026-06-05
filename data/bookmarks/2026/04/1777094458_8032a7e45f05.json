@@ -3,7 +3,10 @@
   "url": "https://ky.fyi/posts/ai-burnout",
   "title": "Do I belong in tech anymore?",
   "annotation": null,
-  "tags": [],
+  "tags": [
+    "ai",
+    "culture"
+  ],
   "saved_at": "2026-04-25T05:20:58+00:00",
   "domain": "ky.fyi",
   "og": {
