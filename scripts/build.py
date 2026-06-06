@@ -75,7 +75,7 @@ def build_tag_index(bookmarks: list[dict]) -> dict:
             tag = tag.strip().lower()
             if tag:
                 counts[tag] = counts.get(tag, 0) + 1
-    return dict(sorted(counts.items()))
+    return dict(sorted(counts.items(), key=lambda x: x[1], reverse=True))
 
 
 def resolve_title(b: dict) -> str:
