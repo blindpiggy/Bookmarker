@@ -823,17 +823,17 @@ function updateFeedState() {{
   const hasTag   = activeTag !== 'all';
   const hasQuery = activeQuery.length > 0;
 
-  const count = document.createElement('span');
-  count.className = 'results-count';
-  count.textContent = `${{filtered.length}} result${{filtered.length !== 1 ? 's' : ''}}`;
-  feedState.appendChild(count);
-
   if (hasTag) {{
     feedState.appendChild(makeClearPill(activeTag, 'tag', () => selectTag('all')));
   }}
   if (hasQuery) {{
     feedState.appendChild(makeClearPill(`"${{activeQuery}}"`, 'search', () => closeSearch()));
   }}
+
+  const count = document.createElement('span');
+  count.className = 'results-count';
+  count.textContent = `${{filtered.length}} result${{filtered.length !== 1 ? 's' : ''}}`;
+  feedState.appendChild(count);
 }}
 
 function makeClearPill(label, type, onClear) {{
