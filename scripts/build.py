@@ -24,13 +24,27 @@ from pathlib import Path
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-REPO_ROOT  = Path(__file__).parent.parent
-DATA_DIR   = REPO_ROOT / "data" / "bookmarks"
-INDEX_DIR  = REPO_ROOT / "index"
-SITE_DIR   = REPO_ROOT / "site"
-SITE_HTML  = SITE_DIR / "index.html"
-SITE_JSON  = SITE_DIR / "bookmarks.json"
-TAGS_JSON  = INDEX_DIR / "tags.json"
+REPO_ROOT   = Path(__file__).parent.parent
+DATA_DIR    = REPO_ROOT / "data" / "bookmarks"
+INDEX_DIR   = REPO_ROOT / "index"
+SITE_DIR    = REPO_ROOT / "site"
+SITE_HTML   = SITE_DIR / "index.html"
+SITE_JSON   = SITE_DIR / "bookmarks.json"
+SITE_ROBOTS = SITE_DIR / "robots.txt"
+TAGS_JSON   = INDEX_DIR / "tags.json"
+
+# Import site config — edit config.py to customise the site
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+from config import (
+    SITE_NAME,
+    SITE_URL,
+    AUTHOR,
+    LINKS_NOFOLLOW,
+    LINKS_NEW_TAB,
+    PAGE_SIZE,
+    ROBOTS_DISALLOW_ALL,
+    ROBOTS_META,
+)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -249,6 +263,12 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     built_at   = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     tags_json  = json.dumps(tag_index, ensure_ascii=False)
 
+    # Config-derived template values
+    robots_meta_tag = '<meta name="robots" content="noindex, nofollow">\n  ' if ROBOTS_META else ''
+    link_target     = ' target="_blank"' if LINKS_NEW_TAB else ''
+    link_rel_parts  = ['noopener'] + (['nofollow'] if LINKS_NOFOLLOW else [])
+    link_rel        = f' rel="{" ".join(link_rel_parts)}"'  
+
     # Build the lean bookmarks payload for inline JS
     lean = []
     for b in bookmarks:
@@ -273,8 +293,8 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="bookmarks-build/{built_at}">
-  <title>Bookmarker</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>{SITE_NAME}</title>
+  {robots_meta_tag}<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -793,7 +813,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       </div>
       <div class="header-center">
         <a class="site-brand" href="/">
-          <span class="site-name">Bookmarker</span>
+          <span class="site-name">{SITE_NAME}</span>
         </a>
       </div>
       <div class="header-right">
@@ -827,7 +847,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
 // ── Data (injected at build time) ──
 const BOOKMARKS  = {bookmarks_json};
 const TAG_INDEX  = {tags_json};
-const PAGE_SIZE  = 20;
+const PAGE_SIZE  = {PAGE_SIZE};
 
 // ── State ──
 let activeTag    = 'all';
@@ -991,7 +1011,7 @@ function renderCard(b) {{
         ${{b.domain ? '<span class="card-meta-sep">·</span>' : ''}}
         <span class="card-meta-domain">${{b.domain || ''}}</span>
       </div>
-      <h2 class="card-title"><a class="card-title-link" href="${{b.url}}" target="_blank" rel="noopener">${{b.title || 'Untitled'}}</a></h2>
+      <h2 class="card-title"><a class="card-title-link" href="${{b.url}}"{link_target}{link_rel}>${{b.title || 'Untitled'}}</a></h2>
       ${{excerptHTML}}
       ${{tagsRowHTML}}
     </div>
@@ -1127,6 +1147,8 @@ def main():
         print(f"  {SITE_HTML}")
         print(f"  {SITE_JSON}")
         print(f"  {TAGS_JSON}")
+        if ROBOTS_DISALLOW_ALL:
+            print(f"  {SITE_ROBOTS}")
         print(f"\nDone (dry-run). No files written.")
         return
 
@@ -1142,6 +1164,13 @@ def main():
 
     print("Writing index.html…")
     SITE_HTML.write_text(build_html(bookmarks, tag_index), encoding="utf-8")
+
+    if ROBOTS_DISALLOW_ALL:
+        print("Writing robots.txt…")
+        SITE_ROBOTS.write_text(
+            "User-agent: *\nDisallow: /\n",
+            encoding="utf-8"
+        )
 
     print(f"\n✓ Built {len(bookmarks)} bookmarks → {SITE_DIR}")
 
