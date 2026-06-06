@@ -485,7 +485,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       height: 10px;
       stroke: currentColor;
       fill: none;
-      stroke-width: 2;
+      stroke-width: 1;
       stroke-linecap: round;
     }}
 
