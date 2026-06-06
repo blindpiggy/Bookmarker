@@ -34,10 +34,92 @@ TAGS_JSON  = INDEX_DIR / "tags.json"
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
+def merge_tags(original: list, incoming: list) -> list:
+    """
+    Union of both tag lists, normalized to lowercase, original order first.
+    """
+    seen = []
+    result = []
+    for tag in (original or []) + (incoming or []):
+        normalized = tag.strip().lower()
+        if normalized and normalized not in seen:
+            seen.append(normalized)
+            result.append(normalized)
+    return result
+
+
+def merge_annotation(original: str | None, incoming: str | None) -> str | None:
+    """
+    Keep original. If incoming is non-empty and different, append it.
+    """
+    orig = (original or "").strip()
+    inc  = (incoming or "").strip()
+    if not inc:
+        return original
+    if not orig:
+        return inc
+    if inc.lower() == orig.lower():
+        return original
+    return f"{orig} {inc}"
+
+
+def merge_og(original: dict | None, incoming: dict | None) -> dict:
+    """
+    Keep original OG fields; fill in any missing ones from incoming.
+    """
+    orig = original or {}
+    inc  = incoming or {}
+    return {
+        "title":       orig.get("title")       or inc.get("title"),
+        "description": orig.get("description") or inc.get("description"),
+        "image":       orig.get("image")        or inc.get("image"),
+    }
+
+
+def merge_duplicates(bookmarks: list[dict]) -> list[dict]:
+    """
+    Merges bookmarks sharing the same URL (case-insensitive) into a single
+    record. Source files are not touched — merging is in-memory only.
+
+    Merge rules:
+      - saved_at:    most recent wins (bookmark sorts to top of feed)
+      - tags:        union, normalized to lowercase
+      - annotation:  keep original; append incoming if non-empty and different
+      - og:          keep original fields; fill missing from duplicate
+      - all others:  keep from the record with the earliest saved_at (original)
+    """
+    seen: dict[str, dict] = {}  # normalized url -> merged record
+    dupe_count = 0
+
+    # Process oldest-first so "original" fields come from the earliest record
+    for b in sorted(bookmarks, key=lambda x: x.get("saved_at") or x.get("id") or ""):
+        key = b["url"].strip().lower()
+        if key not in seen:
+            seen[key] = dict(b)
+        else:
+            canon = seen[key]
+            dupe_count += 1
+            merged = dict(canon)
+            merged["tags"]          = merge_tags(canon.get("tags"), b.get("tags"))
+            merged["annotation"]    = merge_annotation(canon.get("annotation"), b.get("annotation"))
+            merged["og"]            = merge_og(canon.get("og"), b.get("og"))
+            # Accumulate all prior dates oldest-first before updating saved_at
+            prior = list(canon.get("prior_saved_at") or [])
+            prior.append(canon.get("saved_at"))
+            merged["prior_saved_at"] = [d for d in prior if d]
+            merged["saved_at"]      = b.get("saved_at") or canon.get("saved_at")
+            seen[key] = merged
+
+    if dupe_count:
+        print(f"  {dupe_count} duplicate(s) merged (source files unchanged)")
+
+    return list(seen.values())
+
+
 def load_bookmarks() -> list[dict]:
     """
     Loads all bookmark JSON files from data/bookmarks/**/*.json,
-    sorted reverse-chronologically by saved_at.
+    merges duplicates in memory, sorted reverse-chronologically by saved_at.
     Skips and warns on malformed files.
     """
     files = sorted(DATA_DIR.rglob("*.json"))
@@ -56,6 +138,9 @@ def load_bookmarks() -> list[dict]:
             continue
 
         bookmarks.append(data)
+
+    # Merge duplicates in memory before sorting
+    bookmarks = merge_duplicates(bookmarks)
 
     # Sort reverse-chronologically by saved_at, fall back to file ID
     def sort_key(b):
@@ -151,6 +236,7 @@ def build_bookmarks_json(bookmarks: list[dict]) -> str:
             "annotation" : b.get("annotation"),
             "domain"     : b.get("domain"),
             "date"       : b.get("saved_at"),
+            "priorDates" : b.get("prior_saved_at") or [],
             "tags"       : b.get("tags") or [],
         })
     return json.dumps(lean, indent=2, ensure_ascii=False)
@@ -175,6 +261,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
             "annotation" : b.get("annotation"),
             "domain"     : b.get("domain"),
             "date"       : b.get("saved_at"),
+            "priorDates" : b.get("prior_saved_at") or [],
             "tags"       : b.get("tags") or [],
         })
 
@@ -566,6 +653,12 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       color: var(--text-tertiary);
     }}
 
+    .card-meta-date-prior {{
+      font-size: 11px;
+      color: var(--text-tertiary);
+      opacity: 0.7;
+    }}
+
     .card-title {{
       font-family: var(--font-sans);
       font-size: 16px;
@@ -887,10 +980,14 @@ function renderCard(b) {{
     : '';
   const excerptHTML = b.description ? `<p class="card-excerpt">${{b.description}}</p>` : '';
 
+  const priorDatesHTML = (b.priorDates || [])
+    .map(d => `<span class="card-meta-date-prior">${{formatDate(d)}}</span><span class="card-meta-sep">·</span>`)
+    .join('');
+
   article.innerHTML = `
     <div class="card-body">
       <div class="card-meta">
-        <span class="card-meta-date">${{formatDate(b.date)}}</span>
+        ${{priorDatesHTML}}<span class="card-meta-date">${{formatDate(b.date)}}</span>
         ${{b.domain ? '<span class="card-meta-sep">·</span>' : ''}}
         <span class="card-meta-domain">${{b.domain || ''}}</span>
       </div>
