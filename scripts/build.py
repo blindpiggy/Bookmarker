@@ -546,6 +546,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       align-items: center;
       gap: 6px;
       flex-wrap: wrap;
+      justify-content: space-between;
       margin-bottom: 16px;
       min-height: 26px;
     }}
@@ -600,6 +601,38 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       font-size: 12px;
       font-weight: 600;
       color: var(--text-primary);
+    }}
+
+    .refresh-btn {{
+      width: 26px;
+      height: 26px;
+      border: 1px solid transparent;
+      border-radius: var(--radius-sm);
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-tertiary);
+      transition: background 0.12s, border-color 0.12s, color 0.12s;
+      flex-shrink: 0;
+      margin-left: auto;
+    }}
+
+    .refresh-btn:hover {{
+      background: var(--surface);
+      border-color: var(--border);
+      color: var(--text-primary);
+    }}
+
+    .refresh-btn svg {{
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }}
 
     /* ── Cards ── */
@@ -947,6 +980,13 @@ function updateFeedState() {{
   count.className = 'results-count';
   count.textContent = `${{filtered.length}} result${{filtered.length !== 1 ? 's' : ''}}`;
   feedState.appendChild(count);
+
+  const refreshBtn = document.createElement('button');
+  refreshBtn.className = 'refresh-btn';
+  refreshBtn.setAttribute('aria-label', 'Refresh');
+  refreshBtn.innerHTML = `<svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>`;
+  refreshBtn.addEventListener('click', () => window.location.reload());
+  feedState.appendChild(refreshBtn);
 }}
 
 function makeClearPill(label, type, onClear) {{
