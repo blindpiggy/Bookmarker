@@ -1,1 +1,18 @@
-{"id":"20260609071341","url":"https://github.com/viticci/shortcuts-playground-plugin","title":"GitHub - viticci/shortcuts-playground-plugin: Shortcuts Playground: A Claude Code and Codex plugin for building, validating, signing, and remixing macOS/iOS Shortcuts with natural language. · GitHub","annotation":"","tags":["Tools","ai"],"saved_at":"2026-06-09T07:13:41-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260609071341",
+  "url": "https://github.com/viticci/shortcuts-playground-plugin",
+  "title": "GitHub - viticci/shortcuts-playground-plugin: Shortcuts Playground: A Claude Code and Codex plugin for building, validating, signing, and remixing macOS/iOS Shortcuts with natural language. · GitHub",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "ai"
+  ],
+  "saved_at": "2026-06-09T07:13:41-0400",
+  "domain": "github.com",
+  "og": {
+    "title": "GitHub - viticci/shortcuts-playground-plugin: Shortcuts Playground: A Claude Code and Codex plugin for building, validating, signing, and remixing macOS/iOS Shortcuts with natural language.",
+    "description": "Shortcuts Playground: A Claude Code and Codex plugin for building, validating, signing, and remixing macOS/iOS Shortcuts with natural language. - viticci/shortcuts-playground-plugin",
+    "image": "https://opengraph.githubassets.com/96676158c3534dcb6accb40f4f1aede3b1788fd5fd2c8b62967f52c396c9ff8d/viticci/shortcuts-playground-plugin"
+  },
+  "enriched_at": "2026-06-09T12:32:50.506513+00:00"
+}
