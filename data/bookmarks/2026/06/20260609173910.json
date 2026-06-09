@@ -1,1 +1,18 @@
-{"id":"20260609173910","url":"https://karlkoch.me/writing/falling-in-love-with-the-build?ref=sidebar","title":"Karl Koch | Falling in love with the build","annotation":"","tags":["Webdev","ux"],"saved_at":"2026-06-09T17:39:10-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260609173910",
+  "url": "https://karlkoch.me/writing/falling-in-love-with-the-build?ref=sidebar",
+  "title": "Karl Koch | Falling in love with the build",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "ux"
+  ],
+  "saved_at": "2026-06-09T17:39:10-0400",
+  "domain": "karlkoch.me",
+  "og": {
+    "title": "Karl Koch | Falling in love with the build",
+    "description": "Write-first design prevents falling in love with the wrong thing by prioritizing reasoning over implementation.",
+    "image": "https://karlkoch.me/api/og?title=Falling%20in%20love%20with%20the%20build"
+  },
+  "enriched_at": "2026-06-09T21:39:33.305045+00:00"
+}
