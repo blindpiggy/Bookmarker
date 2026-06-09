@@ -1,1 +1,18 @@
-{"id":"20260609113549","url":"https://franktisellano.github.io/datatype/?ref=simplebits.com","title":"Datatype — variable font that turns text into charts","annotation":"","tags":["Fonts","data"],"saved_at":"2026-06-09T11:35:49-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260609113549",
+  "url": "https://franktisellano.github.io/datatype/?ref=simplebits.com",
+  "title": "Datatype — variable font that turns text into charts",
+  "annotation": "",
+  "tags": [
+    "Fonts",
+    "data"
+  ],
+  "saved_at": "2026-06-09T11:35:49-0400",
+  "domain": "franktisellano.github.io",
+  "og": {
+    "title": "Datatype — variable font that turns text into charts",
+    "description": "An OpenType variable font that turns simple text expressions into inline charts. No JavaScript, no images — just type.",
+    "image": "https://franktisellano.github.io/datatype/og.png"
+  },
+  "enriched_at": "2026-06-09T21:37:47.104761+00:00"
+}
