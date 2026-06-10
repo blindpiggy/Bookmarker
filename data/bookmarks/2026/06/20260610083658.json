@@ -1,1 +1,18 @@
-{"id":"20260610083658","url":"https://www.fonts.xyz/about/","title":"About — fonts.xyz","annotation":"","tags":["Fonts","tools"],"saved_at":"2026-06-10T08:36:58-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260610083658",
+  "url": "https://www.fonts.xyz/about/",
+  "title": "About — fonts.xyz",
+  "annotation": "",
+  "tags": [
+    "Fonts",
+    "tools"
+  ],
+  "saved_at": "2026-06-10T08:36:58-0400",
+  "domain": "fonts.xyz",
+  "og": {
+    "title": "About — fonts.xyz",
+    "description": "fonts.xyz is our little internet village for independent type foundries and designers.",
+    "image": "http://www.fonts.xyz/static/img/fontsxyz.png"
+  },
+  "enriched_at": "2026-06-10T12:37:23.635570+00:00"
+}
