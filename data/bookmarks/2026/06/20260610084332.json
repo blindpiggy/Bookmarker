@@ -1,1 +1,17 @@
-{"id":"20260610084332","url":"https://www.nngroup.com/articles/design-jobs-ai-created/?ref=sidebar","title":"The Four Design Jobs AI Created (So Far) - NN/G","annotation":"","tags":["Ai"],"saved_at":"2026-06-10T08:43:32-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260610084332",
+  "url": "https://www.nngroup.com/articles/design-jobs-ai-created/?ref=sidebar",
+  "title": "The Four Design Jobs AI Created (So Far) - NN/G",
+  "annotation": "",
+  "tags": [
+    "Ai"
+  ],
+  "saved_at": "2026-06-10T08:43:32-0400",
+  "domain": "nngroup.com",
+  "og": {
+    "title": "The Four Design Jobs AI Created (So Far)",
+    "description": "\"AI design\" is one label but has forked into four different types of work.",
+    "image": "https://media.nngroup.com/media/articles/opengraph_images/The_Four_Design_Jobs_AI_Created-1.png"
+  },
+  "enriched_at": "2026-06-10T12:43:55.050835+00:00"
+}
