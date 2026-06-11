@@ -1,1 +1,18 @@
-{"id":"20260611071816","url":"https://vale.rocks/","title":"Vale.Rocks","annotation":"","tags":["Webdev","ux"],"saved_at":"2026-06-11T07:18:16-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260611071816",
+  "url": "https://vale.rocks/",
+  "title": "Vale.Rocks",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "ux"
+  ],
+  "saved_at": "2026-06-11T07:18:16-0400",
+  "domain": "vale.rocks",
+  "og": {
+    "title": "Vale.Rocks",
+    "description": "The hippest site this side of MySpace.",
+    "image": "https://vale.rocks/assets/og/standard.webp"
+  },
+  "enriched_at": "2026-06-11T22:03:13.679801+00:00"
+}
