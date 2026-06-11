@@ -1,1 +1,17 @@
-{"id":"20260611181741","url":"https://thedetroitbus.com/","title":"The Detroit Bus Company - Detroit Tours and Adventures","annotation":"","tags":["Civics"],"saved_at":"2026-06-11T18:17:41-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260611181741",
+  "url": "https://thedetroitbus.com/",
+  "title": "The Detroit Bus Company - Detroit Tours and Adventures",
+  "annotation": "",
+  "tags": [
+    "Civics"
+  ],
+  "saved_at": "2026-06-11T18:17:41-0400",
+  "domain": "thedetroitbus.com",
+  "og": {
+    "title": "The Detroit Bus Company - Detroit Tours and Adventures",
+    "description": "The best little bus company in Detroit. Rent a Bus for your special event, go on a special Detroit tour or adventure to see our city in a new light, and support Detroit kids getting safely to school with free rides for those in need. Always moving.",
+    "image": "https://thedetroitbus.com/wp-content/uploads/2023/07/converse-detroit-bus-co-5239-e1689273862585-1.jpg"
+  },
+  "enriched_at": "2026-06-11T22:18:09.202892+00:00"
+}
