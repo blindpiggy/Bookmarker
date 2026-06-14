@@ -1,1 +1,17 @@
-{"id":"20260614113129","url":"https://www.youtube.com/watch?v=2hfqqI7DoeE","title":"","annotation":"Rick Beato interviews Strombo","tags":["Music"],"saved_at":"2026-06-14T11:31:29-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260614113129",
+  "url": "https://www.youtube.com/watch?v=2hfqqI7DoeE",
+  "title": "",
+  "annotation": "Rick Beato interviews Strombo",
+  "tags": [
+    "Music"
+  ],
+  "saved_at": "2026-06-14T11:31:29-0400",
+  "domain": "youtube.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-14T15:31:52.058391+00:00"
+}
