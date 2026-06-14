@@ -1,1 +1,18 @@
-{"id":"20260614152904","url":"https://buzzusborne.com/writing/discovery-delivery/?ref=sidebar","title":"","annotation":"","tags":["ai","design"],"saved_at":"2026-06-14T15:29:04-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260614152904",
+  "url": "https://buzzusborne.com/writing/discovery-delivery/?ref=sidebar",
+  "title": "",
+  "annotation": "",
+  "tags": [
+    "ai",
+    "design"
+  ],
+  "saved_at": "2026-06-14T15:29:04-0400",
+  "domain": "buzzusborne.com",
+  "og": {
+    "title": "Discovery vs Delivery",
+    "description": "A personal perspective on AI, product quality and the growing divide between deciding what should exist and efficiently building it.",
+    "image": "https://buzzusborne.com/writing/discovery-delivery/img/discovery-full.png"
+  },
+  "enriched_at": "2026-06-14T19:29:32.135233+00:00"
+}
