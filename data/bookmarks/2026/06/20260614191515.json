@@ -1,1 +1,18 @@
-{"id":"20260614191515","url":"https://pixii.fr/pixii-max","title":"Pixii Camera - Pixii Max, full-frame digital rangefinder camera","annotation":"","tags":["Photography","cameras"],"saved_at":"2026-06-14T19:15:15-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260614191515",
+  "url": "https://pixii.fr/pixii-max",
+  "title": "Pixii Camera - Pixii Max, full-frame digital rangefinder camera",
+  "annotation": "",
+  "tags": [
+    "Photography",
+    "cameras"
+  ],
+  "saved_at": "2026-06-14T19:15:15-0400",
+  "domain": "pixii.fr",
+  "og": {
+    "title": "Pixii Camera - Pixii Max, full-frame digital rangefinder camera",
+    "description": "Pixii is a modern digital rangefinder camera made in France. Pixii features a high-precision rangefinder, interactive optical viewfinder, native smartphone connectivity and Leica-M compatible lens mount. Its sensor delivers a remarkable image quality, outperforming all comparable rangefinders on the market. Photographers enjoy its film-like experience thanks to the absence of a screen, subtle color profiles and unique RAW monochrome mode.",
+    "image": "https://cdn.pixii.fr/5df2720b245d00451cb961fe/OpenGraph-Pixii-Max.png"
+  },
+  "enriched_at": "2026-06-14T23:15:40.990292+00:00"
+}
