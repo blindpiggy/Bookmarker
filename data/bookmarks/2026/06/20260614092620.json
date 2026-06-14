@@ -1,1 +1,17 @@
-{"id":"20260614092620","url":"https://linolord.com/collections/cornish-coastal-prints","title":"","annotation":"","tags":["test"],"saved_at":"2026-06-14T09:26:20-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260614092620",
+  "url": "https://linolord.com/collections/cornish-coastal-prints",
+  "title": "",
+  "annotation": "",
+  "tags": [
+    "test"
+  ],
+  "saved_at": "2026-06-14T09:26:20-0400",
+  "domain": "linolord.com",
+  "og": {
+    "title": "Cornish Coastal Prints | Seaside inspired art",
+    "description": "Cornish coastal lino prints inspired by seaside landscapes, capturing light and atmosphere through handmade UK printmaking.",
+    "image": "http://linolord.com/cdn/shop/collections/Three_Rowing_Boats.jpg?v=1762520081"
+  },
+  "enriched_at": "2026-06-14T13:27:10.952845+00:00"
+}
