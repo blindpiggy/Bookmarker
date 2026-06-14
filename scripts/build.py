@@ -1261,6 +1261,7 @@ function formatDate(iso) {{
 function renderCard(b) {{
   const article = document.createElement('article');
   article.className = 'card';
+  article.setAttribute('data-source', b.id);
 
   const imgHTML = (b.image && !b.image.endsWith('/'))
     ? `<div class="card-img"><a class="card-img-link" href="${{b.url}}"{link_target}{link_rel}><img src="${{b.image}}" alt="" loading="lazy" onerror="this.closest('.card-img').style.display='none'"></a></div>`
