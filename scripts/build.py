@@ -358,24 +358,25 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
 
     /* ── Header ── */
     header {{
-      border-bottom: 2px solid rgba(255, 255, 255, 0.50);
       background: rgba(255, 255, 255, 0.80);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.50);
+      border-radius: var(--radius-pill);
+      box-shadow: var(--shadow);
+      width: calc(100% - 32px);
+      max-width: var(--max-w);
+      margin: 16px auto 16px;
       position: sticky;
-      top: 0;
+      top: 16px;
       z-index: 100;
-      width: 100%;
     }}
 
     .header-inner {{
       display: grid;
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      padding: 8px 20px;
-      max-width: var(--max-w);
-      margin: 0 auto;
+      padding: 4px;
     }}
 
     .header-left {{
@@ -454,7 +455,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       width: 34px;
       height: 34px;
       border: 1px solid transparent;
-      border-radius: var(--radius-sm);
+      border-radius: var(--radius-pill);
       background: transparent;
       display: flex;
       align-items: center;
