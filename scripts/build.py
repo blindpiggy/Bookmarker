@@ -353,7 +353,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     .wrapper {{
       max-width: var(--max-w);
       margin: 0 auto;
-      padding: 15px 20px 60px;
+      padding: 15px 20px 170px;
     }}
 
     /* ── Gradient blur ── */
@@ -836,6 +836,13 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       mix-blend-mode: multiply;
     }}
 
+    .card-img-link {{
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }}
+
     .card-body {{
       padding: 14px 16px;
       flex: 1;
@@ -941,6 +948,13 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       background: var(--tag-bg);
       color: var(--text-secondary);
       line-height: 1.55;
+      cursor: pointer;
+      transition: background 0.12s, color 0.12s;
+    }}
+
+    .card-tag:hover {{
+      background: var(--border-mid);
+      color: var(--text-primary);
     }}
 
     /* ── Lazy load sentinel ── */
@@ -1198,12 +1212,12 @@ function renderCard(b) {{
   article.className = 'card';
 
   const imgHTML = b.image
-    ? `<div class="card-img"><img src="${{b.image}}" alt="" loading="lazy"></div>`
+    ? `<div class="card-img"><a class="card-img-link" href="${{b.url}}"{link_target}{link_rel}><img src="${{b.image}}" alt="" loading="lazy"></a></div>`
     : '';
 
   const tagsHTML = (b.tags || [])
     .filter(t => t && t.trim())
-    .map(t => `<span class="card-tag">${{t.trim().toLowerCase()}}</span>`).join('');
+    .map(t => `<span class="card-tag" data-tag="${{t.trim().toLowerCase()}}">${{t.trim().toLowerCase()}}</span>`).join('');
   const annotationHTML = b.annotation ? `<div class="card-annotation"><svg class="card-annotation-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><p>${{b.annotation}}</p></div>` : '';
   const tagsRowHTML = (annotationHTML || tagsHTML)
     ? `<div class="card-tags">${{annotationHTML}}${{tagsHTML}}</div>`
@@ -1291,6 +1305,13 @@ tagBtn.addEventListener('click', (e) => {{
 
 document.addEventListener('click', () => {{ if (dropdownOpen) closeDropdown(); }});
 tagDropdown.addEventListener('click', e => e.stopPropagation());
+
+feed.addEventListener('click', (e) => {{
+  const tagEl = e.target.closest('.card-tag');
+  if (tagEl && tagEl.dataset.tag) {{
+    selectTag(tagEl.dataset.tag);
+  }}
+}});
 
 searchInput.addEventListener('input', () => {{
   activeQuery = searchInput.value.trim();
