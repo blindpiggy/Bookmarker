@@ -1,1 +1,17 @@
-{"id":"20260614074106","url":"https://zen-browser.app/","title":"Zen Browser","annotation":"","tags":["Webdev"],"saved_at":"2026-06-14T07:41:06-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260614074106",
+  "url": "https://zen-browser.app/",
+  "title": "Zen Browser",
+  "annotation": "",
+  "tags": [
+    "Webdev"
+  ],
+  "saved_at": "2026-06-14T07:41:06-0400",
+  "domain": "zen-browser.app",
+  "og": {
+    "title": "Zen Browser",
+    "description": "Beautifully designed, privacy-focused, and packed with features.",
+    "image": ""
+  },
+  "enriched_at": "2026-06-14T11:41:32.048710+00:00"
+}
