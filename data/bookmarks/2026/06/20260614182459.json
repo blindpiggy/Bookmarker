@@ -1,1 +1,17 @@
-{"id":"20260614182459","url":"https://www.youtube.com/watch?v=sRW9ttsPgts","title":"","annotation":"","tags":["test"],"saved_at":"2026-06-14T18:24:59-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260614182459",
+  "url": "https://www.youtube.com/watch?v=sRW9ttsPgts",
+  "title": "",
+  "annotation": "",
+  "tags": [
+    "test"
+  ],
+  "saved_at": "2026-06-14T18:24:59-0400",
+  "domain": "youtube.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-14T22:25:15.805677+00:00"
+}
