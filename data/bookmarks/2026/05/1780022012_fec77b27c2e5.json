@@ -13,5 +13,5 @@
     "description": "As part of my ongoing updates to my personal site, I decided to add icons after all external links.\nToday, I wanted to show you how I did it. Let’s dig in!\nWhy? I do a lot of linking on my site, and it’s not always obvious when a link will keep you on-site vs. take you somewhere else.\nUsing [target=\"_blank\"] forces links to open in a new tab or window, but this is considered an anti-pattern for accessibility reasons.",
     "image": "https://gomakethings.com/img/og.png"
   },
-  "enriched_at": "2026-06-03T19:21:07.767627+00:00"
+  "enriched_at": "2026-06-14T20:07:29.637341+00:00"
 }

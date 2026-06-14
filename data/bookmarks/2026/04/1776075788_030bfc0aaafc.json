@@ -14,5 +14,5 @@
     "description": "Skills are the newest hype commodity in the world of agentic AI. Skills are text files that optionally get stapled onto the context window by the agent. You can have skills like “frontend design” or “design tokens” and if the LLM “thinks” it needs more context about that topic, it can import the contents of those files into the context to help generate a response.",
     "image": null
   },
-  "enriched_at": "2026-06-03T19:20:25.394935+00:00"
+  "enriched_at": "2026-06-14T20:06:44.453411+00:00"
 }

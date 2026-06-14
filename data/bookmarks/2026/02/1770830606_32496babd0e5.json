@@ -14,5 +14,5 @@
     "description": "Here’s how I built design system components in just 5 minutes (excluding setup time 😅) using Figma, MCP, and Claude. Fully synced. Professional. Scalable.\n\nWhat we're building:\nA workflow where you give instructions to Claude, and it translates them into Figma through the MCP bridge to build everything for you. But for now, we’re focusing only on the basics.\n\nWhat you need:\n➡️ Figma Pro plan\n➡️ Claude paid plan (Pro works)\n➡️ Claude Code and Desktop (optional)\n➡️ NodeJS and additional packages.",
     "image": "https://media.licdn.com/dms/image/v2/D4D22AQEtme0wWTKjUg/feedshare-shrink_800/B4DZxMAwPNJ8Ag-/0/1770801792951?e=2147483647&v=beta&t=NIqxFSWz2CncS2j0Teu8zSRq_mJBj9LwiyDjfWfX1-Y"
   },
-  "enriched_at": "2026-06-03T19:19:14.428375+00:00"
+  "enriched_at": "2026-06-14T20:05:22.707569+00:00"
 }

@@ -1262,8 +1262,8 @@ function renderCard(b) {{
   const article = document.createElement('article');
   article.className = 'card';
 
-  const imgHTML = b.image
-    ? `<div class="card-img"><a class="card-img-link" href="${{b.url}}"{link_target}{link_rel}><img src="${{b.image}}" alt="" loading="lazy"></a></div>`
+  const imgHTML = (b.image && !b.image.endsWith('/'))
+    ? `<div class="card-img"><a class="card-img-link" href="${{b.url}}"{link_target}{link_rel}><img src="${{b.image}}" alt="" loading="lazy" onerror="this.closest('.card-img').style.display='none'"></a></div>`
     : '';
 
   const tagsHTML = (b.tags || [])

@@ -26,6 +26,7 @@ import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
+from urllib.parse import urljoin
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -80,6 +81,17 @@ class OGParser(HTMLParser):
 
 # ── Fetch helpers ─────────────────────────────────────────────────────────────
 
+def absolutize_url(relative_or_absolute_url: str, base_url: str) -> str:
+    """
+    Resolves a potentially relative URL against a base URL.
+    If the URL is already absolute, returns it unchanged.
+    Handles relative paths like ./img.png, ../img.png, /img.png.
+    """
+    if not relative_or_absolute_url:
+        return relative_or_absolute_url
+    return urljoin(base_url, relative_or_absolute_url)
+
+
 def fetch_og(url: str) -> dict:
     """
     Fetches a URL and extracts OG metadata.
@@ -127,6 +139,10 @@ def fetch_og(url: str) -> dict:
     # Truncate long descriptions
     if og.get("description"):
         og["description"] = og["description"][:500].strip()
+
+    # Absolutize relative image URLs against the source page's domain
+    if og.get("image"):
+        og["image"] = absolutize_url(og["image"], url)
 
     return og
 

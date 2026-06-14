@@ -12,7 +12,7 @@
   "og": {
     "title": "A new holistic exploration of music creation inside your browser",
     "description": "openDAW is a next-gen web-based digital audio workstation designed to democratize music production.",
-    "image": "./meta.jpg"
+    "image": "https://opendaw.org/meta.jpg"
   },
-  "enriched_at": "2026-06-03T19:20:07.232567+00:00"
+  "enriched_at": "2026-06-14T20:06:25.202745+00:00"
 }
