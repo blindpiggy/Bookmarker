@@ -639,6 +639,53 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       stroke-linejoin: round;
     }}
 
+    /* ── Back to top ── */
+    .to-top-btn {{
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      z-index: 50;
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.80);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.50);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-secondary);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease, color 0.12s;
+    }}
+
+    .to-top-btn.visible {{
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }}
+
+    .to-top-btn:hover {{
+      color: var(--text-primary);
+    }}
+
+    .to-top-btn svg {{
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }}
+
     /* ── Tag Dropdown ── */
     .tag-dropdown-wrap {{ position: relative; }}
 
@@ -1060,6 +1107,10 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
 
 </div>
 
+<button class="to-top-btn" id="toTopBtn" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
 <script>
 // ── Data (injected at build time) ──
 const BOOKMARKS  = {bookmarks_json};
@@ -1305,6 +1356,14 @@ tagBtn.addEventListener('click', (e) => {{
 
 document.addEventListener('click', () => {{ if (dropdownOpen) closeDropdown(); }});
 tagDropdown.addEventListener('click', e => e.stopPropagation());
+
+const toTopBtn = document.getElementById('toTopBtn');
+window.addEventListener('scroll', () => {{
+  toTopBtn.classList.toggle('visible', window.scrollY > 600);
+}});
+toTopBtn.addEventListener('click', () => {{
+  window.scrollTo({{ top: 0, behavior: 'smooth' }});
+}});
 
 feed.addEventListener('click', (e) => {{
   const tagEl = e.target.closest('.card-tag');
