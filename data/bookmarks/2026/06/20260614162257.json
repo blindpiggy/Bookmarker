@@ -1,1 +1,17 @@
-{"id":"20260614162257","url":"https://graphicclaystudio.com/","title":"","annotation":"","tags":[""],"saved_at":"2026-06-14T16:22:57-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260614162257",
+  "url": "https://graphicclaystudio.com/",
+  "title": "",
+  "annotation": "",
+  "tags": [
+    ""
+  ],
+  "saved_at": "2026-06-14T16:22:57-0400",
+  "domain": "graphicclaystudio.com",
+  "og": {
+    "title": "Graphic Clay Studio",
+    "description": "",
+    "image": null
+  },
+  "enriched_at": "2026-06-14T20:23:19.286099+00:00"
+}
