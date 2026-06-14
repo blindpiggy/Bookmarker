@@ -1191,7 +1191,7 @@ function closeDropdown() {{
 // ── Filtering ──
 function getFiltered() {{
   return BOOKMARKS.filter(b => {{
-    const matchTag = activeTag === 'all' || (b.tags || []).map(t => t.toLowerCase()).includes(activeTag.toLowerCase());
+    const matchTag = activeTag === 'all' || (b.tags || []).map(t => t.trim().toLowerCase()).includes(activeTag.toLowerCase());
     const q = activeQuery.toLowerCase();
     const matchQuery = !q || [b.title, b.description, b.annotation, b.domain, ...(b.tags || [])].some(f => f && f.toLowerCase().includes(q));
     return matchTag && matchQuery;
