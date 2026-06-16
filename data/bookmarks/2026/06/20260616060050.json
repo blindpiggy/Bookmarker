@@ -1,1 +1,17 @@
-{"id":"20260616060050","url":"https://www.alwaystwisted.com/articles/a-design-tokens-workflow-part-15","title":"Managing Microcopy with Design Tokens | Always Twisted","annotation":"","tags":["Design systems"],"saved_at":"2026-06-16T06:00:50-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260616060050",
+  "url": "https://www.alwaystwisted.com/articles/a-design-tokens-workflow-part-15",
+  "title": "Managing Microcopy with Design Tokens | Always Twisted",
+  "annotation": "",
+  "tags": [
+    "Design systems"
+  ],
+  "saved_at": "2026-06-16T06:00:50-0400",
+  "domain": "alwaystwisted.com",
+  "og": {
+    "title": "Design Tokens for Microcopy with Style Dictionary",
+    "description": "Manage product interface copy, error messages, and labels as design tokens using Style Dictionary. Keep your product language consistent, controllable, and collaborative across teams and platforms.",
+    "image": "https://www.alwaystwisted.com/images/articles/meta-images/design-tokens-part-15.png"
+  },
+  "enriched_at": "2026-06-16T10:28:29.407735+00:00"
+}

@@ -1,1 +1,17 @@
-{"id":"20260616062805","url":"https://inclusive-components.design/","title":"Inclusive Components","annotation":"","tags":["Webdev"],"saved_at":"2026-06-16T06:28:05-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260616062805",
+  "url": "https://inclusive-components.design/",
+  "title": "Inclusive Components",
+  "annotation": "",
+  "tags": [
+    "Webdev"
+  ],
+  "saved_at": "2026-06-16T06:28:05-0400",
+  "domain": "inclusive-components.design",
+  "og": {
+    "title": "Inclusive Components",
+    "description": "A blog trying to be a pattern library. All about designing inclusive web interfaces, piece by piece.",
+    "image": null
+  },
+  "enriched_at": "2026-06-16T10:28:32.797297+00:00"
+}
