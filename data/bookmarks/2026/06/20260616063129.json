@@ -1,1 +1,18 @@
-{"id":"20260616063129","url":"https://www.surrealcms.com/","title":"Surreal CMS","annotation":"","tags":["Webdev","cms"],"saved_at":"2026-06-16T06:31:29-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260616063129",
+  "url": "https://www.surrealcms.com/",
+  "title": "Surreal CMS",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "cms"
+  ],
+  "saved_at": "2026-06-16T06:31:29-0400",
+  "domain": "surrealcms.com",
+  "og": {
+    "title": "Surreal CMS",
+    "description": "A bolt-on CMS that makes websites more powerful and easy to edit.",
+    "image": "https://www.surrealcms.com/uploads/screenshots/tablet-sites.png"
+  },
+  "enriched_at": "2026-06-16T10:34:06.672515+00:00"
+}
