@@ -865,7 +865,8 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     }}
 
     .card:hover {{
-      margin: 0 -0.125rem;
+      margin-top: -0.125rem;
+      transform: scale(1.125);
     }}
 
     .card-img {{
