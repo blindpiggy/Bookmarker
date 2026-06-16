@@ -846,6 +846,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       position: relative;
       text-decoration: none;
       color: inherit;
+      transition: all 0.3s ease-in-out 0.1s;
     }}
 
     .card::after {{
