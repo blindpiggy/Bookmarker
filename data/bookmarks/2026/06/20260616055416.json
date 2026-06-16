@@ -1,1 +1,18 @@
-{"id":"20260616055416","url":"https://newsletter.sachajudd.com/archive/id-please/","title":"ID, please • Buttondown","annotation":"","tags":["Culture","social media"],"saved_at":"2026-06-16T05:54:16-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260616055416",
+  "url": "https://newsletter.sachajudd.com/archive/id-please/",
+  "title": "ID, please • Buttondown",
+  "annotation": "",
+  "tags": [
+    "Culture",
+    "social media"
+  ],
+  "saved_at": "2026-06-16T05:54:16-0400",
+  "domain": "newsletter.sachajudd.com",
+  "og": {
+    "title": "ID, please",
+    "description": "A few weeks ago, we talked about what it’s like to be young and online at the moment, in light of the introduction of age-verification laws in the UK and...",
+    "image": "https://assets.buttondown.email/images/f9613da1-46ef-49af-985e-79b26f37d7ca.jpeg"
+  },
+  "enriched_at": "2026-06-16T09:55:01.955057+00:00"
+}
