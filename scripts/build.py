@@ -863,6 +863,10 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       border-color: var(--gray-400);
     }}
 
+    .card:hover {{
+      margin: 0 -1rem;
+    }}
+
     .card-img {{
       width: 160px;
       min-width: 160px;
