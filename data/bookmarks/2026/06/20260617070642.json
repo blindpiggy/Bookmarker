@@ -1,1 +1,17 @@
-{"id":"20260617070642","url":"https://piccalil.li/blog/programming-principles-for-self-taught-front-end-developers/","title":"Programming principles for self taught front-end developers - Piccalilli","annotation":"","tags":["Webdev"],"saved_at":"2026-06-17T07:06:42-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260617070642",
+  "url": "https://piccalil.li/blog/programming-principles-for-self-taught-front-end-developers/",
+  "title": "Programming principles for self taught front-end developers - Piccalilli",
+  "annotation": "",
+  "tags": [
+    "Webdev"
+  ],
+  "saved_at": "2026-06-17T07:06:42-0400",
+  "domain": "piccalil.li",
+  "og": {
+    "title": "Programming principles for self taught front-end developers",
+    "description": "The majority of us are a bunch of self taught people with rather spotty knowledge and that's fine! Kilian (also self taught) is here to share some of the computer science fundamentals you probably are missing with the aim to improve your code in the long term.",
+    "image": "https://piccalil.b-cdn.net/api/og-image?slug=programming-principles-for-self-taught-front-end-developers/"
+  },
+  "enriched_at": "2026-06-17T12:37:00.212150+00:00"
+}

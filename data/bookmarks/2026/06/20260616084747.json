@@ -1,1 +1,18 @@
-{"id":"20260616084747","url":"https://commodore.net/callback/","title":"Flip-phone - Commodore","annotation":"","tags":["Nostalgia","tech"],"saved_at":"2026-06-16T08:47:47-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260616084747",
+  "url": "https://commodore.net/callback/",
+  "title": "Flip-phone - Commodore",
+  "annotation": "",
+  "tags": [
+    "Nostalgia",
+    "tech"
+  ],
+  "saved_at": "2026-06-16T08:47:47-0400",
+  "domain": "commodore.net",
+  "og": {
+    "title": "Flip-Phone - Commodore",
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-17T12:36:58.879505+00:00"
+}
