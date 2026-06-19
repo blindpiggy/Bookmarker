@@ -1,1 +1,18 @@
-{"id":"20260619074426","url":"https://loreline.app/en/","title":"Loreline - Tools for writing interactive fiction, video game dialogues and branching narratives","annotation":"","tags":["Tools","writing"],"saved_at":"2026-06-19T07:44:26-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260619074426",
+  "url": "https://loreline.app/en/",
+  "title": "Loreline - Tools for writing interactive fiction, video game dialogues and branching narratives",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "writing"
+  ],
+  "saved_at": "2026-06-19T07:44:26-0400",
+  "domain": "loreline.app",
+  "og": {
+    "title": "Loreline - Tools for writing interactive fiction, video game dialogues and branching narratives",
+    "description": "Tools for writing interactive fiction, video game dialogues and branching narratives",
+    "image": "https://loreline.app/static/img/og-banner.png"
+  },
+  "enriched_at": "2026-06-19T12:20:36.820252+00:00"
+}

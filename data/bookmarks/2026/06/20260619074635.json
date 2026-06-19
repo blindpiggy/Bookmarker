@@ -1,1 +1,17 @@
-{"id":"20260619074635","url":"https://ethanmarcotte.com/wrote/all-tomorrows-parties/","title":"All tomorrow’s parties. — Ethan Marcotte","annotation":"","tags":["Ai"],"saved_at":"2026-06-19T07:46:35-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260619074635",
+  "url": "https://ethanmarcotte.com/wrote/all-tomorrows-parties/",
+  "title": "All tomorrow’s parties. — Ethan Marcotte",
+  "annotation": "",
+  "tags": [
+    "Ai"
+  ],
+  "saved_at": "2026-06-19T07:46:35-0400",
+  "domain": "ethanmarcotte.com",
+  "og": {
+    "title": "All tomorrow’s parties. — Ethan Marcotte",
+    "description": "What happens next? Well, you tell me.",
+    "image": "https://ethanmarcotte.com/opengraph/all-tomorrows-parties-c9781f45fb3ec9875b0bf707adf5c203.png"
+  },
+  "enriched_at": "2026-06-19T12:20:37.912998+00:00"
+}

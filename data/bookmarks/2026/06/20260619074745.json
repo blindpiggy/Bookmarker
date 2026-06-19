@@ -1,1 +1,17 @@
-{"id":"20260619074745","url":"https://alpaca.blue/login","title":"alpaca.blue","annotation":"","tags":["Tools"],"saved_at":"2026-06-19T07:47:45-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260619074745",
+  "url": "https://alpaca.blue/login",
+  "title": "alpaca.blue",
+  "annotation": "",
+  "tags": [
+    "Tools"
+  ],
+  "saved_at": "2026-06-19T07:47:45-0400",
+  "domain": "alpaca.blue",
+  "og": {
+    "title": "alpaca.blue",
+    "description": "Your unified social timeline",
+    "image": null
+  },
+  "enriched_at": "2026-06-19T12:20:41.254612+00:00"
+}

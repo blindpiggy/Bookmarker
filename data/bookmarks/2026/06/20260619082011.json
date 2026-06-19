@@ -1,1 +1,17 @@
-{"id":"20260619082011","url":"https://daverupert.com/2026/06/spoons-by-sam/","title":"Spoons by Sam - daverupert.com","annotation":"","tags":["Games"],"saved_at":"2026-06-19T08:20:11-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260619082011",
+  "url": "https://daverupert.com/2026/06/spoons-by-sam/",
+  "title": "Spoons by Sam - daverupert.com",
+  "annotation": "",
+  "tags": [
+    "Games"
+  ],
+  "saved_at": "2026-06-19T08:20:11-0400",
+  "domain": "daverupert.com",
+  "og": {
+    "title": "Spoons by Sam",
+    "description": "I play Clues by Sam nearly every single day. I wrote about it before, but solving a little crime puzzle adds a micro-thrill to my day. A little blast of logic, misdirection, and wordplay. It’s a frequent topic of conversation in the ShopTalkShow Discord where people share their solves like Wordle scores.",
+    "image": null
+  },
+  "enriched_at": "2026-06-19T12:20:43.695419+00:00"
+}
