@@ -1,1 +1,18 @@
-{"id":"20260621165821","url":"https://youtube.com/watch?v=no4N3bBwE9Y&si=q4Avn9FZsYPilPdc","title":"YouTube","annotation":"Chase Bliss CHOMPI ","tags":["Music","tools"],"saved_at":"2026-06-21T16:58:21-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260621165821",
+  "url": "https://youtube.com/watch?v=no4N3bBwE9Y&si=q4Avn9FZsYPilPdc",
+  "title": "YouTube",
+  "annotation": "Chase Bliss CHOMPI ",
+  "tags": [
+    "Music",
+    "tools"
+  ],
+  "saved_at": "2026-06-21T16:58:21-0400",
+  "domain": "youtube.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-06-21T20:58:57.174795+00:00"
+}
