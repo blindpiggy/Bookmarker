@@ -1,1 +1,18 @@
-{"id":"20260621224943","url":"https://www.theguardian.com/football/2026/jun/21/thierry-henry-alexi-lalas-fox-world-cup","title":"The French aristocrat and the all-American idiot: Henry v Lalas is the World Cup’s most compelling battle | World Cup 2026 | The Guardian","annotation":"","tags":["Sports","world cup "],"saved_at":"2026-06-21T22:49:43-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260621224943",
+  "url": "https://www.theguardian.com/football/2026/jun/21/thierry-henry-alexi-lalas-fox-world-cup",
+  "title": "The French aristocrat and the all-American idiot: Henry v Lalas is the World Cup’s most compelling battle | World Cup 2026 | The Guardian",
+  "annotation": "",
+  "tags": [
+    "Sports",
+    "world cup "
+  ],
+  "saved_at": "2026-06-21T22:49:43-0400",
+  "domain": "theguardian.com",
+  "og": {
+    "title": "The French aristocrat and the all-American idiot: Henry v Lalas is the World Cup’s most compelling battle",
+    "description": "Fox’s broadcast at the tournament has become a story of two contrasting styles. And there is one clear winner",
+    "image": "https://i.guim.co.uk/img/media/6834acb8e045ec46cda8c36bee04f07e30cc34ef/405_345_2268_1815/master/2268.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9737a1788c8215c4a56515c1322c92ff"
+  },
+  "enriched_at": "2026-06-22T02:50:04.961509+00:00"
+}
