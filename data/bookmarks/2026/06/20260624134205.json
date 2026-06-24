@@ -1,1 +1,18 @@
-{"id":"20260624134205","url":"https://ileivoivm.github.io/inkField/?ref=sidebar","title":"InkField | 墨域","annotation":"","tags":["Tools","art"],"saved_at":"2026-06-24T13:42:05-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260624134205",
+  "url": "https://ileivoivm.github.io/inkField/?ref=sidebar",
+  "title": "InkField | 墨域",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "art"
+  ],
+  "saved_at": "2026-06-24T13:42:05-0400",
+  "domain": "ileivoivm.github.io",
+  "og": {
+    "title": "InkField | 墨域",
+    "description": "A system that preserves the act of drawing itself, where every gesture is remembered and every image continues to evolve.",
+    "image": "https://ileivoivm.github.io/inkField/tech/assets/logo_1.gif"
+  },
+  "enriched_at": "2026-06-24T17:56:41.361329+00:00"
+}
