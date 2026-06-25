@@ -1,1 +1,19 @@
-{"id":"20260625072450","url":"https://www.alwaystwisted.com/articles/building-your-design-system-workflow-rituals-templates","title":"Building Your Design System Workflow - Rituals and Templates | Always Twisted","annotation":"","tags":["Webdev","design systems","ux"],"saved_at":"2026-06-25T07:24:50-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260625072450",
+  "url": "https://www.alwaystwisted.com/articles/building-your-design-system-workflow-rituals-templates",
+  "title": "Building Your Design System Workflow - Rituals and Templates | Always Twisted",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "design systems",
+    "ux"
+  ],
+  "saved_at": "2026-06-25T07:24:50-0400",
+  "domain": "alwaystwisted.com",
+  "og": {
+    "title": "Building Your Design System Workflow - Rituals and Templates",
+    "description": "Practical playbook for implementing design system workflows. Complete with communication rituals, templates, tools guidance, and phased implementation timelines.",
+    "image": "https://www.alwaystwisted.com/images/articles/meta-images/ds-workflow-rituals-templates.png"
+  },
+  "enriched_at": "2026-06-25T11:27:05.219393+00:00"
+}
