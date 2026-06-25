@@ -1,1 +1,17 @@
-{"id":"20260625113323","url":"https://tonguetype.app/","title":"TongueType | Voice Dictation for macOS, Private, Offline, No Subscription","annotation":"","tags":["tools"],"saved_at":"2026-06-25T11:33:23-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260625113323",
+  "url": "https://tonguetype.app/",
+  "title": "TongueType | Voice Dictation for macOS, Private, Offline, No Subscription",
+  "annotation": "",
+  "tags": [
+    "tools"
+  ],
+  "saved_at": "2026-06-25T11:33:23-0400",
+  "domain": "tonguetype.app",
+  "og": {
+    "title": "TongueType | Free Voice Dictation for macOS, 100% Private",
+    "description": "Hold a key, speak, release. Your words appear instantly. Powered by local Whisper AI on Apple Silicon. No cloud, no accounts, no subscriptions. 12 languages supported.",
+    "image": "https://tonguetype.app/assets/images/og-image.png"
+  },
+  "enriched_at": "2026-06-25T16:04:02.264716+00:00"
+}
