@@ -1,1 +1,18 @@
-{"id":"20260626072356","url":"https://mindfuldesign.xyz/by-humans/","title":"By Humans, For Humans","annotation":"","tags":["Ux","Webdev"],"saved_at":"2026-06-26T07:23:56-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260626072356",
+  "url": "https://mindfuldesign.xyz/by-humans/",
+  "title": "By Humans, For Humans",
+  "annotation": "",
+  "tags": [
+    "Ux",
+    "Webdev"
+  ],
+  "saved_at": "2026-06-26T07:23:56-0400",
+  "domain": "mindfuldesign.xyz",
+  "og": {
+    "title": "By Humans, For Humans – Mindful Design",
+    "description": "Now, more than ever, we need to consider the real, human impact of the work we do. This is a fundamental principle of Mindful Design.",
+    "image": "https://mindfuldesign.xyz/assets/og.png"
+  },
+  "enriched_at": "2026-06-26T11:48:37.359942+00:00"
+}
