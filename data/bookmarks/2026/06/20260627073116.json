@@ -1,1 +1,18 @@
-{"id":"20260627073116","url":"https://tonsky.me/blog/every-frame-perfect/","title":"Every Frame Perfect @ tonsky.me","annotation":"","tags":["Software","ux"],"saved_at":"2026-06-27T07:31:16-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260627073116",
+  "url": "https://tonsky.me/blog/every-frame-perfect/",
+  "title": "Every Frame Perfect @ tonsky.me",
+  "annotation": "",
+  "tags": [
+    "Software",
+    "ux"
+  ],
+  "saved_at": "2026-06-27T07:31:16-0400",
+  "domain": "tonsky.me",
+  "og": {
+    "title": "Every Frame Perfect",
+    "description": "How imprecise UI animations erode trust in product",
+    "image": "https://dynogee.com/gen?id=24m2qx9uethuw6p&title=Every+Frame+Perfect"
+  },
+  "enriched_at": "2026-06-27T11:31:34.813474+00:00"
+}
