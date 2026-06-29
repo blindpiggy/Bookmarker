@@ -1,1 +1,17 @@
-{"id":"20260628084924","url":"https://kage.tamnd.com/","title":"kage","annotation":"","tags":["Webdev"],"saved_at":"2026-06-28T08:49:24-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260628084924",
+  "url": "https://kage.tamnd.com/",
+  "title": "kage",
+  "annotation": "",
+  "tags": [
+    "Webdev"
+  ],
+  "saved_at": "2026-06-28T08:49:24-0400",
+  "domain": "kage.tamnd.com",
+  "og": {
+    "title": "kage",
+    "description": "kage (影, shadow) clones any website into a self-contained folder you can browse offline, with all the JavaScript stripped out. Render in headless Chrome, remove every script, localise the CSS, images, and fonts, from one pure-Go binary.",
+    "image": null
+  },
+  "enriched_at": "2026-06-29T13:35:59.885700+00:00"
+}
