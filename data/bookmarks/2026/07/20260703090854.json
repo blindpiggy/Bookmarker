@@ -1,1 +1,18 @@
-{"id":"20260703090854","url":"https://whitep4nth3r.com/blog/goodbye-forever-probably/","title":"Goodbye, forever, probably.","annotation":"","tags":["Webdev","ai"],"saved_at":"2026-07-03T09:08:54-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260703090854",
+  "url": "https://whitep4nth3r.com/blog/goodbye-forever-probably/",
+  "title": "Goodbye, forever, probably.",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "ai"
+  ],
+  "saved_at": "2026-07-03T09:08:54-0400",
+  "domain": "whitep4nth3r.com",
+  "og": {
+    "title": "Goodbye, forever, probably.",
+    "description": "I’m leaving developer relations and developer education. Rather than disappear completely unannounced, I wanted to tell you why.",
+    "image": "https://res.cloudinary.com/whitep4nth3r/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/w_900,c_fit,g_north_west,co_rgb:ffffff,x_20,y_20,l_text:Anton_100__line_spacing_-40:GOODBYE%252C%20FOREVER%252C%20PROBABLY./og_2026.png"
+  },
+  "enriched_at": "2026-07-03T13:20:28.726900+00:00"
+}
