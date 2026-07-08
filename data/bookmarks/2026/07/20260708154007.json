@@ -1,1 +1,19 @@
-{"id":"20260708154007","url":"https://ky.fyi/posts/trauma-informed-design#trauma-is-an-experience-that-overwhelms-someones-ability-to-cope","title":"To build gentler technology, practice trauma-informed design · Ky Decker","annotation":"","tags":["webdev","design","accessibility"],"saved_at":"2026-07-08T15:40:07-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260708154007",
+  "url": "https://ky.fyi/posts/trauma-informed-design#trauma-is-an-experience-that-overwhelms-someones-ability-to-cope",
+  "title": "To build gentler technology, practice trauma-informed design · Ky Decker",
+  "annotation": "",
+  "tags": [
+    "webdev",
+    "design",
+    "accessibility"
+  ],
+  "saved_at": "2026-07-08T15:40:07-0400",
+  "domain": "ky.fyi",
+  "og": {
+    "title": "To build gentler technology, practice trauma-informed design",
+    "description": "By understanding trauma, we can craft user experiences that are more sensitive to the needs of everyone.",
+    "image": "https://ky.fyi/_astro/cover.CZpgnSwb_Z16OA6y.webp"
+  },
+  "enriched_at": "2026-07-08T19:53:49.736260+00:00"
+}
