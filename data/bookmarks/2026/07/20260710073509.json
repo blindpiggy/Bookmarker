@@ -1,1 +1,18 @@
-{"id":"20260710073509","url":"https://bsky.app/profile/wordpress.org/post/3mqa2m2vfzf2m","title":"@wordpress.org on Bluesky","annotation":"","tags":["Wordpress","documentary "],"saved_at":"2026-07-10T07:35:09-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260710073509",
+  "url": "https://bsky.app/profile/wordpress.org/post/3mqa2m2vfzf2m",
+  "title": "@wordpress.org on Bluesky",
+  "annotation": "",
+  "tags": [
+    "Wordpress",
+    "documentary "
+  ],
+  "saved_at": "2026-07-10T07:35:09-0400",
+  "domain": "bsky.app",
+  "og": {
+    "title": "WordPress (@wordpress.org)",
+    "description": "A web owned by a few, or a web that belongs to everyone.\n\nCode for the People, a new short documentary about the open source movement and the fight for the open web, is now streaming.\n\nhttps://www.youtube.com/watch?v=8lQijrTaaGg\n\n@codeforthepeople.bsky.social",
+    "image": "https://cdn.bsky.app/img/avatar_thumbnail/plain/did:plc:r2no5dzwjjkp4cysp43tqzxa/bafkreifz57gwqywcekz6ftnxtwgsxjiybyr5ih5hoar4f7fhrhcnnqk22a"
+  },
+  "enriched_at": "2026-07-10T11:43:03.012268+00:00"
+}
