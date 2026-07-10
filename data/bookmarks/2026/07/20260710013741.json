@@ -1,1 +1,18 @@
-{"id":"20260710013741","url":"https://maggieappleton.com/command-bar","title":"Command K Bars","annotation":"","tags":["Ux","design"],"saved_at":"2026-07-10T01:37:41-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260710013741",
+  "url": "https://maggieappleton.com/command-bar",
+  "title": "Command K Bars",
+  "annotation": "",
+  "tags": [
+    "Ux",
+    "design"
+  ],
+  "saved_at": "2026-07-10T01:37:41-0400",
+  "domain": "maggieappleton.com",
+  "og": {
+    "title": "Command K Bars",
+    "description": "Command line bars you can quickly summon with a keyboard shortcut",
+    "image": "https://maggieappleton.com/og/command-bar.png"
+  },
+  "enriched_at": "2026-07-10T05:38:06.726510+00:00"
+}
