@@ -1,1 +1,18 @@
-{"id":"20260713171115","url":"https://www.youtube.com/watch?v=jEEbjiC4JE0","title":"YouTube","annotation":"","tags":["ai","design"],"saved_at":"2026-07-13T17:11:15-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260713171115",
+  "url": "https://www.youtube.com/watch?v=jEEbjiC4JE0",
+  "title": "YouTube",
+  "annotation": "",
+  "tags": [
+    "ai",
+    "design"
+  ],
+  "saved_at": "2026-07-13T17:11:15-0400",
+  "domain": "youtube.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-07-13T21:12:28.065773+00:00"
+}

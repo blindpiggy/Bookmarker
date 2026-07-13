@@ -1,1 +1,17 @@
-{"id":"20260713171207","url":"https://www.youtube.com/watch?v=jEEbjiC4JE0","title":"YouTube","annotation":"Anthropic designer Meaghan Choi shares how she works","tags":[""],"saved_at":"2026-07-13T17:12:07-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260713171207",
+  "url": "https://www.youtube.com/watch?v=jEEbjiC4JE0",
+  "title": "YouTube",
+  "annotation": "Anthropic designer Meaghan Choi shares how she works",
+  "tags": [
+    ""
+  ],
+  "saved_at": "2026-07-13T17:12:07-0400",
+  "domain": "youtube.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-07-13T21:12:29.289857+00:00"
+}
