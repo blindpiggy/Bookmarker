@@ -1,1 +1,20 @@
-{"id":"20260714062842","url":"https://mindfuldesign.xyz/","title":"Mindful Design","annotation":"","tags":["Tools","resources","design","Webdev"],"saved_at":"2026-07-14T06:28:42-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260714062842",
+  "url": "https://mindfuldesign.xyz/",
+  "title": "Mindful Design",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "resources",
+    "design",
+    "Webdev"
+  ],
+  "saved_at": "2026-07-14T06:28:42-0400",
+  "domain": "mindfuldesign.xyz",
+  "og": {
+    "title": "Mindful Design",
+    "description": "Mindful Design is the responsible designer’s survival guide. Learn resilient and responsible design practices and own your early stage design — from idea to shipped and beyond.",
+    "image": "https://mindfuldesign.xyz/assets/og.png"
+  },
+  "enriched_at": "2026-07-14T10:29:02.013420+00:00"
+}
