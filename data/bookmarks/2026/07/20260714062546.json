@@ -1,1 +1,19 @@
-{"id":"20260714062546","url":"https://penpot.app/","title":"Penpot: The open-source design platform for teams.","annotation":"Figma alternative","tags":["Software","tools","design"],"saved_at":"2026-07-14T06:25:46-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260714062546",
+  "url": "https://penpot.app/",
+  "title": "Penpot: The open-source design platform for teams.",
+  "annotation": "Figma alternative",
+  "tags": [
+    "Software",
+    "tools",
+    "design"
+  ],
+  "saved_at": "2026-07-14T06:25:46-0400",
+  "domain": "penpot.app",
+  "og": {
+    "title": "Penpot: The open-source design platform for teams.",
+    "description": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
+    "image": "https://site-assets.plasmic.app/bd5cdab7f749bba987c8de1f2cbdff60.webp"
+  },
+  "enriched_at": "2026-07-14T10:26:35.446175+00:00"
+}
