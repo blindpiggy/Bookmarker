@@ -1,1 +1,19 @@
-{"id":"20260721092308","url":"https://github.com/Atarity/deploy-your-own-saas","title":"GitHub - Atarity/deploy-your-own-saas: List of only yours cloud services for everyday needs :black_flag: · GitHub","annotation":"","tags":["Webdev","software","tools"],"saved_at":"2026-07-21T09:23:08-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260721092308",
+  "url": "https://github.com/Atarity/deploy-your-own-saas",
+  "title": "GitHub - Atarity/deploy-your-own-saas: List of only yours cloud services for everyday needs :black_flag: · GitHub",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "software",
+    "tools"
+  ],
+  "saved_at": "2026-07-21T09:23:08-0400",
+  "domain": "github.com",
+  "og": {
+    "title": "GitHub - Atarity/deploy-your-own-saas: List of \"only yours\" cloud services for everyday needs :black_flag:",
+    "description": "List of \"only yours\" cloud services for everyday needs :black_flag: - Atarity/deploy-your-own-saas",
+    "image": "https://repository-images.githubusercontent.com/203188450/e6477b80-f013-11e9-8e59-e0e0b75ec170"
+  },
+  "enriched_at": "2026-07-23T13:34:21.141435+00:00"
+}

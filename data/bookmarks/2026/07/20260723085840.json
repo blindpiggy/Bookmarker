@@ -1,1 +1,18 @@
-{"id":"20260723085840","url":"https://github.com/awesome-selfhosted/awesome-selfhosted","title":"GitHub - awesome-selfhosted/awesome-selfhosted: A list of Free Software network services and web applications which can be hosted on your own servers · GitHub","annotation":"","tags":["Webdev","tools"],"saved_at":"2026-07-23T08:58:40-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260723085840",
+  "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+  "title": "GitHub - awesome-selfhosted/awesome-selfhosted: A list of Free Software network services and web applications which can be hosted on your own servers · GitHub",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "tools"
+  ],
+  "saved_at": "2026-07-23T08:58:40-0400",
+  "domain": "github.com",
+  "og": {
+    "title": "GitHub - awesome-selfhosted/awesome-selfhosted: A list of Free Software network services and web applications which can be hosted on your own servers",
+    "description": "A list of Free Software network services and web applications which can be hosted on your own servers - awesome-selfhosted/awesome-selfhosted",
+    "image": "https://opengraph.githubassets.com/cb8b39d4d0d1b6a9258ae775aeb140b899483266db22332951fdf83870d23b35/awesome-selfhosted/awesome-selfhosted"
+  },
+  "enriched_at": "2026-07-23T13:34:22.535781+00:00"
+}
