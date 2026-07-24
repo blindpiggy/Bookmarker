@@ -1,1 +1,18 @@
-{"id":"20260724081504","url":"https://www.remitly.com/us/en/landing/global-cost-of-happiness","title":"The Cost of Happiness Around the World | Remitly","annotation":"","tags":["Salary","happiness"],"saved_at":"2026-07-24T08:15:04-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260724081504",
+  "url": "https://www.remitly.com/us/en/landing/global-cost-of-happiness",
+  "title": "The Cost of Happiness Around the World | Remitly",
+  "annotation": "",
+  "tags": [
+    "Salary",
+    "happiness"
+  ],
+  "saved_at": "2026-07-24T08:15:04-0400",
+  "domain": "remitly.com",
+  "og": {
+    "title": "The Cost of Happiness Around the World | Remitly",
+    "description": "We used a framework designed by Purdue University to calculate how much money someone may need to buy 'happiness' in different countries and cities.",
+    "image": "https://cdn.remitly.com/images/v1/img/icon_250x250_eafa15c2d7fcb1c4dd9.GJaJpUFQyIyvTCIY.png"
+  },
+  "enriched_at": "2026-07-24T15:11:01.446895+00:00"
+}
