@@ -1,1 +1,18 @@
-{"id":"20260725075955","url":"https://bitchat.free/","title":"bitchat","annotation":"","tags":["Software","tools"],"saved_at":"2026-07-25T07:59:55-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260725075955",
+  "url": "https://bitchat.free/",
+  "title": "bitchat",
+  "annotation": "",
+  "tags": [
+    "Software",
+    "tools"
+  ],
+  "saved_at": "2026-07-25T07:59:55-0400",
+  "domain": "bitchat.free",
+  "og": {
+    "title": "bitchat",
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-07-25T12:11:30.004435+00:00"
+}

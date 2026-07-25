@@ -1,1 +1,17 @@
-{"id":"20260725080014","url":"https://korben.info/en/india-cuts-internet-demands-removal-bitchat-code.html","title":"India cuts internet, then demands removal of bitchat's code - Korben","annotation":"","tags":["Protest"],"saved_at":"2026-07-25T08:00:14-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260725080014",
+  "url": "https://korben.info/en/india-cuts-internet-demands-removal-bitchat-code.html",
+  "title": "India cuts internet, then demands removal of bitchat's code - Korben",
+  "annotation": "",
+  "tags": [
+    "Protest"
+  ],
+  "saved_at": "2026-07-25T08:00:14-0400",
+  "domain": "korben.info",
+  "og": {
+    "title": "India cuts internet, then demands removal of bitchat's code - Korben",
+    "description": "On July 23 at exactly 11:16 PM, GitHub received a notice from India's Ministry of Home Affairs with a countdown of just 3 hours. What this notice demanded ...",
+    "image": "https://korben.info/inde-ordonne-github-supprimer-bitchat/inde-ordonne-github-supprimer-bitchat-1.png"
+  },
+  "enriched_at": "2026-07-25T12:11:31.214129+00:00"
+}
