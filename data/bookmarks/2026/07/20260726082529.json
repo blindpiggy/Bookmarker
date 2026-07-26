@@ -1,1 +1,18 @@
-{"id":"20260726082529","url":"https://brolly.sh/forecast/8nnvrCD7","title":"brolly.sh","annotation":"","tags":["Weather","tools"],"saved_at":"2026-07-26T08:25:29-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260726082529",
+  "url": "https://brolly.sh/forecast/8nnvrCD7",
+  "title": "brolly.sh",
+  "annotation": "",
+  "tags": [
+    "Weather",
+    "tools"
+  ],
+  "saved_at": "2026-07-26T08:25:29-0400",
+  "domain": "brolly.sh",
+  "og": {
+    "title": "Plain-text weather forecast for Guelph, Wellington County, Ontario, Canada - brolly.sh",
+    "description": "Plain-text weather forecast for Guelph, Wellington County, Ontario, Canada. 7-day forecast, previous day comparison, hourly conditions, UV index, air quality, and pollen data.",
+    "image": null
+  },
+  "enriched_at": "2026-07-26T12:25:47.917889+00:00"
+}
