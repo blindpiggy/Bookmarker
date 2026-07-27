@@ -1,1 +1,18 @@
-{"id":"20260727080434","url":"https://www.mixfont.com/experiments/decoy-font","title":"Decoy Font: A TTF font that hides what you type","annotation":"","tags":["Typography","ai"],"saved_at":"2026-07-27T08:04:34-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260727080434",
+  "url": "https://www.mixfont.com/experiments/decoy-font",
+  "title": "Decoy Font: A TTF font that hides what you type",
+  "annotation": "",
+  "tags": [
+    "Typography",
+    "ai"
+  ],
+  "saved_at": "2026-07-27T08:04:34-0400",
+  "domain": "mixfont.com",
+  "og": {
+    "title": "Decoy Font: A TTF font that hides what you type",
+    "description": "Decoy Font combines every letter with a decoy, making it harder for AI to read what you type. Type a message to try it out or download the TTF directly.",
+    "image": "https://static.mixfont.com/assets/20260715-083635-decoy-font-og-ctfx685m.webp"
+  },
+  "enriched_at": "2026-07-27T12:05:02.501829+00:00"
+}
