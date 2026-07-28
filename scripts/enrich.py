@@ -191,21 +191,24 @@ def _is_enriched(path: Path) -> bool:
         return False
 
 
-def enrich_file(path: Path, dry_run: bool) -> bool:
+def enrich_file(path: Path, dry_run: bool) -> bool | None:
     """
     Enriches a single bookmark JSON file with OG metadata.
-    Returns True on success, False on failure.
+    Returns True on success, False on a real failure (e.g. couldn't write
+    the file back), or None if the file was skipped (unreadable/malformed
+    JSON or missing URL) — skips don't fail the overall run since build.py
+    already tolerates and skips these same files.
     """
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError) as e:
-        print(f"  ✗ Could not read {path.name}: {e}", file=sys.stderr)
-        return False
+        print(f"  ⚠ Skipping {path.name}: {e}", file=sys.stderr)
+        return None
 
     url = data.get("url")
     if not url:
-        print(f"  ✗ No URL in {path.name} — skipping", file=sys.stderr)
-        return False
+        print(f"  ⚠ Skipping {path.name}: no URL", file=sys.stderr)
+        return None
 
     print(f"  → {url}")
 
@@ -260,11 +263,14 @@ def main():
     print(f"Enriching {len(files)} bookmark(s) {label}...\n")
 
     success = 0
+    skipped = 0
     failure = 0
 
     for i, path in enumerate(files):
-        ok = enrich_file(path, dry_run=args.dry_run)
-        if ok:
+        result = enrich_file(path, dry_run=args.dry_run)
+        if result is None:
+            skipped += 1
+        elif result:
             success += 1
         else:
             failure += 1
@@ -274,7 +280,7 @@ def main():
             time.sleep(REQUEST_DELAY)
 
     print(f"\n{'─' * 40}")
-    print(f"Done. {success} enriched, {failure} failed.")
+    print(f"Done. {success} enriched, {skipped} skipped, {failure} failed.")
 
     if failure > 0:
         sys.exit(1)
