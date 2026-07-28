@@ -1,1 +1,19 @@
-{"id":"20260728080052","url":"https://yeptype.com/article/inter-alternatives","title":"Inter alternatives: How to choose a UI font","annotation":"","tags":["Typography","design","webdev "],"saved_at":"2026-07-28T08:00:52-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260728080052",
+  "url": "https://yeptype.com/article/inter-alternatives",
+  "title": "Inter alternatives: How to choose a UI font",
+  "annotation": "",
+  "tags": [
+    "Typography",
+    "design",
+    "webdev "
+  ],
+  "saved_at": "2026-07-28T08:00:52-0400",
+  "domain": "yeptype.com",
+  "og": {
+    "title": "How to choose a UI font (and 10 Inter alternatives)",
+    "description": "Tired of Inter being everywhere? Two real criteria—cap-centered vertical metrics and a tall x-height—for choosing a UI font, plus 10 alternatives from independent foundries.",
+    "image": "https://yeptype.com/og/articles/inter-alternatives.png"
+  },
+  "enriched_at": "2026-07-28T12:08:29.649320+00:00"
+}
