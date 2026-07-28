@@ -356,157 +356,6 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       padding: 15px 20px 170px;
     }}
 
-    /* ── Gradient blur ── */
-    .gradient-blur {{
-      position: fixed;
-      inset: 0;
-      height: 90px;
-      width: 100%;
-      z-index: 5;
-      pointer-events: none;
-      background: linear-gradient(to bottom, var(--bg) 0%, var(--bg) 10%, transparent 100%);
-    }}
-    .gradient-blur > div,
-    .gradient-blur::before,
-    .gradient-blur::after {{
-      position: absolute;
-      inset: 0;
-    }}
-    .gradient-blur::before {{
-      content: "";
-      z-index: 1;
-      -webkit-backdrop-filter: blur(0.5px);
-      backdrop-filter: blur(0.5px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 37.5%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 37.5%);
-    }}
-    .gradient-blur > div:nth-of-type(1) {{
-      z-index: 2;
-      -webkit-backdrop-filter: blur(1px);
-      backdrop-filter: blur(1px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,0) 50%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,0) 50%);
-    }}
-    .gradient-blur > div:nth-of-type(2) {{
-      z-index: 3;
-      -webkit-backdrop-filter: blur(2px);
-      backdrop-filter: blur(2px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 62.5%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 62.5%);
-    }}
-    .gradient-blur > div:nth-of-type(3) {{
-      z-index: 4;
-      -webkit-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,0) 75%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,0) 75%);
-    }}
-    .gradient-blur > div:nth-of-type(4) {{
-      z-index: 5;
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 87.5%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 87.5%);
-    }}
-    .gradient-blur > div:nth-of-type(5) {{
-      z-index: 6;
-      -webkit-backdrop-filter: blur(7px);
-      backdrop-filter: blur(7px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,0) 100%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,0) 100%);
-    }}
-    .gradient-blur > div:nth-of-type(6) {{
-      z-index: 7;
-      -webkit-backdrop-filter: blur(16px);
-      backdrop-filter: blur(16px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,1) 100%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,1) 100%);
-    }}
-    .gradient-blur::after {{
-      content: "";
-      z-index: 8;
-      -webkit-backdrop-filter: blur(24px);
-      backdrop-filter: blur(24px);
-      -webkit-mask: linear-gradient(to top, rgba(255,255,255,0) 87.5%, rgba(255,255,255,1) 100%);
-      mask: linear-gradient(to top, rgba(255,255,255,0) 87.5%, rgba(255,255,255,1) 100%);
-    }}
-
-    /* ── Gradient blur (bottom) ── */
-    .gradient-blur-bottom {{
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 150px;
-      z-index: 5;
-      pointer-events: none;
-      background: linear-gradient(to top, var(--bg) 0%, var(--bg) 10%, transparent 100%);
-    }}
-    .gradient-blur-bottom > div,
-    .gradient-blur-bottom::before,
-    .gradient-blur-bottom::after {{
-      position: absolute;
-      inset: 0;
-    }}
-    .gradient-blur-bottom::before {{
-      content: "";
-      z-index: 1;
-      -webkit-backdrop-filter: blur(0.5px);
-      backdrop-filter: blur(0.5px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 37.5%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 37.5%);
-    }}
-    .gradient-blur-bottom > div:nth-of-type(1) {{
-      z-index: 2;
-      -webkit-backdrop-filter: blur(1px);
-      backdrop-filter: blur(1px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,0) 50%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 12.5%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,0) 50%);
-    }}
-    .gradient-blur-bottom > div:nth-of-type(2) {{
-      z-index: 3;
-      -webkit-backdrop-filter: blur(2px);
-      backdrop-filter: blur(2px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 62.5%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 62.5%);
-    }}
-    .gradient-blur-bottom > div:nth-of-type(3) {{
-      z-index: 4;
-      -webkit-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,0) 75%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 37.5%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,0) 75%);
-    }}
-    .gradient-blur-bottom > div:nth-of-type(4) {{
-      z-index: 5;
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 87.5%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 87.5%);
-    }}
-    .gradient-blur-bottom > div:nth-of-type(5) {{
-      z-index: 6;
-      -webkit-backdrop-filter: blur(7px);
-      backdrop-filter: blur(7px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,0) 100%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 62.5%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,0) 100%);
-    }}
-    .gradient-blur-bottom > div:nth-of-type(6) {{
-      z-index: 7;
-      -webkit-backdrop-filter: blur(16px);
-      backdrop-filter: blur(16px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,1) 100%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 87.5%, rgba(255,255,255,1) 100%);
-    }}
-    .gradient-blur-bottom::after {{
-      content: "";
-      z-index: 8;
-      -webkit-backdrop-filter: blur(24px);
-      backdrop-filter: blur(24px);
-      -webkit-mask: linear-gradient(to bottom, rgba(255,255,255,0) 87.5%, rgba(255,255,255,1) 100%);
-      mask: linear-gradient(to bottom, rgba(255,255,255,0) 87.5%, rgba(255,255,255,1) 100%);
-    }}
-
     /* ── Header ── */
     header {{
       background: rgba(255, 255, 255, 0.80);
@@ -570,37 +419,53 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       gap: 4px;
     }}
 
-    /* kept for JS compat — actual layout uses .header-right */
-
     .search-expand {{
-      overflow: hidden;
-      max-width: 0;
-      opacity: 0;
-      transition: max-width 0.22s ease, opacity 0.18s ease;
+      position: absolute;
+      inset: 0;
+      z-index: 10;
       display: flex;
       align-items: center;
+      gap: 8px;
+      padding: 0 8px 0 18px;
+      background: var(--surface);
+      border-radius: var(--radius-pill);
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.97);
+      transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
     }}
 
     .search-expand.open {{
-      max-width: 240px;
       opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+    }}
+
+    .search-expand-icon {{
+      width: 18px;
+      height: 18px;
+      stroke: var(--text-tertiary);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
     }}
 
     .search-expand input {{
-      width: 210px;
+      flex: 1;
+      min-width: 0;
       font-family: var(--font-sans);
-      font-size: 13px;
-      background: var(--surface);
-      border: 1px solid var(--border-mid);
-      border-radius: var(--radius-sm);
-      padding: 6px 10px;
+      font-size: 14px;
+      background: transparent;
+      border: none;
+      padding: 0;
       color: var(--text-primary);
       outline: none;
-      transition: border-color 0.15s;
     }}
 
     .search-expand input::placeholder {{ color: var(--text-tertiary); }}
-    .search-expand input:focus {{ border-color: var(--accent); }}
 
     .icon-btn {{
       width: 34px;
@@ -1038,9 +903,6 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
         height: 180px;
         order: -1;
       }}
-      .site-name {{ display: none; }}
-      .search-expand.open {{ max-width: 180px; }}
-      .search-expand input {{ width: 160px; }}
     }}
   </style>
 </head>
@@ -1064,33 +926,19 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
         </a>
       </div>
       <div class="header-right">
-        <div class="search-expand" id="searchExpand">
-          <input type="text" id="searchInput" placeholder="Search bookmarks…" aria-label="Search bookmarks" autocomplete="off">
-        </div>
         <button class="icon-btn" id="searchBtn" aria-label="Toggle search (⌘K)">
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
       </div>
     </div>
+    <div class="search-expand" id="searchExpand">
+      <svg class="search-expand-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Search bookmarks…" aria-label="Search bookmarks" autocomplete="off">
+      <button class="icon-btn" id="searchCloseBtn" aria-label="Close search">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
   </header>
-
-  <div class="gradient-blur">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <div class="gradient-blur-bottom">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
 
 <div class="wrapper">
 
@@ -1127,9 +975,10 @@ let visibleCount = PAGE_SIZE;
 let filtered     = [];
 
 // ── Elements ──
-const searchBtn    = document.getElementById('searchBtn');
-const searchExpand = document.getElementById('searchExpand');
-const searchInput  = document.getElementById('searchInput');
+const searchBtn      = document.getElementById('searchBtn');
+const searchExpand   = document.getElementById('searchExpand');
+const searchInput    = document.getElementById('searchInput');
+const searchCloseBtn = document.getElementById('searchCloseBtn');
 const tagBtn       = document.getElementById('tagBtn');
 const tagDropdown  = document.getElementById('tagDropdown');
 const tagPillsWrap = document.getElementById('tagPillsWrap');
@@ -1349,6 +1198,8 @@ function readURL() {{
 searchBtn.addEventListener('click', () => {{
   if (searchOpen) {{ closeSearch(); }} else {{ openSearch(); }}
 }});
+
+searchCloseBtn.addEventListener('click', () => closeSearch());
 
 tagBtn.addEventListener('click', (e) => {{
   e.stopPropagation();
