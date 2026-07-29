@@ -552,20 +552,19 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     }}
 
     /* ── Tag Dropdown ── */
-    .tag-dropdown-wrap {{ position: relative; }}
-
     .tag-dropdown {{
       position: absolute;
       top: calc(100% + 8px);
       left: 0;
+      right: 0;
       background: var(--surface);
       border: 1px solid var(--border-mid);
       border-radius: var(--radius);
       padding: 14px;
-      min-width: 240px;
       display: none;
       z-index: 200;
       box-shadow: var(--shadow-md);
+      overflow-y: auto;
     }}
 
     .tag-dropdown.open {{ display: block; }}
@@ -579,7 +578,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       font-weight: 500;
     }}
 
-    .tag-pills-wrap {{ display: flex; gap: 6px; flex-wrap: wrap; }}
+    .tag-pills-wrap {{ display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }}
 
     .tag-pill {{
       font-size: 12px;
@@ -602,6 +601,24 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       background: var(--accent);
       color: var(--accent-fg);
       border-color: var(--accent);
+    }}
+
+    .tag-pill-md {{
+      font-size: 13px;
+      font-weight: 500;
+      padding: 5px 13px;
+    }}
+
+    .tag-pill-lg {{
+      font-size: 15px;
+      font-weight: 600;
+      padding: 6px 16px;
+    }}
+
+    /* Forces a new row in the flex-wrap pill list at each size-tier boundary */
+    .tag-tier-break {{
+      flex-basis: 100%;
+      height: 0;
     }}
 
     /* ── Feed State ── */
@@ -910,15 +927,9 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
   <header>
     <div class="header-inner">
       <div class="header-left">
-        <div class="tag-dropdown-wrap">
-          <button class="icon-btn" id="tagBtn" aria-label="Filter by tag">
-            <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          </button>
-          <div class="tag-dropdown" id="tagDropdown" role="listbox" aria-label="Filter by tag">
-            <p class="tag-dropdown-heading">Filter by tag</p>
-            <div class="tag-pills-wrap" id="tagPillsWrap"></div>
-          </div>
-        </div>
+        <button class="icon-btn" id="tagBtn" aria-label="Filter by tag">
+          <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        </button>
       </div>
       <div class="header-center">
         <a class="site-brand" href="/">
@@ -930,6 +941,10 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
       </div>
+    </div>
+    <div class="tag-dropdown" id="tagDropdown" role="listbox" aria-label="Filter by tag">
+      <p class="tag-dropdown-heading">Filter by tag</p>
+      <div class="tag-pills-wrap" id="tagPillsWrap"></div>
     </div>
     <div class="search-expand" id="searchExpand">
       <svg class="search-expand-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -988,19 +1003,44 @@ const emptyState   = document.getElementById('emptyState');
 const loadSentinel = document.getElementById('loadSentinel');
 
 // ── Tag pills ──
+// Percentile cutoffs (by rank, not raw count) for the enlarged tiers —
+// raise to shrink how many tags qualify, lower to grow it.
+const TAG_LG_PCT = 0.2;
+const TAG_MD_PCT = 0.5;
+
+function tagSizeClass(count, sortedCounts) {{
+  const n = sortedCounts.length;
+  if (n < 4 || count <= 1) return '';
+  const lgThreshold = sortedCounts[Math.max(0, Math.ceil(n * TAG_LG_PCT) - 1)];
+  const mdThreshold = sortedCounts[Math.max(0, Math.ceil(n * TAG_MD_PCT) - 1)];
+  if (count >= lgThreshold) return 'tag-pill-lg';
+  if (count >= mdThreshold) return 'tag-pill-md';
+  return '';
+}}
+
 function buildTagPills() {{
   tagPillsWrap.innerHTML = '';
-  const allPill = makePill('All', 'all');
-  tagPillsWrap.appendChild(allPill);
+  const sortedCounts = Object.values(TAG_INDEX).slice().sort((a, b) => b - a);
+  let prevTier = null;
   Object.keys(TAG_INDEX).forEach(tag => {{
-    tagPillsWrap.appendChild(makePill(tag, tag));
+    const tier = tagSizeClass(TAG_INDEX[tag], sortedCounts);
+    // Tags are already in count-descending order, so a tier change here
+    // always means "entering the next size band" — force it onto a new
+    // row rather than letting it wrap in wherever it happens to fit.
+    if (prevTier !== null && tier !== prevTier) {{
+      const brk = document.createElement('div');
+      brk.className = 'tag-tier-break';
+      tagPillsWrap.appendChild(brk);
+    }}
+    tagPillsWrap.appendChild(makePill(tag, tier));
+    prevTier = tier;
   }});
 }}
 
-function makePill(label, tag) {{
+function makePill(tag, tier) {{
   const btn = document.createElement('button');
-  btn.className = 'tag-pill' + (activeTag === tag ? ' active' : '');
-  btn.textContent = label;
+  btn.className = 'tag-pill' + (tier ? ' ' + tier : '') + (activeTag === tag ? ' active' : '');
+  btn.textContent = tag;
   btn.dataset.tag = tag;
   btn.addEventListener('click', () => selectTag(tag));
   return btn;
@@ -1038,6 +1078,15 @@ function closeSearch() {{
 function closeDropdown() {{
   dropdownOpen = false;
   tagDropdown.classList.remove('open');
+}}
+
+// Constrains the dropdown to the viewport so it never overflows the
+// bottom edge on short/mobile viewports; the tag list scrolls internally.
+function positionTagDropdown() {{
+  const rect = tagDropdown.getBoundingClientRect();
+  const margin = 16;
+  const available = window.innerHeight - rect.top - margin;
+  tagDropdown.style.maxHeight = Math.max(available, 120) + 'px';
 }}
 
 // ── Filtering ──
@@ -1207,10 +1256,15 @@ tagBtn.addEventListener('click', (e) => {{
   e.stopPropagation();
   dropdownOpen = !dropdownOpen;
   tagDropdown.classList.toggle('open', dropdownOpen);
+  if (dropdownOpen) positionTagDropdown();
 }});
 
 document.addEventListener('click', () => {{ if (dropdownOpen) closeDropdown(); }});
 tagDropdown.addEventListener('click', e => e.stopPropagation());
+
+window.addEventListener('resize', () => {{
+  if (dropdownOpen) positionTagDropdown();
+}});
 
 const toTopBtn = document.getElementById('toTopBtn');
 window.addEventListener('scroll', () => {{
