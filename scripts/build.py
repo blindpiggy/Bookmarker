@@ -457,7 +457,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       flex: 1;
       min-width: 0;
       font-family: var(--font-sans);
-      font-size: 14px;
+      font-size: 16px; /* iOS Safari auto-zooms on focus for inputs under 16px */
       background: transparent;
       border: none;
       padding: 0;
@@ -1020,7 +1020,9 @@ function openSearch() {{
   searchOpen = true;
   searchExpand.classList.add('open');
   searchBtn.classList.add('active');
-  setTimeout(() => searchInput.focus(), 180);
+  // Focus synchronously (not via setTimeout) — mobile Safari only honors
+  // focus() as part of the original user gesture, a deferred call is ignored.
+  searchInput.focus();
 }}
 
 function closeSearch() {{
