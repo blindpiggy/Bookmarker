@@ -1,1 +1,19 @@
-{"id":"20260730081249","url":"https://lurkmoophy.com/product-design/baseline-design-system/","title":"Baseline Design System","annotation":"","tags":["Design","Figma","design systems "],"saved_at":"2026-07-30T08:12:49-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260730081249",
+  "url": "https://lurkmoophy.com/product-design/baseline-design-system/",
+  "title": "Baseline Design System",
+  "annotation": "",
+  "tags": [
+    "Design",
+    "Figma",
+    "design systems "
+  ],
+  "saved_at": "2026-07-30T08:12:49-0400",
+  "domain": "lurkmoophy.com",
+  "og": {
+    "title": "Baseline Design System",
+    "description": "An enterprise-level design system and suite of Figma plugins, built from scratch for zeroheight. This project helped showcase the capabilities of the platform to enable our sales, customer success, and marketing teams.",
+    "image": null
+  },
+  "enriched_at": "2026-07-30T12:30:39.658391+00:00"
+}
