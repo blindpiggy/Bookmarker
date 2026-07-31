@@ -1,1 +1,18 @@
-{"id":"20260730232151","url":"https://tools.rmv.fyi/","title":"delphitools — privacy-first browser tools","annotation":"","tags":["Tools","software"],"saved_at":"2026-07-30T23:21:51-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260730232151",
+  "url": "https://tools.rmv.fyi/",
+  "title": "delphitools — privacy-first browser tools",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "software"
+  ],
+  "saved_at": "2026-07-30T23:21:51-0400",
+  "domain": "tools.rmv.fyi",
+  "og": {
+    "title": "delphitools — privacy-first browser tools",
+    "description": "A collection of small, low stakes and low effort tools. No logins, no registration, no data collection. Everything runs locally in your browser.",
+    "image": "https://delphi.tools/og.png"
+  },
+  "enriched_at": "2026-07-31T03:22:24.138478+00:00"
+}
