@@ -1,1 +1,19 @@
-{"id":"20260731073558","url":"https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations/","title":"Statement on behalf of UEFA and its 55 national associations | UEFA.com","annotation":"","tags":["Uefa","soccer","fifa"],"saved_at":"2026-07-31T07:35:58-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260731073558",
+  "url": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations/",
+  "title": "Statement on behalf of UEFA and its 55 national associations | UEFA.com",
+  "annotation": "",
+  "tags": [
+    "Uefa",
+    "soccer",
+    "fifa"
+  ],
+  "saved_at": "2026-07-31T07:35:58-0400",
+  "domain": "uefa.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-07-31T11:36:32.848459+00:00"
+}
