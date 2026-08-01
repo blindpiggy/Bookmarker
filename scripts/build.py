@@ -717,7 +717,7 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
     }}
 
     /* ── Cards ── */
-    .feed {{ display: flex; flex-direction: column; gap: 12px; }}
+    .feed {{ display: flex; flex-direction: column; gap: 18px; }}
 
     .card {{
       background: var(--surface);
@@ -766,13 +766,6 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       mix-blend-mode: multiply;
     }}
 
-    .card-img-link {{
-      display: block;
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-    }}
-
     .card-body {{
       padding: 14px 16px;
       flex: 1;
@@ -786,6 +779,42 @@ def build_html(bookmarks: list[dict], tag_index: dict) -> str:
       display: flex;
       align-items: center;
       gap: 6px;
+    }}
+
+    .card-copy-btn {{
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      border: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      color: var(--text-tertiary);
+      cursor: pointer;
+      transition: color 0.12s;
+    }}
+
+    .card-copy-btn:hover,
+    .card-copy-btn.copied {{
+      color: var(--text-primary);
+    }}
+
+    .card-copy-label {{
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }}
+
+    .card-copy-icon {{
+      width: 10px;
+      height: 10px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
     }}
 
     .card-meta-domain,
@@ -1149,6 +1178,10 @@ function makeClearPill(label, type, onClear) {{
   return pill;
 }}
 
+// ── Copy-link icons ──
+const COPY_ICON  = '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>';
+const CHECK_ICON = '<polyline points="20 6 9 17 4 12"/>';
+
 // ── Date formatting ──
 function formatDate(iso) {{
   if (!iso) return '';
@@ -1165,7 +1198,7 @@ function renderCard(b) {{
   article.setAttribute('data-source', b.id);
 
   const imgHTML = (b.image && !b.image.endsWith('/'))
-    ? `<div class="card-img"><a class="card-img-link" href="${{b.url}}"{link_target}{link_rel}><img src="${{b.image}}" alt="" loading="lazy" onerror="this.closest('.card-img').style.display='none'"></a></div>`
+    ? `<div class="card-img"><img src="${{b.image}}" alt="" loading="lazy" onerror="this.closest('.card-img').style.display='none'"></div>`
     : '';
 
   const tagsHTML = (b.tags || [])
@@ -1187,6 +1220,11 @@ function renderCard(b) {{
         ${{priorDatesHTML}}<span class="card-meta-date">${{formatDate(b.date)}}</span>
         ${{b.domain ? '<span class="card-meta-sep">·</span>' : ''}}
         <span class="card-meta-domain">${{b.domain || ''}}</span>
+        <span class="card-meta-sep">·</span>
+        <button class="card-copy-btn" type="button" data-url="${{b.url}}" aria-label="Copy link">
+          <svg class="card-copy-icon" viewBox="0 0 24 24">${{COPY_ICON}}</svg>
+          <span class="card-copy-label">Copy</span>
+        </button>
       </div>
       <h2 class="card-title"><a class="card-title-link" href="${{b.url}}"{link_target}{link_rel}>${{b.title || 'Untitled'}}</a></h2>
       ${{excerptHTML}}
@@ -1274,7 +1312,57 @@ toTopBtn.addEventListener('click', () => {{
   window.scrollTo({{ top: 0, behavior: 'smooth' }});
 }});
 
+// Clipboard-write can silently reject (insecure context, no document focus,
+// permission denied) — fall back to a hidden-textarea + execCommand copy
+// rather than leaving the user with nothing on their clipboard.
+function fallbackCopyText(text) {{
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.top = '-1000px';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  let ok = false;
+  try {{ ok = document.execCommand('copy'); }} catch (e) {{ ok = false; }}
+  document.body.removeChild(ta);
+  return ok;
+}}
+
+function showCopied(btn) {{
+  const icon  = btn.querySelector('.card-copy-icon');
+  const label = btn.querySelector('.card-copy-label');
+  clearTimeout(btn._copyTimeout);
+  btn.classList.add('copied');
+  icon.innerHTML = CHECK_ICON;
+  label.textContent = 'Copied!';
+  btn._copyTimeout = setTimeout(() => {{
+    btn.classList.remove('copied');
+    icon.innerHTML = COPY_ICON;
+    label.textContent = 'Copy';
+  }}, 1500);
+}}
+
+function copyLink(btn) {{
+  const url = btn.dataset.url;
+  if (navigator.clipboard && navigator.clipboard.writeText) {{
+    navigator.clipboard.writeText(url).then(
+      () => showCopied(btn),
+      () => {{ if (fallbackCopyText(url)) showCopied(btn); }}
+    );
+  }} else if (fallbackCopyText(url)) {{
+    showCopied(btn);
+  }}
+}}
+
 feed.addEventListener('click', (e) => {{
+  const copyBtn = e.target.closest('.card-copy-btn');
+  if (copyBtn) {{
+    e.stopPropagation();
+    copyLink(copyBtn);
+    return;
+  }}
   const tagEl = e.target.closest('.card-tag');
   if (tagEl && tagEl.dataset.tag) {{
     selectTag(tagEl.dataset.tag);
