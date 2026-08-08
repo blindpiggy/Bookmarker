@@ -1,1 +1,18 @@
-{"id":"20260807234059","url":"https://davidpoblador.com/deep-dives/what-happened-to-the-frontend/","title":"The Descent — What Happened to the Frontend While You Weren't Watching","annotation":"","tags":["Webdev","frameworks "],"saved_at":"2026-08-07T23:40:59-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260807234059",
+  "url": "https://davidpoblador.com/deep-dives/what-happened-to-the-frontend/",
+  "title": "The Descent — What Happened to the Frontend While You Weren't Watching",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "frameworks "
+  ],
+  "saved_at": "2026-08-07T23:40:59-0400",
+  "domain": "davidpoblador.com",
+  "og": {
+    "title": "The Descent — What Happened to the Frontend While You Weren't Watching",
+    "description": "The last time you wrote one it was a <button> and an FTP upload — spare twenty minutes and get up to speed on everything the web did while you looked away.",
+    "image": "https://davidpoblador.com/s/img/og.jpg?v=1645de89b372f8db660c7440b4b2105a"
+  },
+  "enriched_at": "2026-08-08T03:43:47.289429+00:00"
+}
