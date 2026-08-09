@@ -1,1 +1,18 @@
-{"id":"20260809070142","url":"https://opendaw.org/en","title":"openDAW | Free Open-Source DAW in Your Browser","annotation":"","tags":["Tools","music"],"saved_at":"2026-08-09T07:01:42-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260809070142",
+  "url": "https://opendaw.org/en",
+  "title": "openDAW | Free Open-Source DAW in Your Browser",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "music"
+  ],
+  "saved_at": "2026-08-09T07:01:42-0400",
+  "domain": "opendaw.org",
+  "og": {
+    "title": "openDAW: Musikproduktion im Browser, kostenlos und quelloffen",
+    "description": "Kostenlose, quelloffene Digital Audio Workstation im Browser. Ohne Installation, ohne Account und DSGVO-konform, ideal für den Musikunterricht an Schulen.",
+    "image": "https://opendaw.org/meta.jpg"
+  },
+  "enriched_at": "2026-08-09T11:02:05.479112+00:00"
+}
