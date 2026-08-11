@@ -1,1 +1,18 @@
-{"id":"20260811135605","url":"https://john-mrty.github.io/Trace/","title":"Trace — a quiet place to write","annotation":"","tags":["Tools","writing"],"saved_at":"2026-08-11T13:56:05-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260811135605",
+  "url": "https://john-mrty.github.io/Trace/",
+  "title": "Trace — a quiet place to write",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "writing"
+  ],
+  "saved_at": "2026-08-11T13:56:05-0400",
+  "domain": "john-mrty.github.io",
+  "og": {
+    "title": "Trace — a quiet place to write",
+    "description": "A minimal Markdown writer for macOS. The marks fade as you type. Plain files, no chrome, no lock-in.",
+    "image": "https://john-mrty.github.io/Trace/trace-social.png"
+  },
+  "enriched_at": "2026-08-11T17:56:26.226545+00:00"
+}
