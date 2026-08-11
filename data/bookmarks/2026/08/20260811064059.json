@@ -1,1 +1,18 @@
-{"id":"20260811064059","url":"https://doodlescan.rknight.me/","title":"Doodle Scan","annotation":"","tags":["Tools","drawing"],"saved_at":"2026-08-11T06:40:59-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260811064059",
+  "url": "https://doodlescan.rknight.me/",
+  "title": "Doodle Scan",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "drawing"
+  ],
+  "saved_at": "2026-08-11T06:40:59-0400",
+  "domain": "doodlescan.rknight.me",
+  "og": {
+    "title": "Doodle Scan",
+    "description": "Remove the paper background from your doodles, sketches, and drawings",
+    "image": "https://doodlescan.rknight.me/icons/preview.jpg"
+  },
+  "enriched_at": "2026-08-11T10:43:39.109753+00:00"
+}
