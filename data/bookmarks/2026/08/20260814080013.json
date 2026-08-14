@@ -1,1 +1,17 @@
-{"id":"20260814080013","url":"https://www.theatlantic.com/technology/2026/08/openai-hacks-panic/688264/?gift=mWSL2ZcKH-wayfqKylLB3MZ9WZwOAURCKsvHoocKrtc","title":"It May Be Time to Panic About AI - The Atlantic","annotation":"","tags":["Ai"],"saved_at":"2026-08-14T08:00:13-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260814080013",
+  "url": "https://www.theatlantic.com/technology/2026/08/openai-hacks-panic/688264/?gift=mWSL2ZcKH-wayfqKylLB3MZ9WZwOAURCKsvHoocKrtc",
+  "title": "It May Be Time to Panic About AI - The Atlantic",
+  "annotation": "",
+  "tags": [
+    "Ai"
+  ],
+  "saved_at": "2026-08-14T08:00:13-0400",
+  "domain": "theatlantic.com",
+  "og": {
+    "title": "It May Be Time to Panic About AI",
+    "description": "Bots are starting to conspire with one another. Can they be reeled back in?",
+    "image": "https://cdn.theatlantic.com/thumbor/Y-vLkLI0cVT8A-39filV70gHpdg=/0x40:1999x1081/1200x625/media/img/mt/2026/08/2026_08_12_AI_mpg/original.gif"
+  },
+  "enriched_at": "2026-08-14T12:10:35.837763+00:00"
+}

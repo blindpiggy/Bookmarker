@@ -1,1 +1,18 @@
-{"id":"20260814075153","url":"https://www.rexandpress.com/","title":"REX&PRESS","annotation":"","tags":["Printmaker","Linocut "],"saved_at":"2026-08-14T07:51:53-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260814075153",
+  "url": "https://www.rexandpress.com/",
+  "title": "REX&PRESS",
+  "annotation": "",
+  "tags": [
+    "Printmaker",
+    "Linocut "
+  ],
+  "saved_at": "2026-08-14T07:51:53-0400",
+  "domain": "rexandpress.com",
+  "og": {
+    "title": "REX&PRESS",
+    "description": "Rex&Press is the studio and publishing imprint of visual artist Jurriaan Rexwinkel. \"Smudges tell better stories than perfection\"",
+    "image": "https://assets.bigcartel.com/account_images/7895328/IMG_6562.jpeg?auto=format&fit=max&h=1200&w=1200"
+  },
+  "enriched_at": "2026-08-14T12:10:34.710834+00:00"
+}
