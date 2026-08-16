@@ -1,1 +1,18 @@
-{"id":"20260815204348","url":"https://www.aaronawad.com/pattern/","title":"Pattern library — Aaron Awad","annotation":"","tags":["webdev","design"],"saved_at":"2026-08-15T20:43:48-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260815204348",
+  "url": "https://www.aaronawad.com/pattern/",
+  "title": "Pattern library — Aaron Awad",
+  "annotation": "",
+  "tags": [
+    "webdev",
+    "design"
+  ],
+  "saved_at": "2026-08-15T20:43:48-0400",
+  "domain": "aaronawad.com",
+  "og": {
+    "title": "Pattern library",
+    "description": "A sample page containing all of the styles and elements available.",
+    "image": "https://aaronawad.com/pattern/default.png"
+  },
+  "enriched_at": "2026-08-16T00:44:11.183657+00:00"
+}
