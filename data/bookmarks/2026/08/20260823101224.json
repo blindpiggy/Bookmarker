@@ -1,1 +1,17 @@
-{"id":"20260823101224","url":"https://crispmac.app/","title":"Crisp: Free BetterDisplay & Lunar alternative for macOS","annotation":"","tags":["Tools"],"saved_at":"2026-08-23T10:12:24-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260823101224",
+  "url": "https://crispmac.app/",
+  "title": "Crisp: Free BetterDisplay & Lunar alternative for macOS",
+  "annotation": "",
+  "tags": [
+    "Tools"
+  ],
+  "saved_at": "2026-08-23T10:12:24-0400",
+  "domain": "crispmac.app",
+  "og": {
+    "title": "Crisp: Free BetterDisplay & Lunar alternative for macOS",
+    "description": "A free, open-source alternative to BetterDisplay and Lunar: DDC brightness, HiDPI scaling, presets, virtual displays, and arrangement, all in the menu bar.",
+    "image": "https://crispmac.app/og-card.png"
+  },
+  "enriched_at": "2026-08-23T14:12:45.854014+00:00"
+}
