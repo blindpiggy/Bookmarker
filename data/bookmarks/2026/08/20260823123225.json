@@ -1,1 +1,18 @@
-{"id":"20260823123225","url":"https://gxace.com/gxp1","title":"GX-P1 — [Gx]Ace","annotation":"","tags":["Photography","cameras"],"saved_at":"2026-08-23T12:32:25-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260823123225",
+  "url": "https://gxace.com/gxp1",
+  "title": "GX-P1 — [Gx]Ace",
+  "annotation": "",
+  "tags": [
+    "Photography",
+    "cameras"
+  ],
+  "saved_at": "2026-08-23T12:32:25-0400",
+  "domain": "gxace.com",
+  "og": {
+    "title": "GX-P1 — [Gx]Ace",
+    "description": "",
+    "image": "http://static1.squarespace.com/static/57c9d27a2e69cfea32321660/t/6a5e6f656adfc16e57860245/1784573801330/Screenshot+2026-07-20+at+14.56.32.png?format=1500w"
+  },
+  "enriched_at": "2026-08-23T16:32:47.405119+00:00"
+}
