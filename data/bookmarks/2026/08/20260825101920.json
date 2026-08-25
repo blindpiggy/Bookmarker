@@ -1,1 +1,18 @@
-{"id":"20260825101920","url":"https://extract.pics/","title":"Image Extractor - extract.pics","annotation":"","tags":["Tools","software "],"saved_at":"2026-08-25T10:19:20-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260825101920",
+  "url": "https://extract.pics/",
+  "title": "Image Extractor - extract.pics",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "software "
+  ],
+  "saved_at": "2026-08-25T10:19:20-0400",
+  "domain": "extract.pics",
+  "og": {
+    "title": "extract.pics",
+    "description": "extract.pics is a free tool to extract, view and download images from any public website by using a virtual browser. Now with an easy-to-use API.",
+    "image": "https://extract.pics/img/preview.png"
+  },
+  "enriched_at": "2026-08-25T14:19:40.866632+00:00"
+}
