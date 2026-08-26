@@ -1,1 +1,18 @@
-{"id":"20260826084100","url":"https://meet.jit.si/","title":"Jitsi Meet","annotation":"Alternative to Google Meet/Zoom","tags":["tools","software"],"saved_at":"2026-08-26T08:41:00-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260826084100",
+  "url": "https://meet.jit.si/",
+  "title": "Jitsi Meet",
+  "annotation": "Alternative to Google Meet/Zoom",
+  "tags": [
+    "tools",
+    "software"
+  ],
+  "saved_at": "2026-08-26T08:41:00-0400",
+  "domain": "meet.jit.si",
+  "og": {
+    "title": "Jitsi Meet",
+    "description": "Join a WebRTC video conference powered by the Jitsi Videobridge",
+    "image": "https://meet.jit.si/images/jitsilogo.png?v=1"
+  },
+  "enriched_at": "2026-08-26T12:43:08.533538+00:00"
+}
