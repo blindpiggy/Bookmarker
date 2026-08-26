@@ -1,1 +1,18 @@
-{"id":"20260826075139","url":"https://piccalil.li/blog/the-open-source-design-stack/","title":"The open source design stack - Piccalilli","annotation":"","tags":["Tools","open source"],"saved_at":"2026-08-26T07:51:39-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260826075139",
+  "url": "https://piccalil.li/blog/the-open-source-design-stack/",
+  "title": "The open source design stack - Piccalilli",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "open source"
+  ],
+  "saved_at": "2026-08-26T07:51:39-0400",
+  "domain": "piccalil.li",
+  "og": {
+    "title": "The open source design stack",
+    "description": "Scott Riley tested free and open source design tools out when researching his course, Mindful Design. They actually worked out better than Figma ever could, as he explains in this article with loads of options for you.",
+    "image": "https://piccalil.b-cdn.net/api/og-image?slug=the-open-source-design-stack/"
+  },
+  "enriched_at": "2026-08-26T11:52:00.690963+00:00"
+}
