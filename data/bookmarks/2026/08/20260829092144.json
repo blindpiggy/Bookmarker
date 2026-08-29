@@ -1,1 +1,19 @@
-{"id":"20260829092144","url":"https://method.ac/","title":"Welcome to Method of Action","annotation":"","tags":["Design","tools","games"],"saved_at":"2026-08-29T09:21:44-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260829092144",
+  "url": "https://method.ac/",
+  "title": "Welcome to Method of Action",
+  "annotation": "",
+  "tags": [
+    "Design",
+    "tools",
+    "games"
+  ],
+  "saved_at": "2026-08-29T09:21:44-0400",
+  "domain": "method.ac",
+  "og": {
+    "title": "Method of Action",
+    "description": "Method of Action is education made fun",
+    "image": ""
+  },
+  "enriched_at": "2026-08-29T13:22:04.415736+00:00"
+}
