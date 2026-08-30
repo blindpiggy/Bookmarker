@@ -1,1 +1,18 @@
-{"id":"20260830165338","url":"https://namecheck.fontdata.com/","title":"fontdata: typeface name check","annotation":"","tags":["tools","fonts"],"saved_at":"2026-08-30T16:53:38-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260830165338",
+  "url": "https://namecheck.fontdata.com/",
+  "title": "fontdata: typeface name check",
+  "annotation": "",
+  "tags": [
+    "tools",
+    "fonts"
+  ],
+  "saved_at": "2026-08-30T16:53:38-0400",
+  "domain": "namecheck.fontdata.com",
+  "og": {
+    "title": "fontdata: typeface name check",
+    "description": "Designing a new typeface and wondering if the name is already taken?",
+    "image": "https://namecheck.fontdata.com/ogimagev1.png"
+  },
+  "enriched_at": "2026-08-30T20:54:06.007933+00:00"
+}
