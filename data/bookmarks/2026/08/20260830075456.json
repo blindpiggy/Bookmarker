@@ -1,1 +1,18 @@
-{"id":"20260830075456","url":"https://www.blockforest.co.uk/","title":"Linocut Prints & Illustrations by Blockforest","annotation":"","tags":["Linocut","printmaking "],"saved_at":"2026-08-30T07:54:56-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260830075456",
+  "url": "https://www.blockforest.co.uk/",
+  "title": "Linocut Prints & Illustrations by Blockforest",
+  "annotation": "",
+  "tags": [
+    "Linocut",
+    "printmaking "
+  ],
+  "saved_at": "2026-08-30T07:54:56-0400",
+  "domain": "blockforest.co.uk",
+  "og": {
+    "title": "Linocut Prints & Illustrations by Blockforest",
+    "description": "Blockforest (aka Mike Black) is a UK-based freelance printmaker, artist and graphic designer drawing inspiration from folklore, horror and mythology. Produced in his South Devon studio, he produces linocut and digital works for print, film and as decorative art.",
+    "image": "http://www.blockforest.co.uk/cdn/shop/files/BF_LOGO-min.png?height=628&pad_color=ffffff&v=1741968850&width=1200"
+  },
+  "enriched_at": "2026-08-30T11:58:13.798166+00:00"
+}
