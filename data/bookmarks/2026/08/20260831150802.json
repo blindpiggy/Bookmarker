@@ -1,1 +1,18 @@
-{"id":"20260831150802","url":"https://www.donkilpatrick.com/","title":"Don Kilpatrick III","annotation":"","tags":["Printmaking","artist"],"saved_at":"2026-08-31T15:08:02-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260831150802",
+  "url": "https://www.donkilpatrick.com/",
+  "title": "Don Kilpatrick III",
+  "annotation": "",
+  "tags": [
+    "Printmaking",
+    "artist"
+  ],
+  "saved_at": "2026-08-31T15:08:02-0400",
+  "domain": "donkilpatrick.com",
+  "og": {
+    "title": "Don Kilpatrick III",
+    "description": "",
+    "image": null
+  },
+  "enriched_at": "2026-08-31T19:08:30.442041+00:00"
+}
