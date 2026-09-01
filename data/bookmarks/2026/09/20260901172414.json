@@ -1,1 +1,18 @@
-{"id":"20260901172414","url":"https://www.minoradventures.co/blog/the-making-of-cursors-icons","title":"The Making of Cursor's Icons – Minor Adventures","annotation":"","tags":["Design","icons"],"saved_at":"2026-09-01T17:24:14-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260901172414",
+  "url": "https://www.minoradventures.co/blog/the-making-of-cursors-icons",
+  "title": "The Making of Cursor's Icons – Minor Adventures",
+  "annotation": "",
+  "tags": [
+    "Design",
+    "icons"
+  ],
+  "saved_at": "2026-09-01T17:24:14-0400",
+  "domain": "minoradventures.co",
+  "og": {
+    "title": "The Making of Cursor's Icons",
+    "description": "A year of drawing, testing, and shipping a complete icon system for the world's favourite coding agent.",
+    "image": "https://minoradventures.co/images/blog/the-making-of-cursors-icons/hero.png"
+  },
+  "enriched_at": "2026-09-01T21:24:34.954121+00:00"
+}
