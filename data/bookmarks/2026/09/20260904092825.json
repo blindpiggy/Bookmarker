@@ -1,1 +1,18 @@
-{"id":"20260904092825","url":"https://www.normaltools.com/?ref=sidebar","title":"Normal Tools — Useful online tools, no nonsense","annotation":"","tags":["tools","software"],"saved_at":"2026-09-04T09:28:25-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260904092825",
+  "url": "https://www.normaltools.com/?ref=sidebar",
+  "title": "Normal Tools — Useful online tools, no nonsense",
+  "annotation": "",
+  "tags": [
+    "tools",
+    "software"
+  ],
+  "saved_at": "2026-09-04T09:28:25-0400",
+  "domain": "normaltools.com",
+  "og": {
+    "title": "Normal Tools — Useful online tools, no nonsense",
+    "description": "Small, useful online tools that work directly in your browser.",
+    "image": "https://normaltools.com/opengraph-image.png?1b997219a1f9686d"
+  },
+  "enriched_at": "2026-09-04T13:30:26.813640+00:00"
+}

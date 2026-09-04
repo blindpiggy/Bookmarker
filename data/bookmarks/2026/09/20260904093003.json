@@ -1,1 +1,19 @@
-{"id":"20260904093003","url":"https://www.renebieder.com/","title":"Studio Rene Bieder — Retail and Custom Type Design","annotation":"","tags":["fonts","typeface","design"],"saved_at":"2026-09-04T09:30:03-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260904093003",
+  "url": "https://www.renebieder.com/",
+  "title": "Studio Rene Bieder — Retail and Custom Type Design",
+  "annotation": "",
+  "tags": [
+    "fonts",
+    "typeface",
+    "design"
+  ],
+  "saved_at": "2026-09-04T09:30:03-0400",
+  "domain": "renebieder.com",
+  "og": {
+    "title": "Studio René Bieder",
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-09-04T13:30:28.148950+00:00"
+}
