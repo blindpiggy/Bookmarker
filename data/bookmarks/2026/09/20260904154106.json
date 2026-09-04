@@ -1,1 +1,19 @@
-{"id":"20260904154106","url":"https://reverb.com/featured/telecaster75?ref=simplebits.com","title":"75 years of the Telecaster | Reverb","annotation":"","tags":["Film","music","guitar"],"saved_at":"2026-09-04T15:41:06-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260904154106",
+  "url": "https://reverb.com/featured/telecaster75?ref=simplebits.com",
+  "title": "75 years of the Telecaster | Reverb",
+  "annotation": "",
+  "tags": [
+    "Film",
+    "music",
+    "guitar"
+  ],
+  "saved_at": "2026-09-04T15:41:06-0400",
+  "domain": "reverb.com",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-09-04T19:41:25.009532+00:00"
+}
