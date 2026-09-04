@@ -1,1 +1,20 @@
-{"id":"20260904072451","url":"https://hicks.design/journal/jacket-app","title":"Jacket App - Hicks.design","annotation":"","tags":["Music","tools","software","ai"],"saved_at":"2026-09-04T07:24:51-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260904072451",
+  "url": "https://hicks.design/journal/jacket-app",
+  "title": "Jacket App - Hicks.design",
+  "annotation": "",
+  "tags": [
+    "Music",
+    "tools",
+    "software",
+    "ai"
+  ],
+  "saved_at": "2026-09-04T07:24:51-0400",
+  "domain": "hicks.design",
+  "og": {
+    "title": "Jacket App - Hicks.design",
+    "description": "A music app that almost does everything I want it to? Too good to be true?",
+    "image": "https://hicks.design/media/pages/journal/jacket-app/87973e4048-1786564334/jacket_splitview_cover.webp"
+  },
+  "enriched_at": "2026-09-04T11:25:16.571769+00:00"
+}
