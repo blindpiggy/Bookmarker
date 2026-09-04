@@ -1,1 +1,19 @@
-{"id":"20260904153036","url":"https://slam.co/","title":"SLAM & CO","annotation":"","tags":["Tools","design","product "],"saved_at":"2026-09-04T15:30:36-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260904153036",
+  "url": "https://slam.co/",
+  "title": "SLAM & CO",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "design",
+    "product "
+  ],
+  "saved_at": "2026-09-04T15:30:36-0400",
+  "domain": "slam.co",
+  "og": {
+    "title": "SLAM & CO",
+    "description": "For those creating their own paths.",
+    "image": "https://slam.co/social-image.png"
+  },
+  "enriched_at": "2026-09-04T19:37:56.697280+00:00"
+}
