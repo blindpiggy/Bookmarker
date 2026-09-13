@@ -1,1 +1,18 @@
-{"id":"20260913090527","url":"https://ronaldsvilcins.com/2026/08/30/native-html-and-css-features-that-replaced-javascript/","title":"Native HTML and CSS Features That Replaced JavaScript · Ronalds Vilciņš","annotation":"","tags":["CSS","webdev"],"saved_at":"2026-09-13T09:05:27-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260913090527",
+  "url": "https://ronaldsvilcins.com/2026/08/30/native-html-and-css-features-that-replaced-javascript/",
+  "title": "Native HTML and CSS Features That Replaced JavaScript · Ronalds Vilciņš",
+  "annotation": "",
+  "tags": [
+    "CSS",
+    "webdev"
+  ],
+  "saved_at": "2026-09-13T09:05:27-0400",
+  "domain": "ronaldsvilcins.com",
+  "og": {
+    "title": "Native HTML and CSS Features That Replaced JavaScript · Ronalds Vilciņš",
+    "description": "Replace common JavaScript components with native HTML and CSS, from disclosures and dialogs to container queries and scroll effects.",
+    "image": "https://ronaldsvilcins.com/og_base_hu_c82bc8e7a75104b6.png"
+  },
+  "enriched_at": "2026-09-13T13:05:46.726980+00:00"
+}
