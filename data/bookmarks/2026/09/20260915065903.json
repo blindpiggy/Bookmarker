@@ -1,1 +1,19 @@
-{"id":"20260915065903","url":"https://roland50.studio/","title":"Roland50.studio","annotation":"","tags":["Music","tools","software "],"saved_at":"2026-09-15T06:59:03-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260915065903",
+  "url": "https://roland50.studio/",
+  "title": "Roland50.studio",
+  "annotation": "",
+  "tags": [
+    "Music",
+    "tools",
+    "software "
+  ],
+  "saved_at": "2026-09-15T06:59:03-0400",
+  "domain": "roland50.studio",
+  "og": {
+    "title": "Roland50.studio",
+    "description": "Emulate the sound of Roland's most famous and influential musical instruments from Yuri Suzuki and Roland.",
+    "image": "https://roland50.studio/card-facebook.png"
+  },
+  "enriched_at": "2026-09-15T10:59:25.443209+00:00"
+}
