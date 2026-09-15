@@ -1,1 +1,20 @@
-{"id":"20260915083728","url":"https://maggieappleton.com/planning-agents?ref=sidebar","title":"Planning with Agents: Divided Worlds, Boundary Objects, and Thicker Interfaces","annotation":"","tags":["Ai","ui","design","tools"],"saved_at":"2026-09-15T08:37:28-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260915083728",
+  "url": "https://maggieappleton.com/planning-agents?ref=sidebar",
+  "title": "Planning with Agents: Divided Worlds, Boundary Objects, and Thicker Interfaces",
+  "annotation": "",
+  "tags": [
+    "Ai",
+    "ui",
+    "design",
+    "tools"
+  ],
+  "saved_at": "2026-09-15T08:37:28-0400",
+  "domain": "maggieappleton.com",
+  "og": {
+    "title": "Planning with Agents: Divided Worlds, Boundary Objects, and Thicker Interfaces",
+    "description": "Why we need richer, thicker interfaces and better boundary objects for collaborative planning with agents",
+    "image": "https://maggieappleton.com/og/planning-agents.png"
+  },
+  "enriched_at": "2026-09-15T12:38:16.932760+00:00"
+}
