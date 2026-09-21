@@ -1,1 +1,19 @@
-{"id":"20260921134056","url":"https://www.crowdsupply.com/open-tools/openprinter","title":"Openprinter | Crowd Supply","annotation":"","tags":["Tools","open source","hardware"],"saved_at":"2026-09-21T13:40:56-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260921134056",
+  "url": "https://www.crowdsupply.com/open-tools/openprinter",
+  "title": "Openprinter | Crowd Supply",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "open source",
+    "hardware"
+  ],
+  "saved_at": "2026-09-21T13:40:56-0400",
+  "domain": "crowdsupply.com",
+  "og": {
+    "title": "Openprinter",
+    "description": "Finally, an open hardware printer you can actually understand, repair, and upgrade",
+    "image": "https://www.crowdsupply.com/img/22e5/3d43da42-ffae-4c0f-9336-79fa631f22e5_open-graph.jpg"
+  },
+  "enriched_at": "2026-09-21T17:41:25.592395+00:00"
+}
