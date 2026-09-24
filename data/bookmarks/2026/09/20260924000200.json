@@ -1,1 +1,18 @@
-{"id":"20260924000200","url":"https://dexie.org/cloud","title":"Dexie Cloud — Turn your App into a SaaS in minutes | Offline-First Sync Platform | Dexie.js - Offline-First Database for JavaScript","annotation":"","tags":["Software","tools"],"saved_at":"2026-09-24T00:02:00-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260924000200",
+  "url": "https://dexie.org/cloud",
+  "title": "Dexie Cloud — Turn your App into a SaaS in minutes | Offline-First Sync Platform | Dexie.js - Offline-First Database for JavaScript",
+  "annotation": "",
+  "tags": [
+    "Software",
+    "tools"
+  ],
+  "saved_at": "2026-09-24T00:02:00-0400",
+  "domain": "dexie.org",
+  "og": {
+    "title": "Dexie Cloud — Turn your app into a SaaS in minutes",
+    "description": "Add sync, auth, and collaboration to your app in minutes. No backend development needed. The world's best offline-first sync platform.",
+    "image": "https://dexie.org/assets/images/og-images/og-base.png"
+  },
+  "enriched_at": "2026-09-24T04:02:28.715304+00:00"
+}
