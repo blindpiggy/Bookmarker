@@ -1,1 +1,18 @@
-{"id":"20260924215717","url":"https://bsky.app/profile/kevinpowell.co/post/3mwbekgftys2o","title":"@kevinpowell.co on Bluesky","annotation":"","tags":["CSS","webdev "],"saved_at":"2026-09-24T21:57:17-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260924215717",
+  "url": "https://bsky.app/profile/kevinpowell.co/post/3mwbekgftys2o",
+  "title": "@kevinpowell.co on Bluesky",
+  "annotation": "",
+  "tags": [
+    "CSS",
+    "webdev "
+  ],
+  "saved_at": "2026-09-24T21:57:17-0400",
+  "domain": "bsky.app",
+  "og": {
+    "title": "Kevin Powell (@kevinpowell.co)",
+    "description": "A quick look at how the `lh` unit can make styling textareas a lot easier, and a quick look at field-sizing which makes something that was very hard, very easy 😊",
+    "image": "https://video.bsky.app/watch/did%3Aplc%3Axbj7qbl7qmoo7dpf5dheplex/bafkreihzxhjki5ynr3hbingwhngd3unpfb5krlkr2ybvtekhm2xqyyebwi/thumbnail.jpg"
+  },
+  "enriched_at": "2026-09-26T09:42:42.472717+00:00"
+}
