@@ -1,1 +1,18 @@
-{"id":"20260928141201","url":"https://www.brianbiggs.com/","title":"Brian Biggs | words & pictures","annotation":"","tags":["Illustrator","artist"],"saved_at":"2026-09-28T14:12:01-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20260928141201",
+  "url": "https://www.brianbiggs.com/",
+  "title": "Brian Biggs | words & pictures",
+  "annotation": "",
+  "tags": [
+    "Illustrator",
+    "artist"
+  ],
+  "saved_at": "2026-09-28T14:12:01-0400",
+  "domain": "brianbiggs.com",
+  "og": {
+    "title": "Brian Biggs | words & pictures",
+    "description": "",
+    "image": "http://static1.squarespace.com/static/61c0ebee51d8bc2b8fa4772b/t/61d5f0c52e66a400c00c37c7/1641410757239/BrianBiggs-social.jpg?format=1500w"
+  },
+  "enriched_at": "2026-09-28T18:12:25.616352+00:00"
+}
