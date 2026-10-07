@@ -1,1 +1,19 @@
-{"id":"20261007085425","url":"https://getartcraft.com/apps","title":"Crafting Apps: open-source creative tools — ArtCraft","annotation":"","tags":["tools","software","open source"],"saved_at":"2026-10-07T08:54:25-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261007085425",
+  "url": "https://getartcraft.com/apps",
+  "title": "Crafting Apps: open-source creative tools — ArtCraft",
+  "annotation": "",
+  "tags": [
+    "tools",
+    "software",
+    "open source"
+  ],
+  "saved_at": "2026-10-07T08:54:25-0400",
+  "domain": "getartcraft.com",
+  "og": {
+    "title": "Crafting Apps: open-source creative tools",
+    "description": "Image editing, vector illustration, video, photography, PDFs, motion graphics and page layout: seven native, open-source apps from the ArtCraft team, built in Rust and free to use.",
+    "image": "https://getartcraft.com/images/apps/og.jpg"
+  },
+  "enriched_at": "2026-10-07T12:54:50.211352+00:00"
+}
