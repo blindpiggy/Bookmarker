@@ -1,1 +1,18 @@
-{"id":"20261013200618","url":"https://typography.damato.design/","title":"CSS Typesetting: The Math Parts | typography.damato.design","annotation":"","tags":["CSS","typography"],"saved_at":"2026-10-13T20:06:18-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261013200618",
+  "url": "https://typography.damato.design/",
+  "title": "CSS Typesetting: The Math Parts | typography.damato.design",
+  "annotation": "",
+  "tags": [
+    "CSS",
+    "typography"
+  ],
+  "saved_at": "2026-10-13T20:06:18-0400",
+  "domain": "typography.damato.design",
+  "og": {
+    "title": "CSS Typesetting: The Math Parts",
+    "description": "Recommendations for typography on the web.",
+    "image": "https://typography.damato.design/og/index.png"
+  },
+  "enriched_at": "2026-10-14T00:06:37.306638+00:00"
+}
