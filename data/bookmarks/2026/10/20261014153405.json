@@ -1,1 +1,18 @@
-{"id":"20261014153405","url":"https://tinylittleoffice.com/","title":"Tiny Little Office","annotation":"","tags":["Tools","productivity"],"saved_at":"2026-10-14T15:34:05-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261014153405",
+  "url": "https://tinylittleoffice.com/",
+  "title": "Tiny Little Office",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "productivity"
+  ],
+  "saved_at": "2026-10-14T15:34:05-0400",
+  "domain": "tinylittleoffice.com",
+  "og": {
+    "title": "Tiny Little Office: the link is the document",
+    "description": "A tiny office suite where the link is the document. No accounts. Nothing is saved anywhere unless you choose to keep it on this device.",
+    "image": "https://tinylittleoffice.com/og.png"
+  },
+  "enriched_at": "2026-10-14T19:34:43.219123+00:00"
+}
