@@ -1,1 +1,18 @@
-{"id":"20261016195359","url":"https://maevyn.codes/decoherence","title":"The Decoherence Trap: When AI slop drowns out the signal in an endless sea of noise | maevyn.codes","annotation":"","tags":["ai","software"],"saved_at":"2026-10-16T19:53:59-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261016195359",
+  "url": "https://maevyn.codes/decoherence",
+  "title": "The Decoherence Trap: When AI slop drowns out the signal in an endless sea of noise | maevyn.codes",
+  "annotation": "",
+  "tags": [
+    "ai",
+    "software"
+  ],
+  "saved_at": "2026-10-16T19:53:59-0400",
+  "domain": "maevyn.codes",
+  "og": {
+    "title": "The Decoherence Trap: When AI slop drowns out the signal in an endless sea of noise",
+    "description": "Of all the forms of tech debt, decoherence is the worst. It compounds exponentially with a system's rate of change, and AI is now producing it faster than ever, leading us deeper and deeper into the abyss...",
+    "image": "https://maevyn.codes/decoherence/decoherence-social.png"
+  },
+  "enriched_at": "2026-10-16T23:54:19.009485+00:00"
+}
