@@ -1,1 +1,19 @@
-{"id":"20261016233227","url":"https://getsill.app/","title":"Sill: windows from your Mac on your iPhone and iPad","annotation":"","tags":["Tools","productivity","Mac "],"saved_at":"2026-10-16T23:32:27-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261016233227",
+  "url": "https://getsill.app/",
+  "title": "Sill: windows from your Mac on your iPhone and iPad",
+  "annotation": "",
+  "tags": [
+    "Tools",
+    "productivity",
+    "Mac "
+  ],
+  "saved_at": "2026-10-16T23:32:27-0400",
+  "domain": "getsill.app",
+  "og": {
+    "title": "Sill: your Mac, on your iPhone and iPad",
+    "description": "Any window from your Mac, live on your iPhone or iPad, with touch, a trackpad and keys. Free and open source, no account, no servers.",
+    "image": "https://getsill.app/preview.jpg"
+  },
+  "enriched_at": "2026-10-17T03:32:58.811786+00:00"
+}
