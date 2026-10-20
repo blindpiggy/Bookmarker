@@ -1,1 +1,19 @@
-{"id":"20261018213448","url":"https://www.layerchart.com/","title":"LayerChart","annotation":"","tags":["Charts","svg","webdev"],"saved_at":"2026-10-18T21:34:48-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261018213448",
+  "url": "https://www.layerchart.com/",
+  "title": "LayerChart",
+  "annotation": "",
+  "tags": [
+    "Charts",
+    "svg",
+    "webdev"
+  ],
+  "saved_at": "2026-10-18T21:34:48-0400",
+  "domain": "layerchart.com",
+  "og": {
+    "title": "LayerChart",
+    "description": "Composable Svelte chart components to build a large variety of visualizations",
+    "image": "https://www.layerchart.com/images/og-image.png"
+  },
+  "enriched_at": "2026-10-20T12:21:00.917651+00:00"
+}
