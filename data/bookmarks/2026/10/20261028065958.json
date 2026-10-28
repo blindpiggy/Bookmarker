@@ -1,1 +1,19 @@
-{"id":"20261028065958","url":"https://pablozarate.com/manifesto","title":"Design Manifesto: 10 Principles for Ethical, Human Design","annotation":"","tags":["Design","ai","ethics"],"saved_at":"2026-10-28T06:59:58-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261028065958",
+  "url": "https://pablozarate.com/manifesto",
+  "title": "Design Manifesto: 10 Principles for Ethical, Human Design",
+  "annotation": "",
+  "tags": [
+    "Design",
+    "ai",
+    "ethics"
+  ],
+  "saved_at": "2026-10-28T06:59:58-0400",
+  "domain": "pablozarate.com",
+  "og": {
+    "title": "Design Manifesto: 10 Principles for Ethical, Human Design",
+    "description": "Ten principles for designers on ethics, craft, responsibility, respect for audiences, and knowing when less is better—written by Pablo Zarate.",
+    "image": "https://pablozarate.com/opengraph-image.jpg"
+  },
+  "enriched_at": "2026-10-28T11:00:23.314207+00:00"
+}

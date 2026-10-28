@@ -1,1 +1,18 @@
-{"id":"20261028065913","url":"https://constitution.design/","title":"The Designer’s Constitution, by PabloZarate™","annotation":"","tags":["Design","ai"],"saved_at":"2026-10-28T06:59:13-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261028065913",
+  "url": "https://constitution.design/",
+  "title": "The Designer’s Constitution, by PabloZarate™",
+  "annotation": "",
+  "tags": [
+    "Design",
+    "ai"
+  ],
+  "saved_at": "2026-10-28T06:59:13-0400",
+  "domain": "constitution.design",
+  "og": {
+    "title": "The Designer’s Constitution",
+    "description": "A model for rethinking what makes a designer in the age of AI.",
+    "image": "https://constitution.design/assets/img/og.jpg"
+  },
+  "enriched_at": "2026-10-28T11:00:22.142868+00:00"
+}
