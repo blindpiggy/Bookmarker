@@ -1,1 +1,17 @@
-{"id":"20261029082803","url":"https://owlsintowels.org/","title":"Owls in Towels","annotation":"","tags":["Owls"],"saved_at":"2026-10-29T08:28:03-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261029082803",
+  "url": "https://owlsintowels.org/",
+  "title": "Owls in Towels",
+  "annotation": "",
+  "tags": [
+    "Owls"
+  ],
+  "saved_at": "2026-10-29T08:28:03-0400",
+  "domain": "owlsintowels.org",
+  "og": {
+    "title": "Owls in Towels",
+    "description": "Wildlife rehabilitators often wrap owls in fabric so they can be weighed, treated, and fed. If not, the owls get in a flap.",
+    "image": "https://owlsintowels.org/content/media/d7pEV7y.png"
+  },
+  "enriched_at": "2026-10-29T12:28:30.825088+00:00"
+}
