@@ -1,1 +1,18 @@
-{"id":"20261031091540","url":"https://fujimod.com/","title":"FujiMod","annotation":"","tags":["Photography","Fujifilm "],"saved_at":"2026-10-31T09:15:40-0400","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261031091540",
+  "url": "https://fujimod.com/",
+  "title": "FujiMod",
+  "annotation": "",
+  "tags": [
+    "Photography",
+    "Fujifilm "
+  ],
+  "saved_at": "2026-10-31T09:15:40-0400",
+  "domain": "fujimod.com",
+  "og": {
+    "title": "FujiMod",
+    "description": "Firmware modified to unlock your camera’s full potential. 23 new features like 65:24 XPan crop, highlight metering, snap focus, unlimited recipes with white balance shift, F-Log video, and touch input in menus. Assign any setting to any control: use the EV dial for ISO, or the auto/manual switch to change film simulation. Try in your browser or dual-boot from an SD card without flashing.",
+    "image": "https://fujimod.com/artifacts/docs/e91004baf819b68028638162.webp"
+  },
+  "enriched_at": "2026-10-31T13:15:58.790006+00:00"
+}
