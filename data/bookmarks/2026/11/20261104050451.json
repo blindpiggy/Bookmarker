@@ -1,1 +1,17 @@
-{"id":"20261104050451","url":"https://www.twigandtale.com/","title":"Twig + Tale | Sewing & Craft Patterns","annotation":"","tags":["Sewing"],"saved_at":"2026-11-04T05:04:51-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261104050451",
+  "url": "https://www.twigandtale.com/",
+  "title": "Twig + Tale | Sewing & Craft Patterns",
+  "annotation": "",
+  "tags": [
+    "Sewing"
+  ],
+  "saved_at": "2026-11-04T05:04:51-0500",
+  "domain": "twigandtale.com",
+  "og": {
+    "title": "Twig + Tale | Sewing & Craft Patterns",
+    "description": "Discover sewing patterns for timeless clothing & crafts. Thoughtfully designed for makers of all skill levels. Create with Twig + Tale today.",
+    "image": "https://cdn.shopify.com/s/files/1/1083/5260/files/T_T_primary_onwhite_trans.png?height=628&pad_color=fff&v=1613535245&width=1200"
+  },
+  "enriched_at": "2026-11-04T12:25:38.621703+00:00"
+}

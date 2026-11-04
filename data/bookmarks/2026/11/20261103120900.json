@@ -1,1 +1,18 @@
-{"id":"20261103120900","url":"https://roster.design/","title":"Roster | Make the cut. Get hired.","annotation":"","tags":["Design","jobs"],"saved_at":"2026-11-03T12:09:00-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261103120900",
+  "url": "https://roster.design/",
+  "title": "Roster | Make the cut. Get hired.",
+  "annotation": "",
+  "tags": [
+    "Design",
+    "jobs"
+  ],
+  "saved_at": "2026-11-03T12:09:00-0500",
+  "domain": "roster.design",
+  "og": {
+    "title": "Roster | Make the cut. Get hired.",
+    "description": "Roster is a roster of designers looking for work, and the goal is simple: get them hired.",
+    "image": "https://roster.design/assets/og-image.png"
+  },
+  "enriched_at": "2026-11-04T12:25:36.669640+00:00"
+}
