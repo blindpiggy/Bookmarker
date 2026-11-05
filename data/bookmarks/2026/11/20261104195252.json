@@ -1,1 +1,18 @@
-{"id":"20261104195252","url":"https://blog.kizu.dev/link-parameters-soon/","title":"Groundbreaking Upgrade to SVG is Approaching: Linked Parameters Are Almost Here — Roma’s Unpolished Posts","annotation":"","tags":["SVG","webdev"],"saved_at":"2026-11-04T19:52:52-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261104195252",
+  "url": "https://blog.kizu.dev/link-parameters-soon/",
+  "title": "Groundbreaking Upgrade to SVG is Approaching: Linked Parameters Are Almost Here — Roma’s Unpolished Posts",
+  "annotation": "",
+  "tags": [
+    "SVG",
+    "webdev"
+  ],
+  "saved_at": "2026-11-04T19:52:52-0500",
+  "domain": "blog.kizu.dev",
+  "og": {
+    "title": "Groundbreaking Upgrade to SVG is Approaching: Linked Parameters Are Almost Here",
+    "description": "“This feature will change everything” might be a bit of an exaggeration, but it, surely, will change a lot, both in #CSS and #SVG. In this post, I’ll report on what is happening right now with it, and why I think this is so exciting.",
+    "image": null
+  },
+  "enriched_at": "2026-11-05T20:49:23.645845+00:00"
+}

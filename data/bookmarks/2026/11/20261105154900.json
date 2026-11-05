@@ -1,1 +1,20 @@
-{"id":"20261105154900","url":"https://sign.aboard.com/","title":"AboardSign","annotation":"","tags":["document","legal","signature","contract"],"saved_at":"2026-11-05T15:49:00-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261105154900",
+  "url": "https://sign.aboard.com/",
+  "title": "AboardSign",
+  "annotation": "",
+  "tags": [
+    "document",
+    "legal",
+    "signature",
+    "contract"
+  ],
+  "saved_at": "2026-11-05T15:49:00-0500",
+  "domain": "sign.aboard.com",
+  "og": {
+    "title": "AboardSign",
+    "description": "Digitally sign any document in minutes. Email the agreement, CC sign@aboard.com, and everyone gets a link to sign. Free.",
+    "image": "https://sign.aboard.com/og.png"
+  },
+  "enriched_at": "2026-11-05T20:49:25.011850+00:00"
+}
