@@ -1,1 +1,18 @@
-{"id":"20261104194104","url":"https://buzzusborne.com/writing/pick-three/?ref=sidebar","title":"Pick three","annotation":"","tags":["Ai","design"],"saved_at":"2026-11-04T19:41:04-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261104194104",
+  "url": "https://buzzusborne.com/writing/pick-three/?ref=sidebar",
+  "title": "Pick three",
+  "annotation": "",
+  "tags": [
+    "Ai",
+    "design"
+  ],
+  "saved_at": "2026-11-04T19:41:04-0500",
+  "domain": "buzzusborne.com",
+  "og": {
+    "title": "Pick three",
+    "description": "Exploring the hidden cost of producing good, fast and cheap creative work.",
+    "image": "https://buzzusborne.com/writing/pick-three/img/pick-3.png"
+  },
+  "enriched_at": "2026-11-05T00:41:30.220377+00:00"
+}
