@@ -1,1 +1,18 @@
-{"id":"20261106075921","url":"https://iso.sloptoronto.ca/#v=2&x=39620&y=16292&z=1.49","title":"Isometric Toronto","annotation":"","tags":["Ai","map"],"saved_at":"2026-11-06T07:59:21-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261106075921",
+  "url": "https://iso.sloptoronto.ca/#v=2&x=39620&y=16292&z=1.49",
+  "title": "Isometric Toronto",
+  "annotation": "",
+  "tags": [
+    "Ai",
+    "map"
+  ],
+  "saved_at": "2026-11-06T07:59:21-0500",
+  "domain": "iso.sloptoronto.ca",
+  "og": {
+    "title": "Isometric Toronto",
+    "description": "An isometric illustrated map of the City of Toronto. Zoom in on every block.",
+    "image": "https://iso.sloptoronto.ca/og.jpg"
+  },
+  "enriched_at": "2026-11-07T11:31:02.063574+00:00"
+}
