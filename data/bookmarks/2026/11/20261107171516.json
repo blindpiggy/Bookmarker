@@ -1,1 +1,18 @@
-{"id":"20261107171516","url":"https://www.m-vave.com/product?id=fm-1","title":"FM-1 - M-VAVE","annotation":"","tags":["Music","synth"],"saved_at":"2026-11-07T17:15:16-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261107171516",
+  "url": "https://www.m-vave.com/product?id=fm-1",
+  "title": "FM-1 - M-VAVE",
+  "annotation": "",
+  "tags": [
+    "Music",
+    "synth"
+  ],
+  "saved_at": "2026-11-07T17:15:16-0500",
+  "domain": "m-vave.com",
+  "og": {
+    "title": "Product - M-VAVE",
+    "description": null,
+    "image": null
+  },
+  "enriched_at": "2026-11-07T22:15:41.410102+00:00"
+}
