@@ -1,1 +1,19 @@
-{"id":"20261107192559","url":"https://aboard.com/the-great-firmware-flowering/","title":"The Great Firmware Flowering","annotation":"","tags":["Firmware","synth","ai"],"saved_at":"2026-11-07T19:25:59-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261107192559",
+  "url": "https://aboard.com/the-great-firmware-flowering/",
+  "title": "The Great Firmware Flowering",
+  "annotation": "",
+  "tags": [
+    "Firmware",
+    "synth",
+    "ai"
+  ],
+  "saved_at": "2026-11-07T19:25:59-0500",
+  "domain": "aboard.com",
+  "og": {
+    "title": "The great firmware flowering",
+    "description": "It’s only a matter of time before we start hacking, well, everything.",
+    "image": "https://aboard.com/wp-content/uploads/2026/10/fm1-tall-1024x686.png"
+  },
+  "enriched_at": "2026-11-08T00:26:21.045628+00:00"
+}
