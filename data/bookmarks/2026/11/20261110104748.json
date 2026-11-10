@@ -1,1 +1,19 @@
-{"id":"20261110104748","url":"https://fontsight.xyz/font-alternatives","title":"Free Font Alternatives to 202 Paid Typefaces, Measured","annotation":"","tags":["typography","open source","tools"],"saved_at":"2026-11-10T10:47:48-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261110104748",
+  "url": "https://fontsight.xyz/font-alternatives",
+  "title": "Free Font Alternatives to 202 Paid Typefaces, Measured",
+  "annotation": "",
+  "tags": [
+    "typography",
+    "open source",
+    "tools"
+  ],
+  "saved_at": "2026-11-10T10:47:48-0500",
+  "domain": "fontsight.xyz",
+  "og": {
+    "title": "Free fonts like the paid ones",
+    "description": "Free alternatives to Söhne, Proxima Nova, Gotham, Circular, Helvetica and 197 more paid fonts, found by measuring the letters and checked by eye. With CSS that keeps your line breaks.",
+    "image": "https://fontsight.xyz/og.png"
+  },
+  "enriched_at": "2026-11-10T15:48:48.129205+00:00"
+}
