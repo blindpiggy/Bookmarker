@@ -1,1 +1,21 @@
-{"id":"20261111170223","url":"https://aboard.com/lets-have-a-mouse-party/","title":"Let’s Have a Mouse Party!","annotation":"","tags":["Webdev","tools","tunnel","ngrok","video"],"saved_at":"2026-11-11T17:02:23-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261111170223",
+  "url": "https://aboard.com/lets-have-a-mouse-party/",
+  "title": "Let’s Have a Mouse Party!",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "tools",
+    "tunnel",
+    "ngrok",
+    "video"
+  ],
+  "saved_at": "2026-11-11T17:02:23-0500",
+  "domain": "aboard.com",
+  "og": {
+    "title": "Let’s have a Mouse Party!",
+    "description": "A free, secure way to watch videos together on the web (no server needed).",
+    "image": "https://aboard.com/wp-content/uploads/2026/11/mouseparty-TALL-1024x686.png"
+  },
+  "enriched_at": "2026-11-11T22:17:01.903749+00:00"
+}
