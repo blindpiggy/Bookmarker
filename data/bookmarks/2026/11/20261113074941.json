@@ -1,1 +1,20 @@
-{"id":"20261113074941","url":"https://hicks.design/journal/rosin-app","title":"Rosin App - Hicks.design","annotation":"","tags":["Software","app","music","player"],"saved_at":"2026-11-13T07:49:41-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261113074941",
+  "url": "https://hicks.design/journal/rosin-app",
+  "title": "Rosin App - Hicks.design",
+  "annotation": "",
+  "tags": [
+    "Software",
+    "app",
+    "music",
+    "player"
+  ],
+  "saved_at": "2026-11-13T07:49:41-0500",
+  "domain": "hicks.design",
+  "og": {
+    "title": "Rosin App - Hicks.design",
+    "description": "Rosin is a menubar companion for Qobuz on macOS, adding a custom theme and missing functionality.",
+    "image": "https://hicks.design/media/pages/journal/rosin-app/e312b387c8-1793815746/fullscreen.webp"
+  },
+  "enriched_at": "2026-11-13T13:21:09.546972+00:00"
+}
