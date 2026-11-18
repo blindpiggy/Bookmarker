@@ -1,1 +1,19 @@
-{"id":"20261118065226","url":"https://cassidoo.co/post/dying-indies/","title":"Why are all the indie-friendly products dying at the same time?","annotation":"","tags":["Essay","webdev","enshittification"],"saved_at":"2026-11-18T06:52:26-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261118065226",
+  "url": "https://cassidoo.co/post/dying-indies/",
+  "title": "Why are all the indie-friendly products dying at the same time?",
+  "annotation": "",
+  "tags": [
+    "Essay",
+    "webdev",
+    "enshittification"
+  ],
+  "saved_at": "2026-11-18T06:52:26-0500",
+  "domain": "cassidoo.co",
+  "og": {
+    "title": "Why are all the indie-friendly products dying at the same time?",
+    "description": "So many startups and products are shutting down, seemingly all at once. There's a few reasons why that could be.",
+    "image": "https://cassidoo.co/og-image/dying-indies.png"
+  },
+  "enriched_at": "2026-11-18T11:52:49.587359+00:00"
+}
