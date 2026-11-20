@@ -1,1 +1,19 @@
-{"id":"20261120131203","url":"https://bsky.app/profile/machal.bsky.social/post/3n2qt3sp4hs2y","title":"@machal.bsky.social on Bluesky","annotation":"","tags":["Software","waiting","performance"],"saved_at":"2026-11-20T13:12:03-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261120131203",
+  "url": "https://bsky.app/profile/machal.bsky.social/post/3n2qt3sp4hs2y",
+  "title": "@machal.bsky.social on Bluesky",
+  "annotation": "",
+  "tags": [
+    "Software",
+    "waiting",
+    "performance"
+  ],
+  "saved_at": "2026-11-20T13:12:03-0500",
+  "domain": "bsky.app",
+  "og": {
+    "title": "Martin Michalek (@machal.bsky.social)",
+    "description": "Anything slower than 100 ms is not “instant.” \n\nAfter 10 seconds, the user loses focus. \n\nThis has been a known fact for nearly 60 years. \n\nGreat visualization by @stephaniewalter.bsky.social at #perfnow. #webperf",
+    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:h5rk3cszdyp54lfem4hfkk7f/bafkreiepwuds7uxxohgymo7wjxqctjzvcy6jaxivia4zynw7ke2ht6suie"
+  },
+  "enriched_at": "2026-11-20T19:12:21.205295+00:00"
+}
