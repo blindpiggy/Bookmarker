@@ -1,1 +1,18 @@
-{"id":"20261126175439","url":"https://ishadeed.com/article/web-personality/","title":"The web is losing its personality","annotation":"","tags":["Webdev","essay"],"saved_at":"2026-11-26T17:54:39-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261126175439",
+  "url": "https://ishadeed.com/article/web-personality/",
+  "title": "The web is losing its personality",
+  "annotation": "",
+  "tags": [
+    "Webdev",
+    "essay"
+  ],
+  "saved_at": "2026-11-26T17:54:39-0500",
+  "domain": "ishadeed.com",
+  "og": {
+    "title": "The web is losing its personality",
+    "description": "A look at why websites started to look the same, and how we got here.",
+    "image": "https://ishadeed.com/assets/web-personality/thumb.jpg"
+  },
+  "enriched_at": "2026-11-26T22:55:01.478539+00:00"
+}
