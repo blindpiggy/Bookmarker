@@ -1,1 +1,20 @@
-{"id":"20261126074158","url":"https://martincmartin.github.io/slidev-stem/watches/article/1/","title":"How a Mechanical Watch Keeps Time (Interactive 3D)","annotation":"","tags":["Watch","mechanical","how it works","guide"],"saved_at":"2026-11-26T07:41:58-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261126074158",
+  "url": "https://martincmartin.github.io/slidev-stem/watches/article/1/",
+  "title": "How a Mechanical Watch Keeps Time (Interactive 3D)",
+  "annotation": "",
+  "tags": [
+    "Watch",
+    "mechanical",
+    "how it works",
+    "guide"
+  ],
+  "saved_at": "2026-11-26T07:41:58-0500",
+  "domain": "martincmartin.github.io",
+  "og": {
+    "title": "How a Mechanical Watch Keeps Time (Interactive 3D)",
+    "description": "How a mechanical watch keeps time, piece by piece: the hairspring, the balance wheel, the escapement and the gears, in live figures you can step through.",
+    "image": "https://martincmartin.github.io/slidev-stem/watches/article/1/figures/what-everyone-should-know-about-mechanical-watches-0.png"
+  },
+  "enriched_at": "2026-11-26T12:42:45.420861+00:00"
+}
