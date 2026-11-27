@@ -1,1 +1,19 @@
-{"id":"20261127081621","url":"https://csswizardry.com/2024/11/designing-and-evolving-a-new-performance-score/","title":"Designing (and Evolving) a New Web Performance Score – CSS Wizardry","annotation":"","tags":["CSS","performance","metrics"],"saved_at":"2026-11-27T08:16:21-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261127081621",
+  "url": "https://csswizardry.com/2024/11/designing-and-evolving-a-new-performance-score/",
+  "title": "Designing (and Evolving) a New Web Performance Score – CSS Wizardry",
+  "annotation": "",
+  "tags": [
+    "CSS",
+    "performance",
+    "metrics"
+  ],
+  "saved_at": "2026-11-27T08:16:21-0500",
+  "domain": "csswizardry.com",
+  "og": {
+    "title": "Designing (and Evolving) a New Web Performance Score – CSS Wizardry",
+    "description": "Why design another new performance score?! Good question…",
+    "image": "https://csswizardry.com/wp-content/uploads/2024/11/new-metric-indexed.png"
+  },
+  "enriched_at": "2026-11-27T22:56:35.220406+00:00"
+}

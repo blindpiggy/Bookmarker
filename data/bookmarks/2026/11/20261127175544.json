@@ -1,1 +1,19 @@
-{"id":"20261127175544","url":"https://ciechanow.ski/","title":"Bartosz Ciechanowski","annotation":"","tags":["Guides","essay","interactive"],"saved_at":"2026-11-27T17:55:44-0500","domain":null,"og":null,"enriched_at":null}
+{
+  "id": "20261127175544",
+  "url": "https://ciechanow.ski/",
+  "title": "Bartosz Ciechanowski",
+  "annotation": "",
+  "tags": [
+    "Guides",
+    "essay",
+    "interactive"
+  ],
+  "saved_at": "2026-11-27T17:55:44-0500",
+  "domain": "ciechanow.ski",
+  "og": {
+    "title": "Bartosz Ciechanowski",
+    "description": "Interactive articles about science and engineering.",
+    "image": null
+  },
+  "enriched_at": "2026-11-27T22:56:36.741088+00:00"
+}
